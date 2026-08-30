@@ -12,7 +12,11 @@
       "types": "./lib/provider-sdk.d.ts",
       "default": "./lib/provider-sdk.js"
     },
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./testing": {
+      "types": "./lib/testing.d.ts",
+      "default": "./lib/testing.js"
+    }
   },
   "files": [
     "lib",
