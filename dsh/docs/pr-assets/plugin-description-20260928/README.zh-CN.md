@@ -6,7 +6,7 @@
 
 插件页顶部的简介现在写作“分层记忆”，与下方选中的“分层策略”一致。
 
-![插件页顶部](./plugin-header.png)
+![插件页顶部](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-description-20260928/plugin-header.png)
 
 ## 验证
 

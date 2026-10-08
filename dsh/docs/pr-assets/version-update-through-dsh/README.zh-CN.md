@@ -23,7 +23,7 @@ profile 与记忆均为合成数据。
 
 ## 修复前：已发布的 0.5.20
 
-![dsh-mnemon 0.5.20 可更新到 0.5.21，但面板只提示找不到 pnpm，没有更新按钮](./before.jpg)
+![dsh-mnemon 0.5.20 可更新到 0.5.21，但面板只提示找不到 pnpm，没有更新按钮](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/before.jpg)
 
 该行显示“可更新 0.5.20 → 0.5.21”与“检测到 DSH Profile 安装，但当前找不到 pnpm 命令。”，没有**更新**按钮，与反馈一致。
 
@@ -37,11 +37,11 @@ profile 与记忆均为合成数据。
 
 | 提供更新 | 更新中 |
 |---|---|
-| ![该行通过 DSH 自己的插件安装器提供更新](./offered.jpg) | ![更新中](./updating.jpg) |
+| ![该行通过 DSH 自己的插件安装器提供更新](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/offered.jpg) | ![更新中](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/updating.jpg) |
 
 | 重新打开并显示结果 | 重启之后 |
 |---|---|
-| ![重新打开的面板：dsh-mnemon 已更新，请重启 DSH](./reopened.jpg) | ![重启之后：已是最新，没有重启提示](./restarted.jpg) |
+| ![重新打开的面板：dsh-mnemon 已更新，请重启 DSH](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/reopened.jpg) | ![重启之后：已是最新，没有重启提示](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/restarted.jpg) |
 
 1. dsh-mnemon 一行显示“由当前 DSH Profile 管理；用 DSH 自己的插件安装方式更新，完成后重启 DSH。”与**更新**按钮。
 2. DSH 的插件管理器用桌面版的 pnpm 运行 `pnpm add dsh-mnemon@0.5.21`，profile 日志结尾为 `Done in 384ms using pnpm v11.7.0`。profile 现在记录 `"dsh-mnemon": "0.5.21"`，node_modules 中为 0.5.21，已启用的 bundle 不变。
@@ -49,7 +49,7 @@ profile 与记忆均为合成数据。
 4. 新页面重新打开状态页与**检查版本**。到 3.75 秒时，面板显示 **dsh-mnemon 已更新**与重启提示，该行为“待重启 · 0.5.21”。
 5. 停止并重新启动 DSH 后，状态页显示 dsh-mnemon 0.5.21 / 系统正常；面板显示“已是最新”，没有重启提示，也没有**更新**按钮。
 
-![更新过程：提供更新、更新中、重新打开并检查、显示结果](./update-sequence.gif)
+![更新过程：提供更新、更新中、重新打开并检查、显示结果](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/update-sequence.gif)
 
 ## 为什么要重新打开页面
 
@@ -71,7 +71,7 @@ DSH 0.1.7-rc.2 的 CLI 入口不接受启动器提供的包管理器，它的插
 
 ## 没有任何包管理器时
 
-![该行提示安装 pnpm，没有更新按钮](./no-package-manager.jpg)
+![该行提示安装 pnpm，没有更新按钮](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/no-package-manager.jpg)
 
 这里直接用 `dsh web` 启动 npm 上的 DSH 0.2.0-rc.2，没有启动器，PATH 上也没有 pnpm，此时 DSH 自己的插件页同样无法安装。该行显示“可更新”与“检测到 DSH Profile 安装，但宿主找不到 pnpm 命令；安装 pnpm 并重启 DSH 后即可在此更新。”，没有**更新**按钮。
 
@@ -79,7 +79,7 @@ DSH 0.1.7-rc.2 的 CLI 入口不接受启动器提供的包管理器，它的插
 
 | 提供更新 | 已更新 |
 |---|---|
-| ![由 profile 独立维护的 dsh-mnemon-strategy-scoped 0.5.4 提供更新](./strategy-offered.jpg) | ![dsh-mnemon-strategy-scoped 已更新，请重启 DSH](./strategy-updated.jpg) |
+| ![由 profile 独立维护的 dsh-mnemon-strategy-scoped 0.5.4 提供更新](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/strategy-offered.jpg) | ![dsh-mnemon-strategy-scoped 已更新，请重启 DSH](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/strategy-updated.jpg) |
 
 来自 npm 的 `dsh-mnemon-strategy-scoped@0.5.4` 通过打包版的 `dsh plugin add` 添加，是由 profile 独立维护的 DSH bundle（Profile 独立维护）。它的**更新**经由 DSH 的插件管理器升到 npm 上的 0.5.5（`Done in 267ms using pnpm v11.7.0`）。只有这个 Strategy 的页面发生变化，所以面板保持打开，已启用的 bundle 不变。
 
@@ -93,7 +93,7 @@ DSH 0.1.7-rc.2 的 CLI 入口不接受启动器提供的包管理器，它的插
 
 | 检查版本更新 Starter 之后 | 重启之后 |
 |---|---|
-| ![状态页顶部：dsh-mnemon 0.5.21 已安装，当前运行的仍是 0.5.21-dshupdate.0](./reminder-installed.jpg) | ![重启之后：没有提示，记忆引擎卡片显示 dsh-mnemon 0.5.21](./reminder-restarted.jpg) |
+| ![状态页顶部：dsh-mnemon 0.5.21 已安装，当前运行的仍是 0.5.21-dshupdate.0](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/reminder-installed.jpg) | ![重启之后：没有提示，记忆引擎卡片显示 dsh-mnemon 0.5.21](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/reminder-restarted.jpg) |
 
 **检查版本，DSH 0.2.0-rc.2 加桌面版启动方式：**
 - DSH 的插件管理器安装了 0.5.21（`Done in 598ms using pnpm v11.7.0`）。
@@ -106,7 +106,7 @@ DSH 0.1.7-rc.2 的 CLI 入口不接受启动器提供的包管理器，它的插
 - 命令返回约 0.5 秒后，DSH 换上新的客户端，打开着的记忆系统关闭并回到 DSH 首页。这是 DSH 的客户端 HMR；面板的重新打开只覆盖从面板发起的更新。
 - 从侧栏重新打开后，状态页与运行时记忆页显示同样的提示。检查版本显示“待重启”、当前版本 0.5.21，没有**更新**按钮，不会再次提供已经安装的版本。
 
-![dsh plugin add 之后的检查版本：当前版本 0.5.21，待重启，没有更新按钮](./reminder-cli-dialog.jpg)
+![dsh plugin add 之后的检查版本：当前版本 0.5.21，待重启，没有更新按钮](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/reminder-cli-dialog.jpg)
 
 **回到正在运行的版本：**`dsh plugin add dsh-mnemon@0.5.21-dshupdate.0` 同样关闭了记忆系统。重新打开后没有提示，检查版本再次提供 0.5.21-dshupdate.0 → 0.5.21。
 
@@ -115,7 +115,7 @@ DSH 0.1.7-rc.2 的 CLI 入口不接受启动器提供的包管理器，它的插
 - 状态页与运行时记忆页显示 **dsh-mnemon-strategy-scoped 已更新** 与“重启 DSH 后生效，桌面版请完全退出后重新打开。”。Starter 仍是 0.5.21-dshupdate.0。
 - 重启之后提示消失。
 
-![运行时记忆页顶部：dsh-mnemon-strategy-scoped 已更新，请重启 DSH](./reminder-strategy.jpg)
+![运行时记忆页顶部：dsh-mnemon-strategy-scoped 已更新，请重启 DSH](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/reminder-strategy.jpg)
 
 **DSH 0.1.7-rc.2：**`dsh web`，PATH 上有 pnpm 11.19.0。
 - 检查版本通过 DSH 的插件管理器更新了 Starter（`Done in 419ms using pnpm v11.19.0`）。

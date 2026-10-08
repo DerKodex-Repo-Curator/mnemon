@@ -30,9 +30,9 @@ For the browser run, build Root and plugins, then use `pnpm e2e:serve --review-e
 
 The normal activity gate is unchanged; the fixture shortens only the idle debounce to five seconds. Open the review child from the conversation's subagent menu. All three optional Strategy extensions were enabled in both browser runs.
 
-![Baseline child repeats an already inherited overview read](./before-redundant-read.png)
+![Baseline child repeats an already inherited overview read](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-211-20260911/before-redundant-read.png)
 
-![Fixed child receives a denial and completes the review through allowed tools](./after-read-denied.png)
+![Fixed child receives a denial and completes the review through allowed tools](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-211-20260911/after-read-denied.png)
 
 ## Verification and limits
 
@@ -40,7 +40,7 @@ The Root suite passed 935 tests and the plugin suites passed 323, with seven opt
 
 The opt-in real Native Source suite passed 169 tests with one Windows-only skip, using `MNEMON_NATIVE_TEST_CLI=/opt/homebrew/bin/mnemon`. In the real WebUI, a new Native space was created after review, CLI 0.2.7 wrote an exact canary with `--no-diff`, the UI read it, and the normal Forget action returned the list to zero items.
 
-![Real Native CLI canary remains readable through normal WebUI controls](./after-native-cli-read.png)
+![Real Native CLI canary remains readable through normal WebUI controls](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-211-20260911/after-native-cli-read.png)
 
 Published DSH 0.1.1-rc.1 and 0.1.2-rc.1 tarballs were inspected for `isOwnedBy`, own-scope filter behavior, and `tools.guard`; the executable host/browser tests use 0.1.5-rc.1 on macOS arm64, Node 25.1.0, and pnpm 11.19.0. Missing guard support fails review explicitly. No persistence format, credentials, RPC authority, or personal memory changed.
 

@@ -67,7 +67,7 @@ Mnemon 同时在自己的传输注入作用域内注册 Web RPC，已运行的�
 
 ## DSH 0.1.7 bundle 组件列表
 
-DSH `0.1.7-rc.2` 的“插件 → dsh-mnemon”详情页会把 `mnemon-bundle` 内部容器列为“已关闭”的组件（0.5.20 起显示为 `dsh-mnemon/bundle`，此前为 `cordis:group`），DSH `0.2.0-rc.1` 的显示相同。9 个实际组件全部运行时，列表显示“共 10 个 · 9 运行中 · 1 已停用”；0.5.18 与 0.5.19 多一行就绪条目，对应为“共 11 个 · 10 运行中 · 1 已停用”。点击容器开关会返回 `unknown-plugin`，中文界面提示“组件启用失败：找不到该插件”。参见[原始截图](../../pr-assets/sidebar-native-20260926/before-bundle-toggle-error.jpg)与[上游问题 #649](https://github.com/dsh-external/issues/issues/649)。
+DSH `0.1.7-rc.2` 的“插件 → dsh-mnemon”详情页会把 `mnemon-bundle` 内部容器列为“已关闭”的组件（0.5.20 起显示为 `dsh-mnemon/bundle`，此前为 `cordis:group`），DSH `0.2.0-rc.1` 的显示相同。9 个实际组件全部运行时，列表显示“共 10 个 · 9 运行中 · 1 已停用”；0.5.18 与 0.5.19 多一行就绪条目，对应为“共 11 个 · 10 运行中 · 1 已停用”。点击容器开关会返回 `unknown-plugin`，中文界面提示“组件启用失败：找不到该插件”。参见[原始截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-native-20260926/before-bundle-toggle-error.jpg)与[上游问题 #649](https://github.com/dsh-external/issues/issues/649)。
 
 这是宿主的展示与管理清单不一致：bundle 声明列表包含原生 group，但可管理插件清单明确排除了 group。该行的“已关闭”不代表 Mnemon 核心或其子插件已停用，也不能据此判断记忆读写是否正常。
 

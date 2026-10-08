@@ -15,13 +15,13 @@ The fixture packs and installs a small Client skin through the public DSH plugin
 - [Fixed Builtin](./after-builtin-browser.json): the same skin applies, the composer remains visible, all three enhancements are enabled, settings save succeeds and the conversation replies.
 - [Runtime edit dialog](./dialog-browser.json): the portal has no workbench hook and retains its default surface. A synthetic Runtime fact was added, edited to use SQLite WAL and retained after browser reload; Builtin mode also persisted.
 
-Fresh Chrome runs checked the remaining cascade controls. With the [skin loaded after Mnemon](./after-order-browser.json), root, header and canvas all used the mint surface ([screenshot](./after-order-sidebar.png)); with [no skin installed](./default-browser.json), all three retained the original opaque white surface and two gradients ([screenshot](./default-sidebar.png)). Runtime, Documents and Memory Spaces navigation worked in both. These two runs inspected Sidebar surfaces without starting sessions or writing memory.
+Fresh Chrome runs checked the remaining cascade controls. With the [skin loaded after Mnemon](./after-order-browser.json), root, header and canvas all used the mint surface ([screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-273-skin-hooks/after-order-sidebar.png)); with [no skin installed](./default-browser.json), all three retained the original opaque white surface and two gradients ([screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-273-skin-hooks/default-sidebar.png)). Runtime, Documents and Memory Spaces navigation worked in both. These two runs inspected Sidebar surfaces without starting sessions or writing memory.
 
 | Baseline Sidebar | Fixed Sidebar |
 | --- | --- |
-| ![Baseline surface](./before-skin-sidebar.png) | ![Stable skin override](./after-skin-sidebar.png) |
+| ![Baseline surface](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-273-skin-hooks/before-skin-sidebar.png) | ![Stable skin override](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-273-skin-hooks/after-skin-sidebar.png) |
 
-![Fixed Builtin surface](./after-skin-builtin.png)
+![Fixed Builtin surface](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-273-skin-hooks/after-skin-builtin.png)
 
 ## Verification
 

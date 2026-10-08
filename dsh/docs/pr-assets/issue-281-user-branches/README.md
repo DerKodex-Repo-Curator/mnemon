@@ -14,7 +14,7 @@ The actual advertised schema requires only `action` and `target`. Published rc.2
 
 | Baseline | Fixed |
 | --- | --- |
-| ![Baseline USER replacement error](./before-user-replace.png) | ![Fixed USER replacement receipt](./after-user-replace.png) |
+| ![Baseline USER replacement error](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-281-user-branches/before-user-replace.png) | ![Fixed USER replacement receipt](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-281-user-branches/after-user-replace.png) |
 
 ## Verification
 
@@ -26,7 +26,7 @@ The actual advertised schema requires only `action` and `target`. Published rc.2
 - WebUI: USER empty-array add/replace/remove succeeded; non-empty USER branches failed; MEMORY branch assignment/clearing succeeded. Manual USER editing, Documents creation and content search passed. A Native space was created and activated in WebUI; the verified CLI wrote a synthetic record and WebUI keyword search read its exact text.
 - Settings saved with a visible success receipt. Runtime and Documents files retained identical SHA-256 hashes through a Host cold restart; the Native CLI still recalled the same ID and content.
 
-![Native CLI write read back through WebUI](./native-cli-webui-recall.png)
+![Native CLI write read back through WebUI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-281-user-branches/native-cli-webui-recall.png)
 
 [verification.json](./verification.json) contains the minimal actual calls/receipts and content hashes. [Baseline artifacts](./before-artifacts.json) and [fixed artifacts](./after-artifacts.json) record the seventeen tarball hashes and synthetic inputs. Raw Host logs, local authentication URLs, npm installs and full session logs stay outside the repository.
 

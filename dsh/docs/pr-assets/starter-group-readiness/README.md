@@ -16,9 +16,9 @@ The row could not simply be hidden: DSH lists every entry that a bundle patch in
 
 | Published 0.5.19 on DSH 0.2.0-rc.1: 11 components, `dsh-mnemon/starter` first | Candidate on DSH 0.2.0-rc.1: 10 components, `dsh-mnemon/bundle` first |
 | --- | --- |
-| ![Before](before-components.png) | ![After](after-components.png) |
+| ![Before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-readiness/before-components.png) | ![After](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-readiness/after-components.png) |
 
-English interface: [before](before-components-en.png) · [after](after-components-en.png). The container row still reads Off, as `cordis:group` did, because DSH's plugin inventory skips group entries ([upstream #649](https://github.com/dsh-external/issues/issues/649)).
+English interface: [before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-readiness/before-components-en.png) · [after](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-readiness/after-components-en.png). The container row still reads Off, as `cordis:group` did, because DSH's plugin inventory skips group entries ([upstream #649](https://github.com/dsh-external/issues/issues/649)).
 
 ## Acceptance
 
@@ -32,9 +32,9 @@ The candidate root tarball was installed through **Plugins → Add plugin** on f
 | Leftover `mnemon-starter: disabled: true` in the profile patch | Starts normally with the Memory System | Same |
 | General strategy turned on, then off | Only that component changes | Not run |
 
-A functional check on DSH 0.2.0-rc.1 kept one host process from installation to the end. Status reads nominal with Mnemon 0.2.7, and the page is byte-identical to the [v0.5.19 release acceptance](../release-v0.5.19/status.png). A Runtime entry is read back after a reload, a Native memory space is created and activated in the UI, and **Direct recall** finds a fact written by the Mnemon CLI.
+A functional check on DSH 0.2.0-rc.1 kept one host process from installation to the end. Status reads nominal with Mnemon 0.2.7, and the page is byte-identical to the [v0.5.19 release acceptance](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.19/status.png). A Runtime entry is read back after a reload, a Native memory space is created and activated in the UI, and **Direct recall** finds a fact written by the Mnemon CLI.
 
-![Direct recall finds the fact the Mnemon CLI wrote](recall.png)
+![Direct recall finds the fact the Mnemon CLI wrote](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-readiness/recall.png)
 
 `dsh web` profiles link packages with `nodeLinker: hoisted`, so all 18 packages sit in the profile's own `node_modules` and the preparation step finds them already visible. The layout that needs it is the desktop app's plugin generation, where the profile exposes only the root package. The activation fixture (`tests/bundle-activation.spec.mjs`) reproduces that layout with DSH's own boot and plugin manager: with the native group and no preparation, enabling the bundle after a cold start leaves four components failing to import on both hosts; with the component group, every enabled component starts. The fixture's other cases also pass on both hosts: another bundle's retained routes, the legacy `mnemon` gate and component choices, and the manager's component and bundle toggles.
 

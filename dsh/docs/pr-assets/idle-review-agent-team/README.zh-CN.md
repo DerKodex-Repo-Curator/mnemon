@@ -18,7 +18,7 @@
 
 | 基线上的真实 Team 错误 | 修改后的兼容性暂停 | 携带已提交回执的部分失败 |
 | --- | --- | --- |
-| [截图](./before-team-error.png) | [截图](./after-team-paused.png) | [截图](./after-final-partial-receipts.png) |
+| [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/before-team-error.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/after-team-paused.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/after-final-partial-receipts.png) |
 
 Team WebUI 工作负载包含两个已完成父轮次和五段完整概览，共 335 条合成条目。常规准入阈值仍为 5，第二条实质性消息使累计分数达到 6。基线创建一个审查子代理，发生 Team 错误后释放驻留实例，但保留非活跃目录记录。修改后的构建在记录的 190 秒安静期内没有创建子代理，也没有请求审查模型。[脱敏 WebUI 观测](./webui-evidence.json) 包含包版本、工作负载、构建哈希、释放证据及两次遥测的差异。
 
@@ -72,7 +72,7 @@ MNEMON_CLI_PATH=/path/to/mnemon pnpm e2e:serve --idle-review --strategy-extensio
 
 | 启用，五秒间隔，上限 1 | 关闭，尚有剩余预算（上限 2） | 四个已完成轮次与一个子代理 |
 | --- | --- | --- |
-| [截图](./after-review-budget.png) | [截图](./after-review-disabled.png) | [截图](./after-bounded-conversation.png) |
+| [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/after-review-budget.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/after-review-disabled.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/after-bounded-conversation.png) |
 
 Settings 中的自动审查开关独立于召回和主动写入设置。数值限额在保存前校验，现有授权 Settings RPC 同样校验范围并拒绝只读模式下的写入。自动化覆盖这些拒绝路径、取消、缺少保护能力、其他子代理回执，以及其他插件自身作用域工具被拒绝执行的情况。
 

@@ -50,21 +50,21 @@ framework 必须是未修改、正常 peer 安装的正式 DSH `0.1.7-alpha.1`�
 
 真实应用内浏览器已使用官方 DSH `0.1.7-alpha.1`、17 个基线 tarball 与 Mnemon CLI `0.2.9` 复现两次失败。[浏览器记录](./browser-before.json)与[脱敏 Provider 请求记录](./provider-before.json)区分了 account 留空时的 `GET /api/v1/admin/accounts`，以及填写账号后的 `GET /api/v1/admin/accounts/fixture/users`，均收到受控 access restrictions 错误。请求记录的 `account`/`user` 描述随机 key 对应的夹具身份，`accountField` 才是实际表单输入。截图保留密码掩码，不包含 bootstrap URL。
 
-![基线 account 留空时保存被拒](./before-account-empty.png)
+![基线 account 留空时保存被拒](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/before-account-empty.png)
 
-![基线填写 account 后仍被拒](./before-account-filled.png)
+![基线填写 account 后仍被拒](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/before-account-filled.png)
 
 修复后 GUI 成功保存 `alice`；随后保存 `bob` 被拒，但浏览与直接检索仍返回原 `alice` 的精确 canary，Runtime 也独立写入一条组合 canary。[浏览器验收记录](./browser-after.json)仅用布尔值核验持久化的原 key、endpoint、account、启用状态与唯一活动 `alice` 映射均保留，`bob` 未持久化，注册表权限仍为 `0600`。[Provider 请求记录](./provider-after.json)包含 10 次 `alice` 请求与 1 次被拒的 `bob` 探测，Admin 调用与 account/user 身份请求头均为零，远端合成正文保持不变。验收后已停止全部临时 WebUI/夹具进程。
 
-![修复后 user-key 服务保存成功](./after-user-key-saved.png)
+![修复后 user-key 服务保存成功](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/after-user-key-saved.png)
 
-![无权访问的替换用户被拒](./after-invalid-user-rejected.png)
+![无权访问的替换用户被拒](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/after-invalid-user-rejected.png)
 
-![拒绝后原 alice 正文仍可读取](./after-user-memory-content.png)
+![拒绝后原 alice 正文仍可读取](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/after-user-memory-content.png)
 
-![直接检索返回原精确 canary](./after-user-memory-search.png)
+![直接检索返回原精确 canary](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/after-user-memory-search.png)
 
-![Runtime 仍可独立写入](./after-runtime-coexistence.png)
+![Runtime 仍可独立写入](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/after-runtime-coexistence.png)
 
 ## 限制与数据影响
 

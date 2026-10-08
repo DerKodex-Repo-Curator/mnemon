@@ -41,9 +41,9 @@ MNEMON_CLI_PATH=/absolute/path/to/mnemon pnpm e2e:serve --openviking-write --str
 
 | 基线已存储回执 | 基线空内容页 |
 |---|---|
-| ![基线报告记忆已存储](./before-stored-receipt.png) | ![基线没有已保存的记忆](./before-empty-content.png) |
+| ![基线报告记忆已存储](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/before-stored-receipt.png) | ![基线没有已保存的记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/before-empty-content.png) |
 
-![修复后原文出现在目标命名空间](./after-protocol-content.png)
+![修复后原文出现在目标命名空间](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/after-protocol-content.png)
 
 ## 真实后端验收
 
@@ -63,9 +63,9 @@ MNEMON_OPENVIKING_TEST_ENDPOINT=http://127.0.0.1:19333 \
 
 | 真实 OpenViking 内容 | 真实 OpenViking 直接检索 |
 |---|---|
-| ![真实后端保存完整原文](./after-real-content.png) | ![直接检索返回完整原文](./after-real-search.png) |
+| ![真实后端保存完整原文](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/after-real-content.png) | ![直接检索返回完整原文](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/after-real-search.png) |
 
-![确认删除后真实命名空间为空](./after-real-forget.png)
+![确认删除后真实命名空间为空](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/after-real-forget.png)
 
 ## 契约与失败处理
 

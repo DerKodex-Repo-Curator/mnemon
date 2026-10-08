@@ -42,17 +42,17 @@ WebUI 旧会话夹具额外设置了临时工作区和 `mnemon-e2e` 预设，并
 
 | 证据 | 图片 |
 |---|---|
-| main 复现两个 HTTP 405 | [修复前](./00-before-http-405.png) |
-| 无会话状态页正常连接 | [状态](./01-status-connected.png) |
-| Runtime 新增、编辑结果 | [Runtime](./02-runtime-crud.png) |
-| 档案创建与搜索 | [档案](./03-documents-search.png) |
-| Native 关键词召回 | [召回](./04-native-recall.png) |
-| 设置保存及目录正常连接 | [设置](./05-settings-connected.png) |
-| Builtin 使用同一份 Runtime | [Builtin](./06-builtin-runtime.png) |
-| 重启后的只读模式 | [只读](./07-readonly-restart.png) |
-| 中文设置 | [中文](./10-chinese-settings.png) |
-| 旧会话续写后重启重读 | [冷启动重读](./11-legacy-cold-reopen.png) |
-| Native 内容重启后仍在，随后完成软删除 | [内容](./12-content-after-restart.png) |
+| main 复现两个 HTTP 405 | [修复前](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/00-before-http-405.png) |
+| 无会话状态页正常连接 | [状态](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/01-status-connected.png) |
+| Runtime 新增、编辑结果 | [Runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/02-runtime-crud.png) |
+| 档案创建与搜索 | [档案](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/03-documents-search.png) |
+| Native 关键词召回 | [召回](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/04-native-recall.png) |
+| 设置保存及目录正常连接 | [设置](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/05-settings-connected.png) |
+| Builtin 使用同一份 Runtime | [Builtin](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/06-builtin-runtime.png) |
+| 重启后的只读模式 | [只读](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/07-readonly-restart.png) |
+| 中文设置 | [中文](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/10-chinese-settings.png) |
+| 旧会话续写后重启重读 | [冷启动重读](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/11-legacy-cold-reopen.png) |
+| Native 内容重启后仍在，随后完成软删除 | [内容](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/12-content-after-restart.png) |
 
 ## 复现与边界
 

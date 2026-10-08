@@ -50,21 +50,21 @@ The helper's `fixed` mode selects normal peer installation for both artifact rev
 
 The real in-app browser reproduced both baseline failures using official DSH `0.1.7-alpha.1`, the 17 baseline tarballs and Mnemon CLI `0.2.9`. The [browser record](./browser-before.json) and [redacted provider trace](./provider-before.json) distinguish `GET /api/v1/admin/accounts` with an empty account from `GET /api/v1/admin/accounts/fixture/users` with the account filled. Both return the controlled access-restriction error. The `account`/`user` values in those request records describe the fixture identity bound to the generated key; `accountField` records the actual form input. Screenshots keep the key masked and omit the bootstrap URL.
 
-![Baseline save rejected with account empty](./before-account-empty.png)
+![Baseline save rejected with account empty](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/before-account-empty.png)
 
-![Baseline save still rejected with account supplied](./before-account-filled.png)
+![Baseline save still rejected with account supplied](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/before-account-filled.png)
 
 The fixed GUI saved `alice` successfully. A subsequent save for `bob` was rejected, after which browsing and direct search still returned the exact `alice` canary. Runtime independently stored one composition canary. The [browser acceptance record](./browser-after.json) verifies the persisted original key, endpoint, account, enabled service and single active `alice` projection using booleans only; `bob` was not persisted and the registry retained mode `0600`. The [provider trace](./provider-after.json) contains 10 requests for `alice` and one rejected `bob` probe, with zero Admin calls and zero account/user identity headers. The synthetic remote content was unchanged. All disposable WebUI/fixture processes were stopped after acceptance.
 
-![Fixed user-key service saved](./after-user-key-saved.png)
+![Fixed user-key service saved](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/after-user-key-saved.png)
 
-![Unauthorized replacement user rejected](./after-invalid-user-rejected.png)
+![Unauthorized replacement user rejected](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/after-invalid-user-rejected.png)
 
-![Original alice content remains readable after rejection](./after-user-memory-content.png)
+![Original alice content remains readable after rejection](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/after-user-memory-content.png)
 
-![Direct search returns the exact original canary](./after-user-memory-search.png)
+![Direct search returns the exact original canary](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/after-user-memory-search.png)
 
-![Runtime remains independently writable](./after-runtime-coexistence.png)
+![Runtime remains independently writable](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-271-user-key/after-runtime-coexistence.png)
 
 ## Limits and data effects
 

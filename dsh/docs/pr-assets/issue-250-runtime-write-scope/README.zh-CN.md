@@ -28,9 +28,9 @@ runtime memory archival requires an existing active writable Memory Space with e
 
 | 首回合越限新增失败 | 两个 Native 空间均激活，归档数量为零 |
 |---|---|
-| ![原始容量错误](./before-capacity-error.jpg) | ![两个 Native 空间均激活](./before-two-active-spaces.jpg) |
+| ![原始容量错误](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/before-capacity-error.jpg) | ![两个 Native 空间均激活](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/before-two-active-spaces.jpg) |
 
-![下一回合重试同一份待新增输入成功](./before-next-turn-retry.jpg)
+![下一回合重试同一份待新增输入成功](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/before-next-turn-retry.jpg)
 
 ## 原因与实现
 
@@ -46,11 +46,11 @@ runtime memory archival requires an existing active writable Memory Space with e
 
 | 首回合成功 | 两个已激活空间中各有一条归档 |
 |---|---|
-| ![第一次越限新增成功](./after-first-turn-success.jpg) | ![两条 Native 归档与一条 Runtime 条目](./after-two-archived-spaces.jpg) |
+| ![第一次越限新增成功](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/after-first-turn-success.jpg) | ![两条 Native 归档与一条 Runtime 条目](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/after-two-archived-spaces.jpg) |
 
 | Runtime 仅保留待新增检查点 | Native 中显示两条完整原文 |
 |---|---|
-| ![待新增 Runtime 检查点](./after-pending-runtime.jpg) | ![架构与发布检查点原文](./after-exact-native-content.jpg) |
+| ![待新增 Runtime 检查点](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/after-pending-runtime.jpg) | ![架构与发布检查点原文](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/after-exact-native-content.jpg) |
 
 使用 Native CLI 0.2.8 的 `--readonly` 模式从两个 store 各读取到且仅读取到一条内容，其 UTF-8 字节分别与夹具的两条 `archiveScopeSaved` 字符串完全一致。Runtime 恰有一条条目，其 UTF-8 字节与 `archiveScopePending` 完全一致。[验证数据](./verification.json) 保留汇总数量、相等性断言，以及所核验内容和截图的哈希。这项检查独立验证实际持久化结果，不依赖脚本模型的成功回复。
 

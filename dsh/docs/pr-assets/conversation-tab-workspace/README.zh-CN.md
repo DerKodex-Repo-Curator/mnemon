@@ -17,7 +17,7 @@
 
 | 修复前：状态页 | 修复前：项目档案 |
 |---|---|
-| ![状态页：项目档案等待工作区](./before-status.jpg) | ![项目档案：memory Source is unavailable in the requested management scope](./before-documents.jpg) |
+| ![状态页：项目档案等待工作区](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/conversation-tab-workspace/before-status.jpg) | ![项目档案：memory Source is unavailable in the requested management scope](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/conversation-tab-workspace/before-documents.jpg) |
 
 接着**新建档案**报 `current DSH agent is not live; reopen or resume the conversation and try again`。在侧边栏中的记忆系统里，项目档案能通过所选工作区加载，但新建档案同样失败。
 
@@ -30,12 +30,12 @@
 
 | 修复后：状态页 | 修复后：在这里新建的档案 |
 |---|---|
-| ![状态页：项目档案已计数](./after-status.jpg) | ![项目档案已加载，并出现新建的档案](./after-documents.jpg) |
+| ![状态页：项目档案已计数](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/conversation-tab-workspace/after-status.jpg) | ![项目档案已加载，并出现新建的档案](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/conversation-tab-workspace/after-documents.jpg) |
 
 两个宿主上，同一个会话：
 - 状态页显示项目档案数量；
 - 项目档案能加载并新建档案；
-- 能添加运行时记忆（[运行时记忆](./after-runtime.jpg)）；
+- 能添加运行时记忆（[运行时记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/conversation-tab-workspace/after-runtime.jpg)）；
 - 能打开记忆空间。
 
 侧边栏中的记忆系统同样能新建档案。所有运行都没有控制台错误。

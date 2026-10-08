@@ -16,11 +16,11 @@ Build each revision, then run `MNEMON_CLI_PATH=/path/to/mnemon pnpm e2e:serve --
 
 The fixed run additionally added a fresh `X` and removed it directly, repeating the original reported operation. Direct inspection of the disposable `memories.json` and `MEMORY.md` confirmed the final content is exactly `EGO_LINUX_CHROME`, with its original creation/update timestamps unchanged. The baseline files still contained both original entries after its rejected operations.
 
-![Baseline: rejected exact removal](./before-remove.png)
+![Baseline: rejected exact removal](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-217-exact-runtime-match/before-remove.png)
 
-![Fixed: exact replacement succeeds](./after-edit.png)
+![Fixed: exact replacement succeeds](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-217-exact-runtime-match/after-edit.png)
 
-![Fixed: exact removal leaves the containing entry](./after-remove.png)
+![Fixed: exact removal leaves the containing entry](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-217-exact-runtime-match/after-remove.png)
 
 ## Automated checks and limits
 

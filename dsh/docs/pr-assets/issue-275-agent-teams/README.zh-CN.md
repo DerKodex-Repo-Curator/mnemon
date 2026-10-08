@@ -45,15 +45,15 @@ MNEMON_CLI_PATH=/absolute/verified/mnemon node scripts/fixtures/serve-team-revie
 
 | 截图 | 观察结果 |
 |---|---|
-| [修复前 Team 暂停](./before-team-paused.png) | 两个合格回合后仍显示原警告，没有 Runtime 事实 |
-| [受限设置](./final-scoped-settings.png) | 真实设置界面保存显式兼容选项 |
-| [子代理用户证据](./final-child-user-evidence.png) | 有界检查点保留完整真实用户决策 |
-| [子代理执行限制与写入](./final-child-guard-and-receipt.png) | Team 委派被拒绝，允许的 Runtime 工具成功 |
-| [父会话 Team 任务](./final-parent-team-task.png) | 父会话 Team 工具继续有效 |
-| [预算验证后的 Runtime](./final-runtime.png) | 只有一条项目事实，没有重复记录 |
+| [修复前 Team 暂停](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/before-team-paused.png) | 两个合格回合后仍显示原警告，没有 Runtime 事实 |
+| [受限设置](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-scoped-settings.png) | 真实设置界面保存显式兼容选项 |
+| [子代理用户证据](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-child-user-evidence.png) | 有界检查点保留完整真实用户决策 |
+| [子代理执行限制与写入](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-child-guard-and-receipt.png) | Team 委派被拒绝，允许的 Runtime 工具成功 |
+| [父会话 Team 任务](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-parent-team-task.png) | 父会话 Team 工具继续有效 |
+| [预算验证后的 Runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-runtime.png) | 只有一条项目事实，没有重复记录 |
 
-![原 Team 兼容暂停](./before-team-paused.png)
+![原 Team 兼容暂停](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/before-team-paused.png)
 
-![额外预算验证回合后的 Runtime 事实](./final-runtime.png)
+![额外预算验证回合后的 Runtime 事实](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-runtime.png)
 
 精简报告只包含合成用例元数据与回执。确定性模型验证集成与证据传输，不评价真实模型的记忆判断质量。关闭审查、禁止写入指令与启动错误另有自动测试，不额外宣称 GUI 验收。不使用生产凭据、个人记忆或替换个人 CLI。此次 macOS 运行未覆盖 Windows。

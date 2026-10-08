@@ -22,7 +22,7 @@
 
 | 修复前：Atlas | 修复前：WebUI |
 |---|---|
-| ![Atlas 计数 22，列出 20 条，其中混有不带该实体的记忆](./before-atlas.jpg) | ![WebUI 计数 3，列出 8 条](./before-webui.jpg) |
+| ![Atlas 计数 22，列出 20 条，其中混有不带该实体的记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/entities-complete-index/before-atlas.jpg) | ![WebUI 计数 3，列出 8 条](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/entities-complete-index/before-webui.jpg) |
 
 每个空间都显示“20 条可观察”，左侧只有 63 个实体中的 52 个。选中 `Atlas` 列出 20 条：召回上限截掉了两条带有它的记忆，三条只是提到它的记忆补了进来。`WebUI` 计数 3，却列出 8 条。
 
@@ -37,7 +37,7 @@
 
 | 修复后：Atlas | 修复后：相关记忆折叠 | 修复后：查找到的相关记忆 |
 |---|---|---|
-| ![Atlas 计数 22，列出 22 条](./after-atlas.jpg) | ![WebUI 4/4，相关记忆折叠，显示查找相关记忆按钮](./after-collapsed.jpg) | ![为 WebUI 查找到的相关记忆](./after-related.jpg) |
+| ![Atlas 计数 22，列出 22 条](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/entities-complete-index/after-atlas.jpg) | ![WebUI 4/4，相关记忆折叠，显示查找相关记忆按钮](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/entities-complete-index/after-collapsed.jpg) | ![为 WebUI 查找到的相关记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/entities-complete-index/after-related.jpg) |
 
 两个宿主上的结果相同：
 

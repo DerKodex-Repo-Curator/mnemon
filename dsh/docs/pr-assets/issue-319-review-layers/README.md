@@ -24,13 +24,13 @@ In a new conversation, send the two turns recorded in the [verification data](./
 
 Tool dispatch, the review guard, the Sources and the WebUI are real.
 
-![The two turns before idle review](./conversation.jpg)
+![The two turns before idle review](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/conversation.jpg)
 
 ## Baseline
 
 | Working memory | Documents |
 |---|---|
-| ![MEMORY.md holds the same rule](./before-runtime.jpg) | ![The Document Boot account resolution](./before-documents.jpg) |
+| ![MEMORY.md holds the same rule](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/before-runtime.jpg) | ![The Document Boot account resolution](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/before-documents.jpg) |
 
 The pass creates **Boot account resolution**, then adds the same rule to MEMORY.md (`Entry added.`). The project fact now sits in both layers, and MEMORY.md, which every turn loads, holds a repository detail.
 
@@ -47,7 +47,7 @@ The review persona sent stable project facts, decisions and conventions to `targ
 
 | Working memory | Documents |
 |---|---|
-| ![MEMORY.md stays empty](./after-runtime.jpg) | ![The same Document](./after-documents.jpg) |
+| ![MEMORY.md stays empty](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/after-runtime.jpg) | ![The same Document](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/after-documents.jpg) |
 
 The same pass creates the Document. The working-memory add then returns:
 
@@ -59,7 +59,7 @@ MEMORY.md stays empty, and the review finishes with the Document's id.
 
 ## Write runtime memory off
 
-![Write runtime memory switched off on the Layered strategy's page](./switch-off.jpg)
+![Write runtime memory switched off on the Layered strategy's page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/switch-off.jpg)
 
 The switch sits under **Idle review** on the Layered strategy's page (**Plugins → dsh-mnemon**). With it off, the review's tool list has no `mnemon_runtime_memory`. The fixture creates the Document and finishes, and MEMORY.md stays empty. None of the three runs logged a console error.
 

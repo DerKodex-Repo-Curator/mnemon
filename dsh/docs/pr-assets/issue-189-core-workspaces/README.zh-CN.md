@@ -46,15 +46,15 @@
 
 | 证据 | 内容 |
 |---|---|
-| [01 中文深色设置](./01-settings-zh-dark.png) | 范围、可选集中根和独立全局用户档案 |
-| [02 A 运行时](./02-workspace-a-runtime.png) | A 项目事实与全局偏好 |
-| [03 A 档案](./03-workspace-a-document.png) | 托管档案创建成功 |
-| [04 A Provider](./04-workspace-a-providers.png) | 真实 Native 数据库、Holographic 映射及修正后的长路径布局 |
-| [05 B 隔离](./05-workspace-b-isolation.png) | 全局偏好可见，A 项目事实不可见 |
-| [06 英文浅色设置](./06-settings-en-light.png) | 完整的集中存储标签与目录控件 |
-| [07 重启后的 Builtin](./07-builtin-b-after-restart.png) | B 所属会话读取恢复后的 B 事实 |
-| [08 工作区对齐](./08-workspace-alignment.png) | 查看 A、执行 B，选择器和对齐操作均可见 |
-| [09 390px Sidebar](./09-sidebar-390px.png) | 窄屏记忆空间、长路径和对齐控件 |
+| [01 中文深色设置](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/01-settings-zh-dark.png) | 范围、可选集中根和独立全局用户档案 |
+| [02 A 运行时](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/02-workspace-a-runtime.png) | A 项目事实与全局偏好 |
+| [03 A 档案](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/03-workspace-a-document.png) | 托管档案创建成功 |
+| [04 A Provider](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/04-workspace-a-providers.png) | 真实 Native 数据库、Holographic 映射及修正后的长路径布局 |
+| [05 B 隔离](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/05-workspace-b-isolation.png) | 全局偏好可见，A 项目事实不可见 |
+| [06 英文浅色设置](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/06-settings-en-light.png) | 完整的集中存储标签与目录控件 |
+| [07 重启后的 Builtin](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/07-builtin-b-after-restart.png) | B 所属会话读取恢复后的 B 事实 |
+| [08 工作区对齐](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/08-workspace-alignment.png) | 查看 A、执行 B，选择器和对齐操作均可见 |
+| [09 390px Sidebar](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/09-sidebar-390px.png) | 窄屏记忆空间、长路径和对齐控件 |
 
 ## 验证限制
 

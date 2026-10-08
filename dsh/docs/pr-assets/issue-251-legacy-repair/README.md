@@ -14,32 +14,32 @@ The updated CLI reported three repairs. The original historical user request and
 
 | Before: old repair leaves Runtime summary | After: resume, restart and cold reopen |
 |---|---|
-| ![Historical summary refusal](./251-before-runtime-summary.jpg) | ![Both conversation turns retained](./251-after-cold-reopen.jpg) |
+| ![Historical summary refusal](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-before-runtime-summary.jpg) | ![Both conversation turns retained](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-after-cold-reopen.jpg) |
 
 A second WebUI artifact uses the [combined fixture](../../../tests/fixtures/issue-251-repairable-v0.jsonl): all three summaries, a compatible v2 descriptor and a packed row with empty string ID/name. The old repair still failed at Runtime summary 7. The updated CLI reported three summary repairs, one descriptor promotion and one packed row expanded into three chunks, with no blockers. The actual DSH loader migrated the copy, and the UI displayed the historical user request, assistant answer and expanded `synthetic_lookup {}` call with `Synthetic tool response.` Selecting the configured loopback `DeepSeek-V4-Flash` route restored the interactive composer. The preserved original hash is `94f7da957d213c896c4794603580c9e982670bcd725ecffeee241eab3ad709e5`; the repaired copy is `07db52eaacf6d45fc2d4c0a2e8931604674ce332c3a0f823aeed4d4aacaeed3b`.
 
 | Combined artifact before repair | After migration and tool-history rendering |
 |---|---|
-| ![Combined legacy history refused](./251-combined-before.jpg) | ![Historical messages and expanded tool result](./251-combined-after.jpg) |
+| ![Combined legacy history refused](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-combined-before.jpg) | ![Historical messages and expanded tool result](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-combined-after.jpg) |
 
 A canary turn also completed through the combined Session's actual WebUI. Cold reopening after a `SIGUSR2` Host restart retained the historical messages, expanded tool result and new exchange. The physical v3 log contained 43 rows. Structural comparison retained all five historical user/plugin messages apart from the three removed summary fields, both historical assistant messages, the durable tool call/result and the expanded stream. The original and repaired v0 hashes remained unchanged; external model calls remained zero.
 
 | Historical messages and tool output after cold reopen | Canary exchange retained after cold reopen |
 |---|---|
-| ![Combined history after Host restart](./251-combined-cold-reopen.jpg) | ![Tool output and continued exchange after Host restart](./251-combined-cold-new-turn.jpg) |
+| ![Combined history after Host restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-combined-cold-reopen.jpg) | ![Tool output and continued exchange after Host restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-combined-cold-new-turn.jpg) |
 
 Two further fixtures isolate null streaming names: [raw deltas](../../../tests/fixtures/issue-251-null-name-v0.jsonl) and [packed deltas](../../../tests/fixtures/issue-251-null-name-packed-v0.jsonl). Both retain valid durable tool identities and start with an empty argument fragment. The actual WebUI rejected the originals at the v1→v2 accumulator and packed decoder respectively; the preceding CLI revision `83d0c40` also refused copies. The updated CLI normalized three logical names in each, expanding only the packed row. Both histories then loaded, displayed the original user/assistant messages and tool result, and accepted a new canary turn through the loopback route. Each v3 log had 42 physical rows; structural comparison retained historical messages, durable calls/results and exact timed replay after the intended name normalization. Original and repaired v0 hashes remained unchanged, as recorded in [machine-readable evidence](./verification.json).
 
 | Null-name artifact before repair | After migration and history rendering |
 |---|---|
-| ![Raw null names refused](./251-null-raw-before.jpg) | ![Raw null names repaired](./251-null-raw-after.jpg) |
-| ![Packed null names refused](./251-null-packed-before.jpg) | ![Packed null names repaired](./251-null-packed-after.jpg) |
+| ![Raw null names refused](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-raw-before.jpg) | ![Raw null names repaired](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-raw-after.jpg) |
+| ![Packed null names refused](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-packed-before.jpg) | ![Packed null names repaired](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-packed-after.jpg) |
 
 After a Host restart, both Sessions cold reopened in an independent Chrome test window against the same disposable Profile. Historical tool output and the earlier canary exchanges remained visible. The in-app browser had encountered a client-bundle load failure before Session selection; the bundle returned HTTP 200 and passed syntax checking. Chrome loaded the same Host normally, without changing Host or browser security configuration.
 
 | Raw null-name history after cold reopen | Packed null-name history after cold reopen |
 |---|---|
-| ![Raw history, tool result and canary after restart](./251-null-raw-cold-reopen.jpg) | ![Packed history, tool result and canary after restart](./251-null-packed-cold-reopen.jpg) |
+| ![Raw history, tool result and canary after restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-raw-cold-reopen.jpg) | ![Packed history, tool result and canary after restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-packed-cold-reopen.jpg) |
 
 Two final fixtures cover the completed empty-ID chain: [recorded ID](../../../tests/fixtures/issue-251-existing-id-v0.jsonl) and [all four legacy families](../../../tests/fixtures/issue-251-all-legacy-v0.jsonl). They use consistent `deepseek-official` writer metadata, complete usage records and an independent plugin snapshot. The ID-only WebUI input expands the fixture's packed placeholders into equivalent raw deltas to isolate the durable-ID failure. The full combination retains packed null-name placeholders, all three summaries and descriptor v2. Session id, workspace and preset are adapted to the disposable Profile; original inputs are kept separately.
 
@@ -47,8 +47,8 @@ CLI revision `2612856` refused both inputs without publishing output. The actual
 
 | Before the recorded-ID repair | After history and tool-output recovery |
 |---|---|
-| ![Empty durable tool identity](./251-existing-id-before.jpg) | ![Recorded identity recovered](./251-existing-id-after.jpg) |
-| ![All four legacy shapes](./251-all-legacy-before.jpg) | ![All four shapes repaired together](./251-all-legacy-after.jpg) |
+| ![Empty durable tool identity](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-existing-id-before.jpg) | ![Recorded identity recovered](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-existing-id-after.jpg) |
+| ![All four legacy shapes](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-all-legacy-before.jpg) | ![All four shapes repaired together](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-all-legacy-after.jpg) |
 
 Each Session then received a `legacy-replay-251` canary through the real WebUI with the configured loopback Flash route. The [test model](../../../scripts/fixtures/legacy-session-replay-model.mjs) validates the actual HTTP request: the historical `tool_calls[].id` and `tool_call_id` must equal the recorded `provider-existing-id-251`, the tool name and arguments must remain `synthetic_lookup` / `{}`, and the output must remain `Synthetic tool response with the original provider ID.` Missing, conflicting or freshly invented identities cannot produce the success response.
 
@@ -56,9 +56,9 @@ Both canaries completed. After a Host restart, the historical messages, expanded
 
 | ID-only history and canary after restart | All-four history and canary after restart |
 |---|---|
-| ![Recorded-ID cold reopen](./251-existing-id-cold-reopen.jpg) | ![All-four cold reopen](./251-all-legacy-cold-reopen.jpg) |
+| ![Recorded-ID cold reopen](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-existing-id-cold-reopen.jpg) | ![All-four cold reopen](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-all-legacy-cold-reopen.jpg) |
 
-The shared Starter baseline also loaded all three optional strategy extensions and reported the installed Native CLI 0.2.8. A separate disposable real-CLI create/write/keyword-recall/forget smoke passed. [Native status screenshot](./baseline-native-status.jpg). These checks do not imply that this patch changes Native storage.
+The shared Starter baseline also loaded all three optional strategy extensions and reported the installed Native CLI 0.2.8. A separate disposable real-CLI create/write/keyword-recall/forget smoke passed. [Native status screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/baseline-native-status.jpg). These checks do not imply that this patch changes Native storage.
 
 ## Audited transformations and boundaries
 

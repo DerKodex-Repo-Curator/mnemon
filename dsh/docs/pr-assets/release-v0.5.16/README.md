@@ -34,12 +34,12 @@ One high-concurrency local run exceeded the two Root performance wall-clock limi
 
 ## Screenshots
 
-![Actual Flash Runtime write](./flash-runtime-write.jpg)
-![Document archived through Flash and Native](./documents-archived.jpg)
-![Runtime capacity archival completed](./runtime-capacity-archive.jpg)
-![Native recall and visible Related controls](./native-related.jpg)
-![Version and storage health after cold restart](./status-after-restart.jpg)
-![New conversation receives hot memory after restart](./cold-restart-flash-recall.jpg)
+![Actual Flash Runtime write](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/flash-runtime-write.jpg)
+![Document archived through Flash and Native](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/documents-archived.jpg)
+![Runtime capacity archival completed](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/runtime-capacity-archive.jpg)
+![Native recall and visible Related controls](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/native-related.jpg)
+![Version and storage health after cold restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/status-after-restart.jpg)
+![New conversation receives hot memory after restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/cold-restart-flash-recall.jpg)
 
 Before/after comparisons for the fixes remain in the [metadata](../pr-286-plugin-metadata/README.md), [Sidebar](../sidebar-native-20260926/README.md) and [page-frame](../source-page-frames-20260926/README.md) records.
 

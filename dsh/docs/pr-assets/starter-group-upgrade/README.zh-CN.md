@@ -39,11 +39,11 @@
 
 | 卡在 0.5.19 | 换成 0.5.20 的 generation 并重启后 |
 | --- | --- |
-| ![卡住](desktop-stuck-0519.png) | ![更新后](desktop-updated-0520.png) |
+| ![卡住](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-upgrade/desktop-stuck-0519.png) | ![更新后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-upgrade/desktop-updated-0520.png) |
 
 **更新后不重启。** DSH 运行期间改了链接，再切换一个组件时，加载器会保留运行中组件组的旧模块。这个组件组等待已被移除的就绪服务，记忆系统因此消失，直到重启 DSH：
 
-![更新后不重启时，mnemon-bundle (dsh-mnemon/bundle) 等待 mnemonStarterReady](in-place-no-restart.png)
+![更新后不重启时，mnemon-bundle (dsh-mnemon/bundle) 等待 mnemonStarterReady](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-upgrade/in-place-no-restart.png)
 
 安装指南、运维表格与兼容性参考现在都写明这条提示，处理方法是重启，而不是打开 0.5.20 已经没有的 Starter 开关。
 

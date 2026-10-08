@@ -28,9 +28,9 @@ The status page confirms two Runtime entries, two of two Native spaces active, a
 
 | Failed first-turn add | Two active Native spaces, no archived memories |
 |---|---|
-| ![Original capacity error](./before-capacity-error.jpg) | ![Both Native spaces active](./before-two-active-spaces.jpg) |
+| ![Original capacity error](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/before-capacity-error.jpg) | ![Both Native spaces active](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/before-two-active-spaces.jpg) |
 
-![The same pending input succeeds in the next turn](./before-next-turn-retry.jpg)
+![The same pending input succeeds in the next turn](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/before-next-turn-retry.jpg)
 
 ## Cause and implementation
 
@@ -46,11 +46,11 @@ The same fixture on the fixed build succeeds in its first turn: seven root tool 
 
 | First-turn success | Two archived memories in two active spaces |
 |---|---|
-| ![The first capacity add succeeds](./after-first-turn-success.jpg) | ![Two Native archives and one Runtime entry](./after-two-archived-spaces.jpg) |
+| ![The first capacity add succeeds](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/after-first-turn-success.jpg) | ![Two Native archives and one Runtime entry](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/after-two-archived-spaces.jpg) |
 
 | Only the pending checkpoint remains in Runtime | Both exact originals are visible in Native |
 |---|---|
-| ![Pending Runtime checkpoint](./after-pending-runtime.jpg) | ![Original architecture and release checkpoints](./after-exact-native-content.jpg) |
+| ![Pending Runtime checkpoint](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/after-pending-runtime.jpg) | ![Original architecture and release checkpoints](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-250-runtime-write-scope/after-exact-native-content.jpg) |
 
 Readback with Native CLI 0.2.8 in `--readonly` mode returns exactly one item from each of the two stores. Their UTF-8 content bytes match the fixture's two `archiveScopeSaved` strings. Runtime contains exactly one entry whose UTF-8 bytes match `archiveScopePending`. The [verification data](./verification.json) records the aggregate counts, equality checks and hashes of the checked content and screenshots. This confirms the persisted result separately from the scripted model's success message.
 

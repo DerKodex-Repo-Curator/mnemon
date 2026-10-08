@@ -24,9 +24,9 @@ The existing [packed Team fixture](../../../scripts/fixtures/serve-team-review.m
 
 | Observation | Screenshot |
 |---|---|
-| Runtime added before editing/restart | [runtime-saved.png](./runtime-saved.png) |
-| Version and health after cold restart | [status-after-restart.png](./status-after-restart.png) |
-| Edited Runtime content after cold restart | [runtime-after-restart.png](./runtime-after-restart.png) |
-| Scoped review setting after cold restart | [settings-after-restart.png](./settings-after-restart.png) |
+| Runtime added before editing/restart | [runtime-saved.png](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.14/runtime-saved.png) |
+| Version and health after cold restart | [status-after-restart.png](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.14/status-after-restart.png) |
+| Edited Runtime content after cold restart | [runtime-after-restart.png](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.14/runtime-after-restart.png) |
+| Scoped review setting after cold restart | [settings-after-restart.png](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.14/settings-after-restart.png) |
 
 The optional source-link fixture on the pinned DSH 0.1.5-rc.1 development profile failed to load its `dsh-client-hmr` bundle. Its cause was not established. The packed 0.1.7-rc.1 installation passed without modifying official DSH code; this record does not claim that the source-link failure was fixed. The release smoke does not repeat live cloud-account or real-model acceptance. The original issue records preserve the broader before/after tests.

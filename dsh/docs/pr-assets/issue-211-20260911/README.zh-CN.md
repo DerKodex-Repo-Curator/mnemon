@@ -30,9 +30,9 @@
 
 活动评分门槛不变，夹具仅将空闲等待缩短至五秒。通过会话中的子 Agent 菜单打开审查记录。两次浏览器验证均同时启用三个可选 Strategy 增强。
 
-![基线子 Agent 重复读取已继承概览](./before-redundant-read.png)
+![基线子 Agent 重复读取已继承概览](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-211-20260911/before-redundant-read.png)
 
-![修复后拒绝读取，并通过授权工具完成审查](./after-read-denied.png)
+![修复后拒绝读取，并通过授权工具完成审查](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-211-20260911/after-read-denied.png)
 
 ## 验证与限制
 
@@ -40,7 +40,7 @@ Root 测试通过 935 项，插件测试通过 323 项，共跳过七项 opt-in 
 
 通过 `MNEMON_NATIVE_TEST_CLI=/opt/homebrew/bin/mnemon` 启用真实 Native Source 测试，169 项通过、仅跳过一项 Windows 测试。真实 WebUI 在审查后成功新建 Native 空间；CLI 0.2.7 通过 `--no-diff` 写入精确 canary，UI 读取成功，再通过正常“忘记”操作恢复零条内容。
 
-![真实 Native CLI 写入内容仍可通过正常 WebUI 操作读取](./after-native-cli-read.png)
+![真实 Native CLI 写入内容仍可通过正常 WebUI 操作读取](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-211-20260911/after-native-cli-read.png)
 
 检查了已发布 DSH 0.1.1-rc.1 和 0.1.2-rc.1 tarball 中的 `isOwnedBy`、作用域工具过滤与 `tools.guard`；实际 Host / 浏览器执行使用 0.1.5-rc.1、macOS arm64、Node 25.1.0 和 pnpm 11.19.0。缺少 guard 能力时审查明确失败。没有修改持久化格式、凭据、RPC authority 或个人记忆。
 

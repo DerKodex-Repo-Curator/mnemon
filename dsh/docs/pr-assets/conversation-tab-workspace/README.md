@@ -17,7 +17,7 @@ The fixture creates two conversations under the test preset. Renaming that prese
 
 | Before: Status | Before: Project Documents |
 |---|---|
-| ![Status: Project Documents waiting for workspace](./before-status.jpg) | ![Project Documents: memory Source is unavailable in the requested management scope](./before-documents.jpg) |
+| ![Status: Project Documents waiting for workspace](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/conversation-tab-workspace/before-status.jpg) | ![Project Documents: memory Source is unavailable in the requested management scope](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/conversation-tab-workspace/before-documents.jpg) |
 
 **New Document** then failed with `current DSH agent is not live; reopen or resume the conversation and try again`. In the sidebar Memory System, Documents loaded through the selected workspace, but creating a Document failed the same way.
 
@@ -30,12 +30,12 @@ The fixture creates two conversations under the test preset. Renaming that prese
 
 | After: Status | After: a Document created there |
 |---|---|
-| ![Status: Project Documents counted](./after-status.jpg) | ![Project Documents loaded, with the new Document](./after-documents.jpg) |
+| ![Status: Project Documents counted](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/conversation-tab-workspace/after-status.jpg) | ![Project Documents loaded, with the new Document](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/conversation-tab-workspace/after-documents.jpg) |
 
 On both hosts, the same conversation:
 - shows Status with the Documents count;
 - loads Project Documents and creates a Document;
-- adds a Runtime memory entry ([Runtime](./after-runtime.jpg));
+- adds a Runtime memory entry ([Runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/conversation-tab-workspace/after-runtime.jpg));
 - opens Memory Spaces.
 
 The sidebar Memory System creates the Document too. None of these runs logged a console error.

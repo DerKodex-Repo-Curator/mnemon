@@ -10,7 +10,7 @@
 
 官方“插件”图标在 16 单位 SVG 画布上使用 1 单位描边；记忆系统使用 1.5 单位，同尺寸下明显更粗。原生侧栏、备用入口和 Better Sidebar 现统一为 1 单位。生产代码仅调整三个渲染位置各自的线宽值。
 
-本分支合入命名调整和兼容性文档后的提交 `37d781b1bf89781bb420528c0b1b934de88bbda3` 完整保留“可组合记忆 (dsh-mnemon)”及中英文可组合记忆描述。[当前组合预览](./after-combined.png)同时展示新名称和修正后的图标，Root 制品 SHA-256 为 `d69c10cb453beb1e5d4c8c38ef7728e5e370f05ada74a61977f5c1c10083ec9f`。下方旧截图保留图标单独修复时的原始记录；其中的旧插件名称不代表合并结果。
+本分支合入命名调整和兼容性文档后的提交 `37d781b1bf89781bb420528c0b1b934de88bbda3` 完整保留“可组合记忆 (dsh-mnemon)”及中英文可组合记忆描述。[当前组合预览](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon-weight-20260927/after-combined.png)同时展示新名称和修正后的图标，Root 制品 SHA-256 为 `d69c10cb453beb1e5d4c8c38ef7728e5e370f05ada74a61977f5c1c10083ec9f`。下方旧截图保留图标单独修复时的原始记录；其中的旧插件名称不代表合并结果。
 
 真实 WebUI 使用正式 DSH `0.1.7-rc.2`、本分支打包的 Root、十六个未修改的正式伴随插件制品，以及 Mnemon CLI `0.2.9`。Root 制品 SHA-256：`0404e788c5101b5d1c5d6d7c56904d6e78519f570eafd955f069dbbcfe5f7668`。夹具隔离 profile、工作区和记忆目录，不调用真实模型 API。
 
@@ -18,10 +18,10 @@
 
 | 原生侧栏 | 修复前 | 修复后 |
 |---|---|---|
-| 展开 | [截图](./before-expanded.png) | [截图](./after-expanded.png) |
-| 折叠 | [截图](./before-collapsed.png) | [截图](./after-collapsed.png) |
+| 展开 | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon-weight-20260927/before-expanded.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon-weight-20260927/after-expanded.png) |
+| 折叠 | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon-weight-20260927/before-collapsed.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon-weight-20260927/after-collapsed.png) |
 
-[往返导航后的运行时页面](./after-runtime.png)。浏览器验收覆盖原生侧栏；已有侧栏自动化测试同时覆盖备用入口和 Better Sidebar 行为。
+[往返导航后的运行时页面](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon-weight-20260927/after-runtime.png)。浏览器验收覆盖原生侧栏；已有侧栏自动化测试同时覆盖备用入口和 Better Sidebar 行为。
 
 ## 验证
 

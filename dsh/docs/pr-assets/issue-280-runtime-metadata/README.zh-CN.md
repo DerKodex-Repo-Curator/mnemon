@@ -14,11 +14,11 @@ Runtime 模型投影现在会在每条正文上方显示已记录的重要性及
 
 | 基线 | 修复后 |
 | --- | --- |
-| ![投影缺少元数据](./before-model-projection.png) | ![实际投影中的重要性和年龄](./after-model-projection.png) |
+| ![投影缺少元数据](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-280-runtime-metadata/before-model-projection.png) | ![实际投影中的重要性和年龄](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-280-runtime-metadata/after-model-projection.png) |
 
 随后通过真实 WebUI 对话新增、替换、删除一条 USER 记录，每步均收到已提交的工具回执；最终 Runtime 恢复为原来的三个种子条目。界面创建档案后，按正文中的 `DOC280_CHECK` 搜索返回唯一匹配文档。界面创建并激活 Native 空间，再由官方 CLI 0.2.9 写入 `NATIVE280_CHECK: The disposable project uses SQLite WAL for durable storage.`，WebUI 关键词检索返回唯一结果，正文与记录 ID 均完全一致。
 
-![CLI 写入后由 WebUI 读回](./native-cli-webui-recall.png)
+![CLI 写入后由 WebUI 读回](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-280-runtime-metadata/native-cli-webui-recall.png)
 
 - 六个新元数据回归在 Source 修复前失败；另一个密集存储回归在 Strategy 提示修正前失败。修复后定向检查 **50 项通过**，Runtime Source **63 项**、默认 Strategy **17 项**测试通过。
 - `pnpm verify`：Root **1,363 项通过 / 7 项跳过**，插件 **406 项通过 / 2 项跳过**，以及类型、确定性构建、Headless 和包检查全部通过。Root 解包体积为 **1,374,802 字节**，低于未调整的 1,376,000 字节上限。

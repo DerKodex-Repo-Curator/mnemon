@@ -4,7 +4,7 @@ Captured on **2026-09-07 (Asia/Shanghai)** from the real local DSH WebUI, with *
 
 本组素材于 **2026-09-07（Asia/Shanghai）**从真实本地 DSH WebUI 采集，中英文均明确选择**浅色模式**，全部在导入提供的 Mnemon Pack 后拍摄。此前未提交的深色草稿已从本次素材中移除。
 
-![Imported memory spaces in Light appearance](./en/spaces.jpg)
+![Imported memory spaces in Light appearance](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/spaces.jpg)
 
 ## Environment and data / 环境与数据
 
@@ -33,7 +33,7 @@ Only the disposable copy's catalog description for `dsh-mnemon 架构方向演�
 
 ## Recordings / 录制
 
-[English Light demo — 41.88 s](./en/demo.mp4) · [中文浅色演示 — 42.13 秒](./zh-CN/demo.mp4)
+[English Light demo — 41.88 s](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/demo.mp4) · [中文浅色演示 — 42.13 秒](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/demo.mp4)
 
 Both demos continuously sample the actual browser during one uninterrupted interaction sequence, targeting four source frames per second (166 English frames, 167 Chinese frames). Actual frame timestamps determine playback timing. H.264 MP4 encodes at 24 fps, full-range 4:2:0, with fast-start metadata and no audio; repeated output frames do not imply 24 distinct captures per second. There are no cuts, fabricated answers, composited UI or replaced labels. The manifest records exact durations and chapter times.
 
@@ -58,36 +58,36 @@ Screenshots preserve the browser's original JPEG bytes. All 60 files use Light a
 
 | Surface / 场景 | English | 简体中文 |
 |---|---|---|
-| Status / 状态 | [Open](./en/status.jpg) | [查看](./zh-CN/status.jpg) |
-| npm version guidance / npm 版本引导 | [Open](./en/versions.jpg) | [查看](./zh-CN/versions.jpg) |
-| Expanded subpackages / 展开子包 | [Open](./en/versions-expanded.jpg) | [查看](./zh-CN/versions-expanded.jpg) |
-| Runtime / 运行时 | [Open](./en/runtime.jpg) | [查看](./zh-CN/runtime.jpg) |
-| Configured Runtime budgets / 运行时容量配置 | [Open](./en/runtime-configured.jpg) | [查看](./zh-CN/runtime-configured.jpg) |
-| Runtime creation draft / 新增运行时记忆草稿 | [Open](./en/runtime-create.jpg) | [查看](./zh-CN/runtime-create.jpg) |
-| Document directory / 档案目录 | [Open](./en/documents.jpg) | [查看](./zh-CN/documents.jpg) |
-| Document reader / 档案阅读器 | [Open](./en/document-reader.jpg) | [查看](./zh-CN/document-reader.jpg) |
-| Document creation draft / 新建档案草稿 | [Open](./en/document-create.jpg) | [查看](./zh-CN/document-create.jpg) |
-| Documents disabled / 档案停用状态 | [Open](./en/documents-disabled.jpg) | [查看](./zh-CN/documents-disabled.jpg) |
-| Memory Space directory / 记忆空间目录 | [Open](./en/spaces.jpg) | [查看](./zh-CN/spaces.jpg) |
-| Create Memory Space draft / 创建记忆空间草稿 | [Open](./en/space-create.jpg) | [查看](./zh-CN/space-create.jpg) |
-| Edit Memory Space / 编辑记忆空间 | [Open](./en/space-edit.jpg) | [查看](./zh-CN/space-edit.jpg) |
-| Metadata selection / 元信息选择 | [Open](./en/metadata.jpg) | [查看](./zh-CN/metadata.jpg) |
-| Distillation strategy / 沉淀策略 | [Open](./en/strategy.jpg) | [查看](./zh-CN/strategy.jpg) |
-| Remember draft / 沉淀记忆草稿 | [Open](./en/remember.jpg) | [查看](./zh-CN/remember.jpg) |
-| Direct keyword recall / 直接关键词检索 | [Open](./en/recall.jpg) | [查看](./zh-CN/recall.jpg) |
-| Filtered content / 内容筛选 | [Open](./en/content.jpg) | [查看](./zh-CN/content.jpg) |
-| Entity connections / 实体关联 | [Open](./en/entities.jpg) | [查看](./zh-CN/entities.jpg) |
-| Live graph / 实时图谱 | [Open](./en/graph.jpg) | [查看](./zh-CN/graph.jpg) |
-| General settings / 通用设置 | [Open](./en/settings.jpg) | [查看](./zh-CN/settings.jpg) |
-| Memory Source switches / 记忆层开关 | [Open](./en/settings-layers.jpg) | [查看](./zh-CN/settings-layers.jpg) |
-| Optional enhancements / 可选记忆增强 | [Open](./en/enhancements.jpg) | [查看](./zh-CN/enhancements.jpg) |
-| Native embedding settings / 原生嵌入设置 | [Open](./en/native-settings.jpg) | [查看](./zh-CN/native-settings.jpg) |
-| Backup controls / 备份操作 | [Open](./en/backup.jpg) | [查看](./zh-CN/backup.jpg) |
-| ZIP import preview / ZIP 导入预览 | [Open](./en/backup-preview.jpg) | [查看](./zh-CN/backup-preview.jpg) |
-| Narrow navigation / 窄屏导航 | [Open](./en/spaces-mobile.jpg) | [查看](./zh-CN/spaces-mobile.jpg) |
-| Narrow directory cards / 窄屏目录卡片 | [Open](./en/space-directory-mobile.jpg) | [查看](./zh-CN/space-directory-mobile.jpg) |
-| Narrow creation sheet / 窄屏创建表单 | [Open](./en/space-create-mobile.jpg) | [查看](./zh-CN/space-create-mobile.jpg) |
-| Narrow version maintenance / 窄屏版本维护 | [Open](./en/versions-mobile.jpg) | [查看](./zh-CN/versions-mobile.jpg) |
+| Status / 状态 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/status.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/status.jpg) |
+| npm version guidance / npm 版本引导 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/versions.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/versions.jpg) |
+| Expanded subpackages / 展开子包 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/versions-expanded.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/versions-expanded.jpg) |
+| Runtime / 运行时 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/runtime.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/runtime.jpg) |
+| Configured Runtime budgets / 运行时容量配置 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/runtime-configured.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/runtime-configured.jpg) |
+| Runtime creation draft / 新增运行时记忆草稿 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/runtime-create.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/runtime-create.jpg) |
+| Document directory / 档案目录 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/documents.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/documents.jpg) |
+| Document reader / 档案阅读器 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/document-reader.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/document-reader.jpg) |
+| Document creation draft / 新建档案草稿 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/document-create.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/document-create.jpg) |
+| Documents disabled / 档案停用状态 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/documents-disabled.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/documents-disabled.jpg) |
+| Memory Space directory / 记忆空间目录 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/spaces.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/spaces.jpg) |
+| Create Memory Space draft / 创建记忆空间草稿 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/space-create.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/space-create.jpg) |
+| Edit Memory Space / 编辑记忆空间 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/space-edit.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/space-edit.jpg) |
+| Metadata selection / 元信息选择 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/metadata.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/metadata.jpg) |
+| Distillation strategy / 沉淀策略 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/strategy.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/strategy.jpg) |
+| Remember draft / 沉淀记忆草稿 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/remember.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/remember.jpg) |
+| Direct keyword recall / 直接关键词检索 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/recall.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/recall.jpg) |
+| Filtered content / 内容筛选 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/content.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/content.jpg) |
+| Entity connections / 实体关联 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/entities.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/entities.jpg) |
+| Live graph / 实时图谱 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/graph.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/graph.jpg) |
+| General settings / 通用设置 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/settings.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/settings.jpg) |
+| Memory Source switches / 记忆层开关 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/settings-layers.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/settings-layers.jpg) |
+| Optional enhancements / 可选记忆增强 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/enhancements.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/enhancements.jpg) |
+| Native embedding settings / 原生嵌入设置 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/native-settings.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/native-settings.jpg) |
+| Backup controls / 备份操作 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/backup.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/backup.jpg) |
+| ZIP import preview / ZIP 导入预览 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/backup-preview.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/backup-preview.jpg) |
+| Narrow navigation / 窄屏导航 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/spaces-mobile.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/spaces-mobile.jpg) |
+| Narrow directory cards / 窄屏目录卡片 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/space-directory-mobile.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/space-directory-mobile.jpg) |
+| Narrow creation sheet / 窄屏创建表单 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/space-create-mobile.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/space-create-mobile.jpg) |
+| Narrow version maintenance / 窄屏版本维护 | [Open](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/en/versions-mobile.jpg) | [查看](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.4/zh-CN/versions-mobile.jpg) |
 
 ## Reproduce and interpret / 复现与判读
 

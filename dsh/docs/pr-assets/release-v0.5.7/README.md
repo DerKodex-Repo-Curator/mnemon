@@ -10,8 +10,8 @@ Run `pnpm e2e:serve --document-archive` after the builds. In the real browser, c
 
 | Screenshot | Observation |
 |---|---|
-| [Version and Status](./01-version-status.png) | Actual 0.5.7, connected RPC, no live Session required |
-| [Archived original](./02-document-archived.png) | Original and Host receipt remain readable after reload |
-| [Index after reload](./03-index-after-reload.png) | One Native index with the cold reference and matching content hash |
+| [Version and Status](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.7/01-version-status.png) | Actual 0.5.7, connected RPC, no live Session required |
+| [Archived original](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.7/02-document-archived.png) | Original and Host receipt remain readable after reload |
+| [Index after reload](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.7/03-index-after-reload.png) | One Native index with the cold reference and matching content hash |
 
 The model only scripts archive decisions; the browser, DSH transport, Host, storage and Native CLI remain real. All test content is synthetic and the disposable Profile/browser are removed afterward. This release smoke does not repeat the full historical browser matrix, Windows/Electron checks or live model-quality experiments. The [DSH compatibility report](../issue-223-dsh-015/README.md) and [archive regression report](../issue-222-document-archive/README.md) preserve their original revisions and broader coverage.

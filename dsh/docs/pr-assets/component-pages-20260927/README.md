@@ -10,31 +10,31 @@ A gear marks each component with settings of its own and opens its page; the mai
 
 | Board | Storage and Interface |
 |---|---|
-| ![Board with gears](./pages-board.png) | ![Storage and Interface](./pages-storage-interface.png) |
+| ![Board with gears](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-board.png) | ![Storage and Interface](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-storage-interface.png) |
 
 Moving the storage waits for its Apply, which says what applying does:
 
-![Storage Apply line](./pages-storage-apply.png)
+![Storage Apply line](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-storage-apply.png)
 
 ## Settings on their components' pages
 
 | Runtime Memory: where USER.md lives | Memory Spaces: Providers and embedding |
 |---|---|
-| ![Runtime Memory page](./pages-runtime.png) | ![Memory Spaces page](./pages-spaces.png) |
+| ![Runtime Memory page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-runtime.png) | ![Memory Spaces page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-spaces.png) |
 
 | Default three-tier: background tasks | Review limits wait for their Apply |
 |---|---|
-| ![Default three-tier page](./pages-three-tier.png) | ![Review limits edited](./pages-three-tier-limits.png) |
+| ![Default three-tier page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-three-tier.png) | ![Review limits edited](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-three-tier-limits.png) |
 
 ## Names open pages
 
 | Relation chips on rows | A related name opens in place, with Back |
 |---|---|
-| ![Relation chips](./pages-chips.png) | ![Memory Spaces opened from Active capture](./pages-related.png) |
+| ![Relation chips](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-chips.png) | ![Memory Spaces opened from Active capture](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-related.png) |
 
 Declared options show Apply once one changes:
 
-![Light context option edited](./pages-options-edit.png)
+![Light context option edited](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-options-edit.png)
 
 ## The Memory System names what the components declare
 
@@ -42,7 +42,7 @@ Tabs, the header's main Strategy and one Status card per Source component carry 
 
 | Light | Dark |
 |---|---|
-| ![Status page](./workspace-status.png) | ![Status page, dark](./dark-workspace-status.png) |
+| ![Status page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/workspace-status.png) | ![Status page, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/dark-workspace-status.png) |
 
 ## DSH's component list opens the same pages
 
@@ -50,21 +50,21 @@ Each component package now gives DSH the name and description it declares, so DS
 
 | DSH's list before (package names) | DSH's list now |
 |---|---|
-| ![List before](./rows-list-before.png) | ![List now](./rows-list.png) |
+| ![List before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/rows-list-before.png) | ![List now](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/rows-list.png) |
 
 | Default three-tier on DSH's row page | A related component opens over it |
 |---|---|
-| ![Row page](./row-page.png) | ![Related page over the row page](./row-page-related.png) |
+| ![Row page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/row-page.png) | ![Related page over the row page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/row-page-related.png) |
 
 ## Dark theme and narrow column
 
 | Board | Storage and Interface | Review limits |
 |---|---|---|
-| ![Board, dark](./dark-pages-board.png) | ![Storage, dark](./dark-pages-storage-interface.png) | ![Limits, dark](./dark-pages-three-tier-limits.png) |
+| ![Board, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/dark-pages-board.png) | ![Storage, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/dark-pages-storage-interface.png) | ![Limits, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/dark-pages-three-tier-limits.png) |
 
 | Board, 420 px | Storage Apply, 420 px | Review limits, 420 px |
 |---|---|---|
-| ![Board, narrow](./narrow-pages-board.png) | ![Storage, narrow](./narrow-pages-storage-apply.png) | ![Limits, narrow](./narrow-pages-three-tier-limits.png) |
+| ![Board, narrow](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/narrow-pages-board.png) | ![Storage, narrow](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/narrow-pages-storage-apply.png) | ![Limits, narrow](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/narrow-pages-three-tier-limits.png) |
 
 ## Verification
 

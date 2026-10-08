@@ -16,14 +16,14 @@ Every WebUI run used a fresh `DSH_HOME`, Mnemon data root, and workspace. Model 
 
 The Mnemon status page reports `系统正常` and plugin version 0.4.6:
 
-![DSH 0.1.2-rc.1 Mnemon status](./rc1-status.png)
+![DSH 0.1.2-rc.1 Mnemon status](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-rc1-compat/rc1-status.png)
 
 The isolated conversation completed and remained present after a full page reload:
 
-![DSH 0.1.2-rc.1 isolated conversation](./rc1-conversation.png)
+![DSH 0.1.2-rc.1 isolated conversation](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-rc1-compat/rc1-conversation.png)
 
 ## DSH 0.1.1-rc.2 backward regression
 
 The previous registry baseline still completes the same isolated conversation flow:
 
-![DSH 0.1.1-rc.2 isolated conversation](./rc2-conversation.png)
+![DSH 0.1.1-rc.2 isolated conversation](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-rc1-compat/rc2-conversation.png)

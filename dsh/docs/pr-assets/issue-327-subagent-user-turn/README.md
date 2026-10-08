@@ -28,7 +28,7 @@ Its window is sized when the review sends its third request, to hold that reques
 
 ## Before (main)
 
-![Status: 后台审查失败, memory subagent stopped with error: SERVER: no user query found in messages, with the committed Document receipt](./before-status.jpg)
+![Status: 后台审查失败, memory subagent stopped with error: SERVER: no user query found in messages, with the committed Document receipt](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-327-subagent-user-turn/before-status.jpg)
 
 On both hosts:
 - requests 1 to 3 kept the prompt;
@@ -45,7 +45,7 @@ A route that never refuses sends exactly what main sends. This matters beyond Ol
 
 | After: Status | After: the Document the review created |
 |---|---|
-| ![Status: 系统正常, no review failure, one active Document](./after-status.jpg) | ![Project Documents: Review checkpoint storage](./after-documents.jpg) |
+| ![Status: 系统正常, no review failure, one active Document](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-327-subagent-user-turn/after-status.jpg) | ![Project Documents: Review checkpoint storage](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-327-subagent-user-turn/after-documents.jpg) |
 
 On both hosts the fourth request lost the prompt and was refused once. It ran again at once with the continuation turn and succeeded. Status read 系统正常 with no review failure, and Project Documents showed the Document. No run logged a console error.
 

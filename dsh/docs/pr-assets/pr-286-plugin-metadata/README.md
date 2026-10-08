@@ -17,11 +17,11 @@ Build and pack the PR, install its tarballs into a disposable DSH profile, and r
 
 The Chinese plugin details and component row show `三级记忆 (dsh-mnemon)` and the contributor's Chinese description.
 
-![Chinese DSH plugin metadata](./plugins-zh.jpg)
+![Chinese DSH plugin metadata](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr-286-plugin-metadata/plugins-zh.jpg)
 
 The same entry in English shows the existing `dsh-mnemon` name and complete package description.
 
-![English DSH manifest fallback](./plugins-en.jpg)
+![English DSH manifest fallback](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr-286-plugin-metadata/plugins-en.jpg)
 
 The visible `cordis:group` Off status alongside running children is a separate pre-existing status issue under investigation. These captures validate metadata display, not group enable/disable behavior.
 

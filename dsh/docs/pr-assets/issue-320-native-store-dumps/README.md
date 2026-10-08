@@ -35,7 +35,7 @@ Both runs take the same steps: the Memory Spaces overview and contents, then **R
 
 | Graph | Contents |
 |---|---|
-| ![The space's graph reads connection unavailable](./before-graph.jpg) | ![Contents reads 0 memories](./before-contents.jpg) |
+| ![The space's graph reads connection unavailable](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/before-graph.jpg) | ![Contents reads 0 memories](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/before-contents.jpg) |
 
 The space card reads 900 memories because `status` is small. The graph section reads "connection unavailable" and says the space supports only on-demand queries. Contents reads 0 memories and suggests saving the first one.
 
@@ -45,7 +45,7 @@ Adding entry C fails and the dialog stays open:
 mnemon output exceeded 2097152 bytes. Install Mnemon and ensure "mnemon" is on PATH, or set MNEMON_CLI_PATH or mnemon.cliPath.
 ```
 
-![Adding C fails with the install hint](./before-capacity-error.jpg)
+![Adding C fails with the install hint](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/before-capacity-error.jpg)
 
 Nothing is written: the store keeps 900 insights and working memory keeps A and B. Every later add that needs room fails the same way, so working memory stays full.
 
@@ -63,7 +63,7 @@ The 2 MiB constant in the root package's `lib/index.js`, which the issue cites, 
 
 | Graph | Contents |
 |---|---|
-| ![The graph of 900 memories](./after-graph.jpg) | ![Contents lists 900 memories](./after-contents.jpg) |
+| ![The graph of 900 memories](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/after-graph.jpg) | ![Contents lists 900 memories](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/after-contents.jpg) |
 
 The graph section reads 900 observable memories and 14,956 relations and draws the live snapshot. Contents lists 900 memories.
 
@@ -71,7 +71,7 @@ Adding entry C succeeds on the first try: "容量整理完成：已先归档到�
 
 | Capacity maintenance | The space after archiving |
 |---|---|
-| ![Capacity maintenance archives to default](./after-capacity-archived.jpg) | ![The space reads 902 memories](./after-archived-space.jpg) |
+| ![Capacity maintenance archives to default](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/after-capacity-archived.jpg) | ![The space reads 902 memories](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/after-archived-space.jpg) |
 
 Read back with the Mnemon CLI in `--readonly` mode, the store holds 902 insights, and A and B equal the added entries as exact UTF-8 strings. `runtime/memories.json` holds only C, also exact. Neither run logged a console error. The [verification data](./verification.json) records the counts, page text, entry hashes and screenshot hashes.
 

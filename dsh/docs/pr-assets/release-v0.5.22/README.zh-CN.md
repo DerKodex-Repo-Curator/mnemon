@@ -10,16 +10,16 @@
 
 1. 在未安装 Mnemon 的情况下启动宿主，打开**插件 → 添加插件**。
 2. 安装 `dsh-mnemon`。安装源由 DSH 自行选择，其测速选中了中国大陆镜像。本机 registry 返回 npm 的真实元数据，并附上新版本。安装后 profile 中为 dsh-mnemon 0.5.22，各组件为 npm 上锁定的版本。
-3. 点击**立即启用**，记忆系统无需重启宿主即出现。[状态页](status.png)显示 **dsh-mnemon 0.5.22 / 系统正常**，Mnemon Native 显示 **Mnemon 0.2.9**。
-4. 添加一条运行时记忆，刷新页面后读回：[运行时记忆](runtime.png)。
-5. 在 WebUI 中创建并激活一个 Mnemon Native 空间：[记忆空间](spaces.png)。用 Mnemon CLI `0.2.9` 写入并召回一条事实，再用 WebUI 的**直接检索**找到同一条事实：[检索](recall.png)。
+3. 点击**立即启用**，记忆系统无需重启宿主即出现。[状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/status.png)显示 **dsh-mnemon 0.5.22 / 系统正常**，Mnemon Native 显示 **Mnemon 0.2.9**。
+4. 添加一条运行时记忆，刷新页面后读回：[运行时记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/runtime.png)。
+5. 在 WebUI 中创建并激活一个 Mnemon Native 空间：[记忆空间](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/spaces.png)。用 Mnemon CLI `0.2.9` 写入并召回一条事实，再用 WebUI 的**直接检索**找到同一条事实：[检索](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/recall.png)。
 6. 打开**检查版本**：dsh-mnemon 显示已安装 0.5.22，更新方式为 DSH 自己的插件安装器。发布前 npm 的最新版本仍是 0.5.21，因此面板将 0.5.22 标为本地版本，不提供更新。**立即启用**之后没有出现重启提示，因为正在运行的就是已安装的版本。
 
 两个宿主的每一步均通过，没有宿主警告或控制台错误，每个宿主进程只启动一次。[validation.json](validation.json) 记录了包摘要与各宿主的结果。profile 与记忆均为合成数据。
 
-![DSH 0.2.0-rc.2 上的状态页](status.png)
+![DSH 0.2.0-rc.2 上的状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/status.png)
 
-![直接检索找到 CLI 写入的 Native 记忆](recall.png)
+![直接检索找到 CLI 写入的 Native 记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/recall.png)
 
 ## 本版本的修复
 

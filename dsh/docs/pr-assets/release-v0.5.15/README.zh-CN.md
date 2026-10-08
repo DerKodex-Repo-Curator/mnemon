@@ -14,11 +14,11 @@
 
 [最小调用与回执](./wire.json) · [浏览器观察](./browser.json)
 
-![真实 USER 写入](./user-write.png)
+![真实 USER 写入](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.15/user-write.png)
 
-![实际注入的 Runtime 元数据](./runtime-projection.png)
+![实际注入的 Runtime 元数据](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.15/runtime-projection.png)
 
-![刷新后的 Runtime 记录](./runtime-after-reload.png)
+![刷新后的 Runtime 记录](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.15/runtime-after-reload.png)
 
 ## 检查结果与限制
 

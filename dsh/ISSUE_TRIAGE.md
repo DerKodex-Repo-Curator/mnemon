@@ -58,12 +58,12 @@ Formatting, the location of a log, a missing code reference or the absence of a 
 ## Maintainer command reference
 
 ```sh
-gh issue edit <n> -R omdsh-dev/dsh-mnemon --add-label "bug,good first issue"
-gh issue comment <n> -R omdsh-dev/dsh-mnemon --body "Explanation"
+gh issue edit <n> -R mnemon-dev/mnemon --add-label "bug,good first issue"
+gh issue comment <n> -R mnemon-dev/mnemon --body "Explanation"
 gh api -X PATCH repos/omdsh-dev/dsh-mnemon/issues/<n> \
   -f state=closed -f state_reason=completed
 
-gh issue list -R omdsh-dev/dsh-mnemon --state open \
+gh issue list -R mnemon-dev/mnemon --state open \
   --json number,title,labels --jq '.[] | select(.labels|length==0)'
 ```
 

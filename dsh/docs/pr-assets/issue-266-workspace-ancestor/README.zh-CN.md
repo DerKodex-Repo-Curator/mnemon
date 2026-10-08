@@ -44,7 +44,7 @@ macOS 上的 Chrome 加载了实现 `1750e497` 的全部 17 个制品，使用�
 
 | 集中工作区状态 | Runtime 写入与读回 |
 |---|---|
-| ![Unicode 集中工作区状态正常](./webui-centralized-status.png) | ![UI 写入后显示两条 Runtime 记录](./webui-runtime-write.png) |
+| ![Unicode 集中工作区状态正常](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-266-workspace-ancestor/webui-centralized-status.png) | ![UI 写入后显示两条 Runtime 记录](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-266-workspace-ancestor/webui-runtime-write.png) |
 
 只读检查确认规范工作区哈希为 `b541b67e760240d3e9cf9985777163114eb92d9dad1ce95546b73fd0e04c4c12`，`<集中根>/workspaces/<哈希>/runtime/memories.json` 恰有两条记录，其 `MEMORY.md` 投影也包含精确新增文本。全局 Runtime 仍为空，工作区内没有新增 `.mnemon` 目录。WebUI 记录保留 JSON 与投影哈希。截图中的 “Issue 261” 会话标题和第一条记录是复用兼容性夹具时有意保留的标记。
 

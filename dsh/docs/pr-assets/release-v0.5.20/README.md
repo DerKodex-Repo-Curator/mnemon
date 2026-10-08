@@ -10,15 +10,15 @@ On unmodified npm DSH `0.2.0-rc.1` and `0.1.7-rc.2`, each with Node `24.19.0` an
 
 1. Started the host without Mnemon installed and opened **Plugins → Add plugin**.
 2. Installed `dsh-mnemon`. DSH chose the install source itself (its speed check picked the mainland China mirror). A loopback registry answered with npm's real metadata, read as npm will a day after the release, plus 0.5.20. Installation took 21.8 s on 0.2.0-rc.1 and 13.2 s on 0.1.7-rc.2, starting from an empty pnpm store.
-3. Clicked **Enable now**; the Memory System appeared within about a second, without a host restart. [Status](status.png) reports **dsh-mnemon 0.5.20 / System nominal**, and Mnemon Native names **Mnemon 0.2.7**.
-4. Added a Runtime memory entry and read it back after reloading the page: [Runtime](runtime.png).
-5. Created and activated a Mnemon Native space in the WebUI: [Memory Spaces](spaces.png). Wrote a fact with Mnemon CLI `0.2.7`, recalled it with the CLI, then found the same fact with the WebUI's **Direct recall**: [Recall](recall.png).
+3. Clicked **Enable now**; the Memory System appeared within about a second, without a host restart. [Status](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/status.png) reports **dsh-mnemon 0.5.20 / System nominal**, and Mnemon Native names **Mnemon 0.2.7**.
+4. Added a Runtime memory entry and read it back after reloading the page: [Runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/runtime.png).
+5. Created and activated a Mnemon Native space in the WebUI: [Memory Spaces](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/spaces.png). Wrote a fact with Mnemon CLI `0.2.7`, recalled it with the CLI, then found the same fact with the WebUI's **Direct recall**: [Recall](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/recall.png).
 
 Both hosts passed every step without a host warning or console error, and each host process was started once. [validation.json](validation.json) has the package digest and each host's results. Profiles and memories are synthetic.
 
-![Status on DSH 0.2.0-rc.1](status.png)
+![Status on DSH 0.2.0-rc.1](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/status.png)
 
-![The CLI-written Native memory found by Direct recall](recall.png)
+![The CLI-written Native memory found by Direct recall](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/recall.png)
 
 ## Upgrades and other ways in
 

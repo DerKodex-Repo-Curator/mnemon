@@ -81,10 +81,10 @@ The original control is the unmodified npm 0.3.5 release. PR code commit `590752
 
 | Scenario | Screenshot | Visible result |
 |---|---|---|
-| Original, ordinary environment | [Incorrect CLI status](./before-cli.jpg) | The installed CLI is reported missing |
-| PR code, ordinary environment | [After ten round trips](./after-normal.jpg) | Memory System is visible; the CLI reports readiness with no active Memory Space |
-| Original, controlled announcement loss | [Failed return](./before-controlled.jpg) | Task Board remains visible after the third click on Memory System |
-| PR code, controlled announcement loss | [Successful return](./after-controlled.jpg) | Memory System is visible after the third click |
+| Original, ordinary environment | [Incorrect CLI status](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/npm-sidebar-cli/before-cli.jpg) | The installed CLI is reported missing |
+| PR code, ordinary environment | [After ten round trips](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/npm-sidebar-cli/after-normal.jpg) | Memory System is visible; the CLI reports readiness with no active Memory Space |
+| Original, controlled announcement loss | [Failed return](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/npm-sidebar-cli/before-controlled.jpg) | Task Board remains visible after the third click on Memory System |
+| PR code, controlled announcement loss | [Successful return](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/npm-sidebar-cli/after-controlled.jpg) | Memory System is visible after the third click |
 
 After synchronization, `pnpm run verify` passed 541 tests and skipped one Windows-only test on macOS. Determinism for 106 build files, 35 Headless tools, 10 Node-compatible public entries, publint, and attw all passed. The upstream rc.2 missing-source-map warning remains and does not fail verification. The ordinary environment completed another ten real panel round trips, the CLI version check showed 0.2.5, and the browser console had no errors. The controlled run confirmed that the test plugin actually dropped an announcement and still returned successfully.
 
@@ -167,10 +167,10 @@ pnpm verify:package
 
 | 场景 | 截图 | 可见结果 |
 |---|---|---|
-| 原版，普通环境 | [CLI 状态误报](./before-cli.jpg) | 已安装 CLI，却显示“未找到 Mnemon CLI” |
-| PR 代码，普通环境 | [十轮切换后](./after-normal.jpg) | 返回记忆系统；CLI 显示服务就绪，无已激活记忆空间 |
-| 原版，受控通知丢失 | [返回失败](./before-controlled.jpg) | 第三次点击记忆系统后仍显示任务看板 |
-| PR 代码，受控通知丢失 | [返回成功](./after-controlled.jpg) | 第三次点击后显示记忆系统 |
+| 原版，普通环境 | [CLI 状态误报](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/npm-sidebar-cli/before-cli.jpg) | 已安装 CLI，却显示“未找到 Mnemon CLI” |
+| PR 代码，普通环境 | [十轮切换后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/npm-sidebar-cli/after-normal.jpg) | 返回记忆系统；CLI 显示服务就绪，无已激活记忆空间 |
+| 原版，受控通知丢失 | [返回失败](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/npm-sidebar-cli/before-controlled.jpg) | 第三次点击记忆系统后仍显示任务看板 |
+| PR 代码，受控通知丢失 | [返回成功](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/npm-sidebar-cli/after-controlled.jpg) | 第三次点击后显示记忆系统 |
 
 同步后的 `pnpm run verify`：541 项通过、1 项 Windows 专用测试在 macOS 跳过；106 个构建文件确定性检查、35 个 Headless 工具、10 个 Node 兼容公共入口、publint 与 attw 均通过。上游 rc.2 缺失 source map 的告警保留，不影响测试结果。普通环境再次完成十轮真实页面切换，CLI 版本检查显示 0.2.5，浏览器控制台无 error；受控故障环境确认测试插件确实丢弃通知后仍可返回。
 

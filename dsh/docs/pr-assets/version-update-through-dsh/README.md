@@ -23,7 +23,7 @@ The app itself was not driven: it owns a fixed port and the user's profile, and 
 
 ## Before: published 0.5.20
 
-![dsh-mnemon 0.5.20 can update to 0.5.21, but the dialog only says pnpm is missing and offers no Update button](./before.jpg)
+![dsh-mnemon 0.5.20 can update to 0.5.21, but the dialog only says pnpm is missing and offers no Update button](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/before.jpg)
 
 The row reads 可更新 0.5.20 → 0.5.21 with 检测到 DSH Profile 安装，但当前找不到 pnpm 命令。 and no **Update** button, as reported.
 
@@ -37,11 +37,11 @@ The version check reads npm's own `latest`, 0.5.21, so the dialog offers that up
 
 | Offered | Updating |
 |---|---|
-| ![The row offers Update through DSH's own plugin installer](./offered.jpg) | ![Updating](./updating.jpg) |
+| ![The row offers Update through DSH's own plugin installer](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/offered.jpg) | ![Updating](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/updating.jpg) |
 
 | Reopened with the result | After a restart |
 |---|---|
-| ![The reopened dialog: dsh-mnemon updated, restart DSH](./reopened.jpg) | ![After a restart: up to date, no restart notice](./restarted.jpg) |
+| ![The reopened dialog: dsh-mnemon updated, restart DSH](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/reopened.jpg) | ![After a restart: up to date, no restart notice](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/restarted.jpg) |
 
 1. The dsh-mnemon row reads 由当前 DSH Profile 管理；用 DSH 自己的插件安装方式更新，完成后重启 DSH。 with **Update**.
 2. DSH's plugin manager ran `pnpm add dsh-mnemon@0.5.21` with the app's pnpm, and the profile's log ends `Done in 384ms using pnpm v11.7.0`. The profile now lists `"dsh-mnemon": "0.5.21"` and its node_modules holds 0.5.21. The enabled bundles are unchanged.
@@ -49,7 +49,7 @@ The version check reads npm's own `latest`, 0.5.21, so the dialog offers that up
 4. The new page reopened Status and **Check versions**. By 3.75 s the dialog showed **dsh-mnemon 已更新** with the restart notice, and the row read 待重启 · 0.5.21.
 5. After DSH was stopped and started again, Status reads dsh-mnemon 0.5.21 / 系统正常. The dialog reads 已是最新, with no restart notice and no **Update** button.
 
-![The update sequence: offered, updating, reopened while checking, then the result](./update-sequence.gif)
+![The update sequence: offered, updating, reopened while checking, then the result](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/update-sequence.gif)
 
 ## Why the page reopens
 
@@ -71,7 +71,7 @@ DSH 0.1.7-rc.2's CLI entry takes no package manager from a launcher, so its plug
 
 ## Without any package manager
 
-![The row asks for pnpm and offers no Update button](./no-package-manager.jpg)
+![The row asks for pnpm and offers no Update button](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/no-package-manager.jpg)
 
 Here npm DSH 0.2.0-rc.2 was started directly with `dsh web`, without a launcher and without pnpm on PATH, so DSH's own Plugins page cannot install either. The row reads 可更新 with 检测到 DSH Profile 安装，但宿主找不到 pnpm 命令；安装 pnpm 并重启 DSH 后即可在此更新。, and there is no **Update** button.
 
@@ -79,7 +79,7 @@ Here npm DSH 0.2.0-rc.2 was started directly with `dsh web`, without a launcher 
 
 | Offered | Updated |
 |---|---|
-| ![dsh-mnemon-strategy-scoped 0.5.4, maintained by the profile, offers Update](./strategy-offered.jpg) | ![dsh-mnemon-strategy-scoped updated, restart DSH](./strategy-updated.jpg) |
+| ![dsh-mnemon-strategy-scoped 0.5.4, maintained by the profile, offers Update](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/strategy-offered.jpg) | ![dsh-mnemon-strategy-scoped updated, restart DSH](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/strategy-updated.jpg) |
 
 `dsh-mnemon-strategy-scoped@0.5.4` from npm was added with the packaged-app `dsh plugin add`. It is a DSH bundle the profile maintains (Profile 独立维护). Its **Update** went through DSH's plugin manager to npm's 0.5.5 (`Done in 267ms using pnpm v11.7.0`). Only the Strategy's page changed, so the dialog stayed open, and the enabled bundles were unchanged.
 
@@ -93,7 +93,7 @@ These runs used a build of that revision, served as above: `0.5.21-dshupdate.0` 
 
 | After Check versions updated the Starter | After a restart |
 |---|---|
-| ![Above Status: dsh-mnemon 0.5.21 is installed, while 0.5.21-dshupdate.0 still runs](./reminder-installed.jpg) | ![After a restart: no notice, and the engine card reads dsh-mnemon 0.5.21](./reminder-restarted.jpg) |
+| ![Above Status: dsh-mnemon 0.5.21 is installed, while 0.5.21-dshupdate.0 still runs](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/reminder-installed.jpg) | ![After a restart: no notice, and the engine card reads dsh-mnemon 0.5.21](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/reminder-restarted.jpg) |
 
 **Check versions, on DSH 0.2.0-rc.2 with the packaged-app launcher:**
 - DSH's plugin manager installed 0.5.21 (`Done in 598ms using pnpm v11.7.0`).
@@ -106,7 +106,7 @@ These runs used a build of that revision, served as above: `0.5.21-dshupdate.0` 
 - About 0.5 s after it returned, DSH swapped in the new client and the open Memory System closed to DSH's home. This is DSH's client HMR; the dialog's reopening covers only updates started from the dialog.
 - Reopened from the sidebar, Status and Runtime showed the same notice. Check versions read 待重启 with 0.5.21 installed and no **Update** button, instead of offering the version already installed.
 
-![Check versions after dsh plugin add: 0.5.21 installed, restart needed, no Update button](./reminder-cli-dialog.jpg)
+![Check versions after dsh plugin add: 0.5.21 installed, restart needed, no Update button](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/reminder-cli-dialog.jpg)
 
 **Back to the running version:** `dsh plugin add dsh-mnemon@0.5.21-dshupdate.0` closed the Memory System the same way. Reopened, it showed no notice, and Check versions offered 0.5.21-dshupdate.0 → 0.5.21 again.
 
@@ -115,7 +115,7 @@ These runs used a build of that revision, served as above: `0.5.21-dshupdate.0` 
 - Status and Runtime showed **dsh-mnemon-strategy-scoped 已更新** with 重启 DSH 后生效，桌面版请完全退出后重新打开。 The Starter stayed 0.5.21-dshupdate.0.
 - The notice was gone after a restart.
 
-![Above Runtime: dsh-mnemon-strategy-scoped updated, restart DSH](./reminder-strategy.jpg)
+![Above Runtime: dsh-mnemon-strategy-scoped updated, restart DSH](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/version-update-through-dsh/reminder-strategy.jpg)
 
 **DSH 0.1.7-rc.2:** `dsh web` ran with pnpm 11.19.0 on PATH.
 - Check versions updated the Starter through DSH's plugin manager (`Done in 419ms using pnpm v11.19.0`).

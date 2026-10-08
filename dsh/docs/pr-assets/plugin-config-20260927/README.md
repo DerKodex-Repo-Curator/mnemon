@@ -10,17 +10,17 @@ Tested implementation: `7e23e37f`, stacked on the DSH-style interface (`74b214eb
 
 | Before: Settings → Memory System | After: Plugins → dsh-mnemon |
 |---|---|
-| ![Settings before](../dsh-style-ui-20260927/settings-after.png) | ![The dsh-mnemon page](./plugin-page.png) |
+| ![Settings before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-after.png) | ![The dsh-mnemon page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-config-20260927/plugin-page.png) |
 
 DSH 0.1.7 edits a plugin's own configuration on its page under Plugins and keeps Settings for DSH's sections and the read-only plugin inventory. The Memory System section is gone from Settings:
 
-![Settings without a Memory System section](./settings-dialog.png)
+![Settings without a Memory System section](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-config-20260927/settings-dialog.png)
 
 The dsh-mnemon page (titled 可组合记忆 in Chinese) shows the plugin's title and description, then the configuration in six groups (Strategy, Memory layers, Memory providers, Storage, Background tasks, Interface), then the components the Starter includes. Before this change the page carried only the Strategy rows and a pointer back to Settings:
 
 | Plugins page before | The whole page after |
 |---|---|
-| ![Plugins page before](../dsh-style-ui-20260927/plugins-after.png) | ![The whole dsh-mnemon page](./plugin-page-full.png) |
+| ![Plugins page before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/plugins-after.png) | ![The whole dsh-mnemon page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-config-20260927/plugin-page-full.png) |
 
 ## Unsaved changes
 
@@ -28,19 +28,19 @@ Groups with Save stage their edits; a bar floats 16 px above the bottom of the p
 
 | Floating over the page | At rest before the components |
 |---|---|
-| ![Floating save bar](./plugin-page-floating.png) | ![Components after the configuration](./plugin-page-components.png) |
+| ![Floating save bar](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-config-20260927/plugin-page-floating.png) | ![Components after the configuration](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-config-20260927/plugin-page-components.png) |
 
 ## Between the workspace and its configuration
 
 The page head offers **Open Memory System** (`plugins.detail.actions`), and the Memory System header offers **Configure**, the gear next to refresh, through `ctx.pluginNavigation.openBundle('dsh-mnemon')`. A switched-off memory layer page links to the configuration too.
 
-![Memory System header with Configure](./workspace-configure.png)
+![Memory System header with Configure](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-config-20260927/workspace-configure.png)
 
 ## Themes and narrow layout
 
 | Dark theme | Dark theme, unsaved | 700 × 900 |
 |---|---|---|
-| ![Dark theme](./dark-plugin-page.png) | ![Dark theme with the save bar](./dark-plugin-page-unsaved.png) | ![Narrow layout](./narrow-plugin-page.png) |
+| ![Dark theme](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-config-20260927/dark-plugin-page.png) | ![Dark theme with the save bar](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-config-20260927/dark-plugin-page-unsaved.png) | ![Narrow layout](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-config-20260927/narrow-plugin-page.png) |
 
 ## Remote pages
 
@@ -49,7 +49,7 @@ Chrome mapped `memory.test` to 127.0.0.1 and the fixture ran with `pnpm e2e:serv
 - Default (`remoteAccess: read-only`): the read-only notice leads the page, every control including the Strategy rows is disabled, and a click changes nothing.
 - With `--remote-management` (`remoteAccess: trusted-host`): a Save of the Save to memory switch persisted through the API Gateway across a page reload and was then restored.
 
-![Remote page without the management grant](./remote-readonly-plugin-page.png)
+![Remote page without the management grant](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-config-20260927/remote-readonly-plugin-page.png)
 
 ## Live refresh
 

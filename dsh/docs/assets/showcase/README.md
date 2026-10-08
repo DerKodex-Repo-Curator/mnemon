@@ -23,16 +23,16 @@ The CLI checksum identifies the installed binary; it is not an independent upstr
 
 ## Media
 
-[Watch the 22.72-second recording](./demo.mp4) (English UI, no audio). It is a continuous real browser recording transcoded to H.264 / yuv420p with fast-start metadata: no constructed interface, label replacement, generated answer or composited frame. A single MP4 replaces the old duplicated GIF/video presentation on the project landing page.
+[Watch the 22.72-second recording](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/demo.mp4) (English UI, no audio). It is a continuous real browser recording transcoded to H.264 / yuv420p with fast-start metadata: no constructed interface, label replacement, generated answer or composited frame. A single MP4 replaces the old duplicated GIF/video presentation on the project landing page.
 
 | Surface | English | 简体中文 |
 |---|---|---|
-| Status | [Screenshot](./en/status.png) | [截图](./zh-CN/status.png) |
-| Runtime | [Screenshot](./en/runtime.png) | [截图](./zh-CN/runtime.png) |
-| Documents | [Screenshot](./en/documents.png) | [截图](./zh-CN/documents.png) |
-| Memory Spaces | [Screenshot](./en/spaces.png) | [截图](./zh-CN/spaces.png) |
-| Evidence content | [Screenshot](./en/content.png) | [截图](./zh-CN/content.png) |
-| Enhancements | [Screenshot](./en/enhancements.png) | [截图](./zh-CN/enhancements.png) |
+| Status | [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/en/status.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/zh-CN/status.png) |
+| Runtime | [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/en/runtime.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/zh-CN/runtime.png) |
+| Documents | [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/en/documents.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/zh-CN/documents.png) |
+| Memory Spaces | [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/en/spaces.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/zh-CN/spaces.png) |
+| Evidence content | [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/en/content.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/zh-CN/content.png) |
+| Enhancements | [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/en/enhancements.png) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/zh-CN/enhancements.png) |
 
 ## Reproduce and interpret
 
@@ -50,6 +50,6 @@ The screenshots show the default disabled enhancement state. The recording also 
 
 中英文桌面均验证了三个增强开关的开启、重新打开设置后的持久化，以及恢复默认关闭。390px 窄屏另发现设置裁切，失败证据单列，不计作通过。录屏为连续浏览器画面转码，保留真实按钮和内容。它不证明 LLM 效果、云 Provider 兼容性或真实手机表现。
 
-截图通过 DSH 实际语言设置切换界面；两种语言保留同一组英文合成记忆，便于对照，不代表界面漏译。[22.72 秒演示](./demo.mp4)使用英文界面、无音轨。没有对截图或视频中的文字做后期替换。
+截图通过 DSH 实际语言设置切换界面；两种语言保留同一组英文合成记忆，便于对照，不代表界面漏译。[22.72 秒演示](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/showcase/demo.mp4)使用英文界面、无音轨。没有对截图或视频中的文字做后期替换。
 
 旧版图片、GIF、视频与 PR 证据保留原路径和版本身份，见[历史证据索引](../../pr-assets/README.md)。不覆盖历史结果，也不因主文档停止引用就删除被旧 PR 使用的素材。

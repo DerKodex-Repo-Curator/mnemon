@@ -2,9 +2,9 @@
 
 Captured on 2026-09-06 from the real DSH 0.1.2-rc.1 WebUI, launched with `scripts/serve-e2e.mjs`. The disposable Profile contains a linked Starter and sixteen official subpackages. Memory directories are empty fixtures; no model requests or production data were used. The source location is a temporary alias. The Host's existing Homebrew CLI was inspected with `--version`; no machine-wide install or update was executed.
 
-- [Desktop, collapsed](desktop-collapsed.png): npm migration command, successful copy feedback, expandable post-install steps, and the subpackage toggle at 1280 × 720.
-- [Desktop, expanded](desktop-expanded.png): Source and Strategy versions, Starter pins, and maintenance ownership.
-- [Mobile, expanded](mobile-expanded.png): 390 × 844 bottom sheet with wrapping package names and a fixed footer. The dialog and all sixteen package rows have no horizontal overflow.
+- [Desktop, collapsed](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/status-version-maintenance/desktop-collapsed.png): npm migration command, successful copy feedback, expandable post-install steps, and the subpackage toggle at 1280 × 720.
+- [Desktop, expanded](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/status-version-maintenance/desktop-expanded.png): Source and Strategy versions, Starter pins, and maintenance ownership.
+- [Mobile, expanded](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/status-version-maintenance/mobile-expanded.png): 390 × 844 bottom sheet with wrapping package names and a fixed footer. The dialog and all sixteen package rows have no horizontal overflow.
 
 Validation:
 

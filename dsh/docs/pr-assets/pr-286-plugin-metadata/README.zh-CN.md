@@ -17,11 +17,11 @@
 
 中文插件详情及组件行显示 `三级记忆 (dsh-mnemon)` 和贡献者提交的中文说明。
 
-![DSH 中文插件元数据](./plugins-zh.jpg)
+![DSH 中文插件元数据](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr-286-plugin-metadata/plugins-zh.jpg)
 
 英文界面的同一条目保留现有 `dsh-mnemon` 名称及完整 package 说明。
 
-![DSH 英文 manifest 回退](./plugins-en.jpg)
+![DSH 英文 manifest 回退](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr-286-plugin-metadata/plugins-en.jpg)
 
 截图中 `cordis:group` 显示关闭而子组件仍运行，是另行调查的既有状态问题。本记录仅验证元数据展示，不作为分组启停行为的验收证据。
 

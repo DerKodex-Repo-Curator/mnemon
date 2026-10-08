@@ -14,7 +14,7 @@
 
 | 修复前 | 修复后 |
 | --- | --- |
-| ![基线 USER 替换错误](./before-user-replace.png) | ![修复后 USER 替换回执](./after-user-replace.png) |
+| ![基线 USER 替换错误](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-281-user-branches/before-user-replace.png) | ![修复后 USER 替换回执](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-281-user-branches/after-user-replace.png) |
 
 ## 验证
 
@@ -26,7 +26,7 @@
 - WebUI：USER 空数组增改删成功，非空分支拒绝，MEMORY 分支设置/清空成功。手动编辑 USER、创建档案及按正文搜索成功。界面创建并激活 Native 空间后，由已校验 CLI 写入合成记录，再由 WebUI 关键词检索读回完整原文。
 - 设置保存出现成功回执。Host 冷启动后 Runtime 和 Documents 文件 SHA-256 完全一致，Native CLI 仍能召回同一个 ID 和原文。
 
-![CLI 写入后由 WebUI 读回](./native-cli-webui-recall.png)
+![CLI 写入后由 WebUI 读回](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-281-user-branches/native-cli-webui-recall.png)
 
 [verification.json](./verification.json) 保留最小实际调用、回执和内容哈希。[基线制品](./before-artifacts.json)与[修复制品](./after-artifacts.json)记录十七个 tarball 的哈希及合成输入。原始 Host 日志、本地认证 URL、npm 安装和完整会话日志保留在仓库之外。
 

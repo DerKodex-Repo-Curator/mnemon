@@ -50,15 +50,15 @@ Screenshot review caught and fixed two layout defects: long directory paths caus
 
 | Evidence | Shows |
 |---|---|
-| [01 — Chinese Dark settings](./01-settings-zh-dark.png) | Scope, optional root and independent global profile |
-| [02 — A Runtime](./02-workspace-a-runtime.png) | A project fact plus global preference |
-| [03 — A Document](./03-workspace-a-document.png) | Successful managed Document creation |
-| [04 — A Providers](./04-workspace-a-providers.png) | Real Native database and Holographic mapping; corrected long-path layout |
-| [05 — B isolation](./05-workspace-b-isolation.png) | Global preference present; A project fact absent |
-| [06 — English Light settings](./06-settings-en-light.png) | Full centralized label and root control |
-| [07 — Builtin after restart](./07-builtin-b-after-restart.png) | B's recovered fact in its owning session |
-| [08 — Workspace alignment](./08-workspace-alignment.png) | A inspection versus B execution, with visible selector and alignment action |
-| [09 — 390px Sidebar](./09-sidebar-390px.png) | Narrow Memory Spaces, long path and alignment controls |
+| [01 — Chinese Dark settings](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/01-settings-zh-dark.png) | Scope, optional root and independent global profile |
+| [02 — A Runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/02-workspace-a-runtime.png) | A project fact plus global preference |
+| [03 — A Document](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/03-workspace-a-document.png) | Successful managed Document creation |
+| [04 — A Providers](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/04-workspace-a-providers.png) | Real Native database and Holographic mapping; corrected long-path layout |
+| [05 — B isolation](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/05-workspace-b-isolation.png) | Global preference present; A project fact absent |
+| [06 — English Light settings](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/06-settings-en-light.png) | Full centralized label and root control |
+| [07 — Builtin after restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/07-builtin-b-after-restart.png) | B's recovered fact in its owning session |
+| [08 — Workspace alignment](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/08-workspace-alignment.png) | A inspection versus B execution, with visible selector and alignment action |
+| [09 — 390px Sidebar](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-189-core-workspaces/09-sidebar-390px.png) | Narrow Memory Spaces, long path and alignment controls |
 
 ## Limits
 

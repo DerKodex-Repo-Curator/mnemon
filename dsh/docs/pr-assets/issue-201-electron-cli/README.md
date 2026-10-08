@@ -40,16 +40,16 @@ All actions below used the real published DSH Web stack and the locally built pl
 
 | Scenario / 场景 | Observed result / 观察结果 | Screenshot / 截图 |
 |---|---|---|
-| Baseline Electron version check | npm launcher found, version unreadable | [Before](./01-before-versions.png) |
-| Repaired Electron npm version check | 0.2.8, npm ownership recognized; Check again and all 16 subpackage entries worked | [Versions](./03-after-versions.png) |
-| Electron npm write and browse | Created `Electron issue 201`, activated it, deactivated `default`, wrote a synthetic fact with tags/entities and read it back | [Content](./04-after-write-content.png) |
-| Electron npm keyword recall | Retrieved the exact persisted sentinel with its space and Provider provenance | [Recall](./05-after-recall.png) |
-| Electron npm entity and graph reads | Entity lookup returned the sentinel; related lookup completed; both stores reported healthy storage | [Space health](./06-after-space-health.png) |
-| Forget cancellation and confirmation | Cancel retained the item; Confirm forget removed it and showed the empty state | [After forget](./07-after-forget.png) |
-| Electron update dialog with a controlled npm package | Real RPC and process execution advanced a test version from 0.2.7 to 0.2.8; success shown and Update removed | [Update fixture](./08-update-fixture-success.png) |
-| Ordinary Node npm version check | 0.2.8 and npm ownership recognized | [Node versions](./09-node-host-versions.png) |
-| Ordinary Node npm memory workflow | Create, activate, write, browse, keyword recall, empty filter, filter recovery and confirmed forget passed | [Node recall](./10-node-host-recall.png) |
-| Electron with explicit native `cliPath` | Existing spaces survived restart; version 0.2.8, write and keyword recall passed; automatic npm update remained unavailable for the direct binary | [Native path](./11-electron-native-binary.png) |
+| Baseline Electron version check | npm launcher found, version unreadable | [Before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-201-electron-cli/01-before-versions.png) |
+| Repaired Electron npm version check | 0.2.8, npm ownership recognized; Check again and all 16 subpackage entries worked | [Versions](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-201-electron-cli/03-after-versions.png) |
+| Electron npm write and browse | Created `Electron issue 201`, activated it, deactivated `default`, wrote a synthetic fact with tags/entities and read it back | [Content](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-201-electron-cli/04-after-write-content.png) |
+| Electron npm keyword recall | Retrieved the exact persisted sentinel with its space and Provider provenance | [Recall](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-201-electron-cli/05-after-recall.png) |
+| Electron npm entity and graph reads | Entity lookup returned the sentinel; related lookup completed; both stores reported healthy storage | [Space health](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-201-electron-cli/06-after-space-health.png) |
+| Forget cancellation and confirmation | Cancel retained the item; Confirm forget removed it and showed the empty state | [After forget](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-201-electron-cli/07-after-forget.png) |
+| Electron update dialog with a controlled npm package | Real RPC and process execution advanced a test version from 0.2.7 to 0.2.8; success shown and Update removed | [Update fixture](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-201-electron-cli/08-update-fixture-success.png) |
+| Ordinary Node npm version check | 0.2.8 and npm ownership recognized | [Node versions](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-201-electron-cli/09-node-host-versions.png) |
+| Ordinary Node npm memory workflow | Create, activate, write, browse, keyword recall, empty filter, filter recovery and confirmed forget passed | [Node recall](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-201-electron-cli/10-node-host-recall.png) |
+| Electron with explicit native `cliPath` | Existing spaces survived restart; version 0.2.8, write and keyword recall passed; automatic npm update remained unavailable for the direct binary | [Native path](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-201-electron-cli/11-electron-native-binary.png) |
 
 真实 WebUI 已验证修复前故障、修复后版本识别与重新检查、子包展开、空间创建和激活、写入和内容浏览、关键词召回、实体和关联读取、删除取消与确认、Node Host 回归，以及显式原生二进制路径。上述记忆操作均写入隔离的真实 Mnemon 数据库。
 

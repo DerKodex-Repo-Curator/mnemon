@@ -34,12 +34,12 @@
 
 ## 截图
 
-![真实 Flash 写入 Runtime](./flash-runtime-write.jpg)
-![Flash 与 Native 完成档案归档](./documents-archived.jpg)
-![Runtime 容量归档完成](./runtime-capacity-archive.jpg)
-![Native 检索与可见的关联操作](./native-related.jpg)
-![冷重启后的版本与存储状态](./status-after-restart.jpg)
-![新会话读取重启前的热记忆](./cold-restart-flash-recall.jpg)
+![真实 Flash 写入 Runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/flash-runtime-write.jpg)
+![Flash 与 Native 完成档案归档](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/documents-archived.jpg)
+![Runtime 容量归档完成](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/runtime-capacity-archive.jpg)
+![Native 检索与可见的关联操作](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/native-related.jpg)
+![冷重启后的版本与存储状态](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/status-after-restart.jpg)
+![新会话读取重启前的热记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.16/cold-restart-flash-recall.jpg)
 
 修复前后对比见[元数据](../pr-286-plugin-metadata/README.zh-CN.md)、[Sidebar](../sidebar-native-20260926/README.zh-CN.md)与[页面框架](../source-page-frames-20260926/README.md)记录。
 

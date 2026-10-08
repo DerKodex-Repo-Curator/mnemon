@@ -14,11 +14,11 @@ The real WebUI baseline received all three synthetic stored entries but **zero m
 
 | Baseline | Fixed |
 | --- | --- |
-| ![Projection without metadata](./before-model-projection.png) | ![Actual projected importance and ages](./after-model-projection.png) |
+| ![Projection without metadata](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-280-runtime-metadata/before-model-projection.png) | ![Actual projected importance and ages](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-280-runtime-metadata/after-model-projection.png) |
 
 Real WebUI turns then added, replaced and removed a USER entry, each with a committed tool receipt; the final Runtime store contains the original three seeds. Documents creation and a `DOC280_CHECK` body search returned the one matching document. A Native space was created and activated through the UI, official CLI 0.2.9 wrote `NATIVE280_CHECK: The disposable project uses SQLite WAL for durable storage.`, and the UI keyword search returned that exact text and record ID as its only result.
 
-![Native CLI write read back through WebUI](./native-cli-webui-recall.png)
+![Native CLI write read back through WebUI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-280-runtime-metadata/native-cli-webui-recall.png)
 
 - Six new metadata regressions failed before the Source fix; an additional dense-store regression failed before the Strategy guidance correction. Fixed targeted checks passed **50 tests**, with **63 Runtime Source** and **17 default Strategy** tests passing.
 - `pnpm verify` passed **1,363 Root tests / 7 skips**, **406 plugin tests / 2 skips**, and the type, deterministic-build, Headless and package checks. Root unpacked size: **1,374,802 bytes**, below the unchanged 1,376,000-byte limit.

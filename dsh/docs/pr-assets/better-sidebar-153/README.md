@@ -31,8 +31,8 @@ automation were disabled; storage used a profile-owned custom directory.
 
 | Evidence | Capture |
 | --- | --- |
-| DSH's normal Memory System row and Better Sidebar's registered menu item are visible together | [Tab menu](./after-tab-menu.jpg) |
-| The Memory System Runtime page is rendered inside Better Sidebar | [Memory tab](./after-memory-tab.jpg) |
+| DSH's normal Memory System row and Better Sidebar's registered menu item are visible together | [Tab menu](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/better-sidebar-153/after-tab-menu.jpg) |
+| The Memory System Runtime page is rendered inside Better Sidebar | [Memory tab](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/better-sidebar-153/after-memory-tab.jpg) |
 
 Both captures are from the isolated Harness `0.1.1-rc.2` profile at its native
 1280 × 720 browser viewport.

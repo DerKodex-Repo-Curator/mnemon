@@ -10,7 +10,7 @@
 
 | 默认 | 行内点名相关组件 |
 |---|---|
-| ![面板](./board-default.png) | ![关联标签](./board-relations.png) |
+| ![面板](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-default.png) | ![关联标签](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-relations.png) |
 
 ## 组件详情
 
@@ -18,27 +18,27 @@
 
 | 关系 | 声明的选项 |
 |---|---|
-| ![记忆空间详情](./board-details.png) | ![主动记录选项](./board-options.png) |
+| ![记忆空间详情](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-details.png) | ![主动记录选项](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-options.png) |
 
 ## 带动其他组件的开关与问题提示
 
 | 关闭记忆空间会一同关闭主动记录 | 记忆未生效时的唯一修复 |
 |---|---|
-| ![连带关闭与撤销](./board-cascade.png) | ![问题提示](./board-memory-off.png) |
+| ![连带关闭与撤销](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-cascade.png) | ![问题提示](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-memory-off.png) |
 
 记忆系统把 Source 组件已关闭的层显示为“已关闭”：
 
-![项目档案已关闭](./workspace-layer-off.png)
+![项目档案已关闭](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/workspace-layer-off.png)
 
 ## 深色与窄列
 
 | 面板 | 详情 | 连带关闭 |
 |---|---|---|
-| ![面板，深色](./dark-board-default.png) | ![详情，深色](./dark-board-details.png) | ![连带关闭，深色](./dark-board-cascade.png) |
+| ![面板，深色](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/dark-board-default.png) | ![详情，深色](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/dark-board-details.png) | ![连带关闭，深色](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/dark-board-cascade.png) |
 
 | 面板，420 px | 详情，420 px |
 |---|---|
-| ![面板，窄列](./narrow-board-default.png) | ![详情，窄列](./narrow-board-details.png) |
+| ![面板，窄列](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/narrow-board-default.png) | ![详情，窄列](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/narrow-board-details.png) |
 
 ## 验证
 

@@ -18,7 +18,7 @@ After explicitly installing the repaired copy in the disposable session director
 
 | Before repair | After resume and cold reopen |
 |---|---|
-| ![Strict migration refusal](./225-before-repair.png) | ![Both turns retained](./225-cold-reopen.png) |
+| ![Strict migration refusal](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/225-before-repair.png) | ![Both turns retained](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/225-cold-reopen.png) |
 
 The existing [repair and lifecycle tests](../../../tests/legacy-session-repair.spec.ts) also pass: plain/compressed strict migration, exclusive copy publication, byte preservation, rejection of malformed input and cold reopen. The lifecycle suite checks newly generated instructions/recall against the released v0 payload validator and preserves other plugins' context messages. Follow the [recovery procedure](../../en/guides/operations.md#dsh-015-compatibility-and-legacy-session-recovery) for an affected installation; plugin upgrade alone cannot repair an existing artifact.
 
@@ -30,13 +30,13 @@ A Native memory space was created and activated through the UI. The real CLI sto
 
 | Current status after restart | Settings |
 |---|---|
-| ![Connected Native 0.2.7](./230-restarted-status.png) | ![Connected settings](./230-current-settings.png) |
+| ![Connected Native 0.2.7](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/230-restarted-status.png) | ![Connected settings](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/230-current-settings.png) |
 
 | Keyword recall | Content retained after restart |
 |---|---|
-| ![Real CLI canary recalled](./230-native-recall.png) | ![Persistent Native content](./230-content-after-restart.png) |
+| ![Real CLI canary recalled](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/230-native-recall.png) | ![Persistent Native content](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/230-content-after-restart.png) |
 
-The original 0.5.5 installation and missing-CLI environment in #230 were not recreated. The earlier HTTP 405 before/after evidence remains attached to its tested revision in [PR #226's record](../issue-223-dsh-015/README.md), including the [original failure screenshot](../issue-223-dsh-015/00-before-http-405.png). This run verifies the fixed current state, including real CLI discovery, without claiming another implementation fix.
+The original 0.5.5 installation and missing-CLI environment in #230 were not recreated. The earlier HTTP 405 before/after evidence remains attached to its tested revision in [PR #226's record](../issue-223-dsh-015/README.md), including the [original failure screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/00-before-http-405.png). This run verifies the fixed current state, including real CLI discovery, without claiming another implementation fix.
 
 ## Commands and limits
 

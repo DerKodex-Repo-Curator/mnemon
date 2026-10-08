@@ -64,7 +64,13 @@ export function checkDocuments(root, files) {
     const body = readFileSync(join(root, file), 'utf8')
     for (const { url, line } of documentLinks(body)) {
       // README links also work on npm; verify current-repository URLs locally.
-      const repositoryPath = url.match(/^https:\/\/github\.com\/omdsh-dev\/dsh-mnemon\/(?:blob|tree)\/main\/(.+)$/u)?.[1]
+      // The workspace lives in dsh/ of mnemon-dev/mnemon; links into the
+      // retired omdsh-dev/dsh-mnemon main branch would silently go stale.
+      if (/^https:\/\/(?:github\.com\/omdsh-dev\/dsh-mnemon\/(?:blob|tree)|raw\.githubusercontent\.com\/omdsh-dev\/dsh-mnemon)\/main\//u.test(url)) {
+        failures.push(`${file}:${line}: ${url} points at the retired repository; link to dsh/ in mnemon-dev/mnemon`)
+        continue
+      }
+      const repositoryPath = url.match(/^https:\/\/github\.com\/mnemon-dev\/mnemon\/(?:blob|tree)\/master\/dsh\/(.+)$/u)?.[1]
       if (!repositoryPath && /^(?:[a-z][a-z\d+.-]*:|\/\/)/iu.test(url)) continue
       const [pathAndQuery, rawAnchor] = (repositoryPath ?? url).split('#')
       const rawPath = pathAndQuery.split('?')[0]

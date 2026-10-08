@@ -14,32 +14,32 @@
 
 | 修复前：旧工具遗漏 Runtime summary | 修复后：续写、重启、冷打开 |
 |---|---|
-| ![历史 summary 校验失败](./251-before-runtime-summary.jpg) | ![两轮会话均保留](./251-after-cold-reopen.jpg) |
+| ![历史 summary 校验失败](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-before-runtime-summary.jpg) | ![两轮会话均保留](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-after-cold-reopen.jpg) |
 
 第二个 WebUI 制品使用[组合夹具](../../../tests/fixtures/issue-251-repairable-v0.jsonl)，包含全部三个 summary、兼容 v2 descriptor，以及 ID/name 为空字符串的 packed 行。旧工具仍在 Runtime summary 7 处失败；新 CLI 报告修复三个 summary、提升一个 descriptor、将一条 packed 行展开为三个 chunk，无 blocker。真实 DSH 加载器迁移副本后，界面显示历史用户请求、助手回复，以及展开的 `synthetic_lookup {}` 与 `Synthetic tool response.`。选择配置好的回环 `DeepSeek-V4-Flash` 路由后恢复可交互输入框。原件 hash 保持为 `94f7da957d213c896c4794603580c9e982670bcd725ecffeee241eab3ad709e5`；修复副本为 `07db52eaacf6d45fc2d4c0a2e8931604674ce332c3a0f823aeed4d4aacaeed3b`。
 
 | 组合制品修复前 | 迁移并渲染工具历史后 |
 |---|---|
-| ![组合旧历史被拒绝](./251-combined-before.jpg) | ![历史消息与展开的工具结果](./251-combined-after.jpg) |
+| ![组合旧历史被拒绝](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-combined-before.jpg) | ![历史消息与展开的工具结果](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-combined-after.jpg) |
 
 组合会话也通过真实 WebUI 完成 canary 续写。Host 经 `SIGUSR2` 重启后冷打开，历史消息、展开的工具结果与新对话均保留。物理 v3 日志包含 43 行；结构比较确认五条历史 user/plugin 消息仅删除三个 summary 字段，两条历史 assistant 消息、持久 tool/call 与 tool/result、展开后的 stream 均一致。原始及修复 v0 的 hash 均未改变，外部模型调用为零。
 
 | 冷打开后的历史消息和工具输出 | 冷打开后保留的 canary 对话 |
 |---|---|
-| ![Host 重启后的组合历史](./251-combined-cold-reopen.jpg) | ![Host 重启后的工具输出与续写对话](./251-combined-cold-new-turn.jpg) |
+| ![Host 重启后的组合历史](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-combined-cold-reopen.jpg) | ![Host 重启后的工具输出与续写对话](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-combined-cold-new-turn.jpg) |
 
 另两个夹具单独复现流式 null name：[raw delta](../../../tests/fixtures/issue-251-null-name-v0.jsonl) 与 [packed delta](../../../tests/fixtures/issue-251-null-name-packed-v0.jsonl)。两者保留有效持久工具身份，并以空参数片段开始。真实 WebUI 分别在 v1→v2 accumulator 与 packed decoder 拒绝原件；前一 CLI 版本 `83d0c40` 同样拒绝发布副本。新 CLI 各规范化三个逻辑 name，仅展开 packed 行。两段历史均正常加载，显示原始用户/助手消息与工具结果，并通过回环路由完成新 canary 对话。各 v3 日志有 42 个物理行；结构比较确认历史消息、持久调用/结果及按预期规范化后的精确带时间回放均保留。原始与修复 v0 的 hash 未变，详见[机器可读记录](./verification.json)。
 
 | null-name 制品修复前 | 迁移并渲染历史后 |
 |---|---|
-| ![raw null name 被拒绝](./251-null-raw-before.jpg) | ![raw null name 修复后](./251-null-raw-after.jpg) |
-| ![packed null name 被拒绝](./251-null-packed-before.jpg) | ![packed null name 修复后](./251-null-packed-after.jpg) |
+| ![raw null name 被拒绝](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-raw-before.jpg) | ![raw null name 修复后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-raw-after.jpg) |
+| ![packed null name 被拒绝](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-packed-before.jpg) | ![packed null name 修复后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-packed-after.jpg) |
 
 Host 重启后，独立 Chrome 测试窗口通过同一个一次性 Profile 冷打开了两段会话，历史工具输出与此前的 canary 对话均保留。内置浏览器在选择会话之前遇到 client bundle 加载错误；该 bundle 返回 HTTP 200，语法检查通过。Chrome 正常加载同一个 Host，未改动 Host 或浏览器安全配置。
 
 | raw null-name 历史冷打开后 | packed null-name 历史冷打开后 |
 |---|---|
-| ![重启后的 raw 历史、工具结果与 canary](./251-null-raw-cold-reopen.jpg) | ![重启后的 packed 历史、工具结果与 canary](./251-null-packed-cold-reopen.jpg) |
+| ![重启后的 raw 历史、工具结果与 canary](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-raw-cold-reopen.jpg) | ![重启后的 packed 历史、工具结果与 canary](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-null-packed-cold-reopen.jpg) |
 
 最后两个夹具覆盖完成后的空 ID 链：[已有 ID 链](../../../tests/fixtures/issue-251-existing-id-v0.jsonl)与[四类旧格式组合](../../../tests/fixtures/issue-251-all-legacy-v0.jsonl)。它们使用一致的 `deepseek-official` 写入器元数据、完整 usage 记录与另一插件的 snapshot。仅 ID 故障的 WebUI 输入将 packed 占位值等价展开为 raw delta，以单独复现持久 ID 错误；完整组合保留 packed null-name 占位值、全部三个 summary 和 descriptor v2。为一次性 Profile 调整 session id、工作区和 preset，原始输入另行保留。
 
@@ -47,8 +47,8 @@ CLI 版本 `2612856` 对两份输入均拒绝发布副本。真实 WebUI 在仅 
 
 | 已有 ID 恢复前 | 历史和工具输出恢复后 |
 |---|---|
-| ![持久工具身份为空](./251-existing-id-before.jpg) | ![已有身份恢复后](./251-existing-id-after.jpg) |
-| ![四类旧格式组合](./251-all-legacy-before.jpg) | ![四类格式一并修复](./251-all-legacy-after.jpg) |
+| ![持久工具身份为空](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-existing-id-before.jpg) | ![已有身份恢复后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-existing-id-after.jpg) |
+| ![四类旧格式组合](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-all-legacy-before.jpg) | ![四类格式一并修复](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-all-legacy-after.jpg) |
 
 随后在真实 WebUI 选择已配置的回环 Flash 路由，分别发送 `legacy-replay-251` canary。[测试模型](../../../scripts/fixtures/legacy-session-replay-model.mjs)核对实际 HTTP 请求：历史 `tool_calls[].id` 和 `tool_call_id` 必须等于原有 `provider-existing-id-251`，工具名与参数必须保持 `synthetic_lookup` / `{}`，输出必须保持 `Synthetic tool response with the original provider ID.`。身份缺失、冲突或临时生成时，测试不会返回成功响应。
 
@@ -56,9 +56,9 @@ CLI 版本 `2612856` 对两份输入均拒绝发布副本。真实 WebUI 在仅 
 
 | 重启后的 ID 样本与 canary | 重启后的四类组合与 canary |
 |---|---|
-| ![已有 ID 冷打开](./251-existing-id-cold-reopen.jpg) | ![四类组合冷打开](./251-all-legacy-cold-reopen.jpg) |
+| ![已有 ID 冷打开](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-existing-id-cold-reopen.jpg) | ![四类组合冷打开](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/251-all-legacy-cold-reopen.jpg) |
 
-共享 Starter 基线还启用了三个可选 Strategy 扩展，实际状态页显示已安装 Native CLI 0.2.8。一次性真实 CLI 的创建、写入、关键词召回与删除冒烟通过。[Native 状态截图](./baseline-native-status.jpg)。这些检查不表示此补丁修改了 Native 存储。
+共享 Starter 基线还启用了三个可选 Strategy 扩展，实际状态页显示已安装 Native CLI 0.2.8。一次性真实 CLI 的创建、写入、关键词召回与删除冒烟通过。[Native 状态截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-251-legacy-repair/baseline-native-status.jpg)。这些检查不表示此补丁修改了 Native 存储。
 
 ## 契约审计与修复边界
 

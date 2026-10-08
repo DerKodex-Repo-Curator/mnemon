@@ -19,9 +19,9 @@ The values are the browser's computed styles and boxes, measured with every row 
 
 | | Main | Fix |
 |---|---|---|
-| Expanded | ![The fallback row is smaller, grey and indented](./before-expanded.jpg) | ![The fallback row matches the native rows](./after-expanded.jpg) |
-| Open | ![The open fallback row is bold on a darker background](./before-open.jpg) | ![The open fallback row uses DSH's selected-row background](./after-open.jpg) |
-| Collapsed | ![A circle with a larger icon](./before-collapsed.jpg) | ![The same rounded square as DSH's rail rows](./after-collapsed.jpg) |
+| Expanded | ![The fallback row is smaller, grey and indented](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/before-expanded.jpg) | ![The fallback row matches the native rows](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/after-expanded.jpg) |
+| Open | ![The open fallback row is bold on a darker background](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/before-open.jpg) | ![The open fallback row uses DSH's selected-row background](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/after-open.jpg) |
+| Collapsed | ![A circle with a larger icon](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/before-collapsed.jpg) | ![The same rounded square as DSH's rail rows](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/after-collapsed.jpg) |
 
 | Expanded row | DSH Plugins row | Fallback on main | Fallback with the fix |
 |---|---|---|---|

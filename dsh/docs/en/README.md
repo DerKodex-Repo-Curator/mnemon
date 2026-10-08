@@ -4,7 +4,7 @@
 
 dsh-mnemon gives DeepSeek Harness three kinds of memory: **runtime memory** in every turn, **Project Documents** searched when a question needs them, and **Memory Spaces** for durable evidence on the Provider you choose. A main strategy decides how they take part in each turn; you pick it, and any enhancements, on the Plugins page. Start with the default Layered strategy; you never need to manage plugins to use it.
 
-[![The Memory composition board on the dsh-mnemon plugin page](../assets/webui-v0.5.19/en/plugin-composition.jpg)](./guides/ui-guide.md#on-the-plugins-page)
+[![The Memory composition board on the dsh-mnemon plugin page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.19/en/plugin-composition.jpg)](./guides/ui-guide.md#on-the-plugins-page)
 
 ## Use the system
 

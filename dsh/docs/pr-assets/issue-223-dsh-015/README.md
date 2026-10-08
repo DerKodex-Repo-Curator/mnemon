@@ -42,17 +42,17 @@ For the WebUI legacy scenario only, the generated fixture header was assigned th
 
 | Evidence | Image |
 |---|---|
-| Main reproduces both HTTP 405 errors | [Before](./00-before-http-405.png) |
-| No-session Status connects | [Status](./01-status-connected.png) |
-| Runtime create/edit result | [Runtime](./02-runtime-crud.png) |
-| Document creation and search | [Documents](./03-documents-search.png) |
-| Native keyword Recall | [Recall](./04-native-recall.png) |
-| Settings save and connected catalog | [Settings](./05-settings-connected.png) |
-| Builtin uses the same Runtime data | [Builtin](./06-builtin-runtime.png) |
-| Read-only mode after restart | [Read-only](./07-readonly-restart.png) |
-| Chinese Settings | [中文](./10-chinese-settings.png) |
-| Repaired legacy conversation after resume and restart | [Cold reopen](./11-legacy-cold-reopen.png) |
-| Native content retained through restart, before soft deletion | [Content](./12-content-after-restart.png) |
+| Main reproduces both HTTP 405 errors | [Before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/00-before-http-405.png) |
+| No-session Status connects | [Status](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/01-status-connected.png) |
+| Runtime create/edit result | [Runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/02-runtime-crud.png) |
+| Document creation and search | [Documents](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/03-documents-search.png) |
+| Native keyword Recall | [Recall](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/04-native-recall.png) |
+| Settings save and connected catalog | [Settings](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/05-settings-connected.png) |
+| Builtin uses the same Runtime data | [Builtin](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/06-builtin-runtime.png) |
+| Read-only mode after restart | [Read-only](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/07-readonly-restart.png) |
+| Chinese Settings | [中文](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/10-chinese-settings.png) |
+| Repaired legacy conversation after resume and restart | [Cold reopen](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/11-legacy-cold-reopen.png) |
+| Native content retained through restart, before soft deletion | [Content](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/12-content-after-restart.png) |
 
 ## Reproduction and limits
 

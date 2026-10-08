@@ -10,7 +10,7 @@
 
 | 浅色 | 深色 |
 |---|---|
-| ![默认目录](./directory-default.png) | ![默认目录（深色）](./dark-directory-default.png) |
+| ![默认目录](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/directory-default.png) | ![默认目录（深色）](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/dark-directory-default.png) |
 
 ## 自定义需要填写路径
 
@@ -18,17 +18,17 @@
 
 | 自定义，尚未填写 | 填写有误 |
 |---|---|
-| ![自定义的空输入框](./directory-custom.png) | ![相对路径](./directory-invalid.png) |
+| ![自定义的空输入框](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/directory-custom.png) | ![相对路径](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/directory-invalid.png) |
 
 | 可以应用的路径 | 填写有误（深色） |
 |---|---|
-| ![绝对路径](./directory-typed.png) | ![相对路径（深色）](./dark-directory-invalid.png) |
+| ![绝对路径](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/directory-typed.png) | ![相对路径（深色）](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/dark-directory-invalid.png) |
 
 ## 窄屏
 
 | 默认 | 自定义 |
 |---|---|
-| ![默认（窄屏）](./narrow-directory-default.png) | ![自定义（窄屏）](./narrow-directory-custom.png) |
+| ![默认（窄屏）](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/narrow-directory-default.png) | ![自定义（窄屏）](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/narrow-directory-custom.png) |
 
 ## 验证
 

@@ -14,7 +14,7 @@ Existing Entry IDs, the core gate, independent component choices, native configu
 
 | Published baseline: missing components and settings | Candidate: components running and settings available |
 | --- | --- |
-| ![Before](before.png) | ![After](after.png) |
+| ![Before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/before.png) | ![After](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/after.png) |
 
 ## Candidate and environments
 
@@ -26,13 +26,13 @@ Existing Entry IDs, the core gate, independent component choices, native configu
 
 ## Real WebUI acceptance
 
-1. Start the official WebUI with no Mnemon installed. The [clean baseline](web-before-install.png) is a separate fresh profile with the same host version.
-2. Install the candidate root tarball through **Add plugin**, then choose **Enable now** in the [installation result](web-installed.png). The host remains running throughout installation, activation and the operations below.
-3. Open Memory System: [Status is healthy](web-status.png), with the three Sources and default Strategy available.
-4. Create a Runtime entry and read it back: [Runtime result](web-runtime.png).
-5. Create and read a Project Document: [Documents result](web-documents.png).
-6. Create and activate a Native Memory Space in the UI. Write a synthetic fact with `mnemon remember`, confirm it with CLI `recall`, then retrieve that exact fact using **Recall → Basic match** in the [official WebUI](web-recall.png).
-7. Disable and re-enable the bundle. The sidebar returns, Runtime and Documents retain their content, and the [same active Native space and memory remain](web-reenabled.png). The original host PID is still alive; the fixture launched it only once.
+1. Start the official WebUI with no Mnemon installed. The [clean baseline](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-before-install.png) is a separate fresh profile with the same host version.
+2. Install the candidate root tarball through **Add plugin**, then choose **Enable now** in the [installation result](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-installed.png). The host remains running throughout installation, activation and the operations below.
+3. Open Memory System: [Status is healthy](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-status.png), with the three Sources and default Strategy available.
+4. Create a Runtime entry and read it back: [Runtime result](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-runtime.png).
+5. Create and read a Project Document: [Documents result](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-documents.png).
+6. Create and activate a Native Memory Space in the UI. Write a synthetic fact with `mnemon remember`, confirm it with CLI `recall`, then retrieve that exact fact using **Recall → Basic match** in the [official WebUI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-recall.png).
+7. Disable and re-enable the bundle. The sidebar returns, Runtime and Documents retain their content, and the [same active Native space and memory remain](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-reenabled.png). The original host PID is still alive; the fixture launched it only once.
 
 CLI commands used, with `MNEMON_DATA_DIR` pointing to the isolated test directory:
 
@@ -43,11 +43,11 @@ mnemon --data-dir "$MNEMON_DATA_DIR" --store default remember \
 mnemon --data-dir "$MNEMON_DATA_DIR" --store default recall LIVE_INSTALL_ACCEPTANCE --basic
 ```
 
-![Official WebUI retrieves the fact written by the native CLI](web-recall.png)
+![Official WebUI retrieves the fact written by the native CLI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-recall.png)
 
 ## Electron acceptance
 
-Start the bundled DSH host inside Electron with the installed bundle unselected, then enable it using the official WebUI. The [component list](after-components.png), [healthy Status](electron-status.png) and [new Native store](electron-native.png) show successful activation and CLI subprocess execution. The existing upstream `cordis:group` display issue remains documented in [compatibility notes](../../en/reference/compatibility.md#dsh-017-bundle-component-list); it does not represent a stopped Source or Strategy.
+Start the bundled DSH host inside Electron with the installed bundle unselected, then enable it using the official WebUI. The [component list](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/after-components.png), [healthy Status](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/electron-status.png) and [new Native store](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/electron-native.png) show successful activation and CLI subprocess execution. The existing upstream `cordis:group` display issue remains documented in [compatibility notes](../../en/reference/compatibility.md#dsh-017-bundle-component-list); it does not represent a stopped Source or Strategy.
 
 ## Automated verification
 

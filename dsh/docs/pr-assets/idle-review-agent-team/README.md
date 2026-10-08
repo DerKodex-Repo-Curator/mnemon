@@ -18,7 +18,7 @@ The two cadence regressions were run against the baseline implementation before 
 
 | Actual Team error on the baseline | Compatibility pause on the changed build | Partial failure with committed receipts |
 | --- | --- | --- |
-| [Screenshot](./before-team-error.png) | [Screenshot](./after-team-paused.png) | [Screenshot](./after-final-partial-receipts.png) |
+| [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/before-team-error.png) | [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/after-team-paused.png) | [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/after-final-partial-receipts.png) |
 
 The Team WebUI workload has two completed parent turns and five complete overview chunks containing 335 synthetic entries. Its normal eligibility threshold remains 5; the second substantive turn raises the accumulated score to 6. The baseline creates one review child, hits the Team error, and disposes the resident child while retaining its inactive catalog row. The changed build creates no child and makes no review model request during the recorded 190-second quiet interval. [Sanitized WebUI observations](./webui-evidence.json) include package versions, workload, build hashes, disposal evidence, and the telemetry differences between runs.
 
@@ -72,7 +72,7 @@ The first recorded partial-failure run used the default five-minute minimum inte
 
 | Enabled with a five-second interval and cap 1 | Disabled with available budget (cap 2) | Four completed turns and one child |
 | --- | --- | --- |
-| [Screenshot](./after-review-budget.png) | [Screenshot](./after-review-disabled.png) | [Screenshot](./after-bounded-conversation.png) |
+| [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/after-review-budget.png) | [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/after-review-disabled.png) | [Screenshot](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/idle-review-agent-team/after-bounded-conversation.png) |
 
 In Settings, the independent automatic-review switch leaves recall and writeback settings unchanged. Numeric limits are validated before saving; the existing authorized Settings RPC enforces the same bounds and rejects writes in read-only mode. Automated coverage checks those rejection paths, cancellation, missing guard support, foreign child receipts, and denied own-scope plugin tools.
 

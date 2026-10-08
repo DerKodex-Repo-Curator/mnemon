@@ -12,15 +12,15 @@ Recorded on 2026-09-22, using public DSH packages, all 17 packed Mnemon packages
 
 | Run | Observation | Screenshot |
 | --- | --- | --- |
-| Main baseline, DSH 0.1.5-rc.2 | Both edge points hit native handles; left hover mark opacity is 1. | [Before](before-rc2.png) |
-| Scoped fix, DSH 0.1.5-rc.2 | Both handles hidden and noninteractive; edge points hit Builtin; composer visible and directly hittable. | [After RC2](after-rc2.png) |
-| Scoped fix, DSH 0.1.6-alpha.2 | Same native hit-test result. | [After alpha2](after-alpha2.png) |
-| RC2 Runtime Source | Actual body-portal Add dialog accepted a new memory and displayed a success receipt. Both entries survived reload and session reselection. | [Dialog](runtime-dialog-rc2.png), [saved memory](runtime-write-rc2.png) |
-| RC2 resident composer and Chat | Sent a turn while Builtin was open; Chat showed the new turn and completed model reply. Native width dragging also worked. | [Chat](chat-restored-rc2.png) |
+| Main baseline, DSH 0.1.5-rc.2 | Both edge points hit native handles; left hover mark opacity is 1. | [Before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/before-rc2.png) |
+| Scoped fix, DSH 0.1.5-rc.2 | Both handles hidden and noninteractive; edge points hit Builtin; composer visible and directly hittable. | [After RC2](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/after-rc2.png) |
+| Scoped fix, DSH 0.1.6-alpha.2 | Same native hit-test result. | [After alpha2](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/after-alpha2.png) |
+| RC2 Runtime Source | Actual body-portal Add dialog accepted a new memory and displayed a success receipt. Both entries survived reload and session reselection. | [Dialog](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/runtime-dialog-rc2.png), [saved memory](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/runtime-write-rc2.png) |
+| RC2 resident composer and Chat | Sent a turn while Builtin was open; Chat showed the new turn and completed model reply. Native width dragging also worked. | [Chat](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/chat-restored-rc2.png) |
 
-![RC2 baseline with the native width mark over Builtin](before-rc2.png)
+![RC2 baseline with the native width mark over Builtin](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/before-rc2.png)
 
-![RC2 with scoped suppression and the resident composer visible](after-rc2.png)
+![RC2 with scoped suppression and the resident composer visible](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/after-rc2.png)
 
 Actual Chat drags moved the left edge by 60 px in both cohorts and reduced composer width from 943.20 to 823.20 px. The RC2 width was restored with another real drag. After the Runtime write and browser reload, the handle points still hit Builtin and the composer still hit its own input.
 

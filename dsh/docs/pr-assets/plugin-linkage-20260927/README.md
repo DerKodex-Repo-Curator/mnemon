@@ -10,7 +10,7 @@ Before this change, turning on a second main Strategy showed nothing, turning of
 
 | A second main Strategy runs unused | The selected one is off; a fallback composes | No main Strategy runs |
 |---|---|---|
-| ![Idle second main Strategy](./strategy-idle.png) | ![Fallback Strategy](./strategy-fallback.png) | ![No main Strategy](./strategy-none.png) |
+| ![Idle second main Strategy](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/strategy-idle.png) | ![Fallback Strategy](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/strategy-fallback.png) | ![No main Strategy](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/strategy-none.png) |
 
 Choosing a main Strategy turns the other main Strategies off. Enhancements wait while the selected main Strategy is not running, because the Host validates every write against it.
 
@@ -18,23 +18,23 @@ Choosing a main Strategy turns the other main Strategies off. Enhancements wait 
 
 Before this change, with both main Strategy components off, every new turn failed with "no Serving memory generation is available: No Memory Strategy contribution is installed." The same turn now completes; the Host logs once: `[dsh-mnemon] this turn runs without memory: …`.
 
-![A turn completing with no main Strategy](./conversation-without-memory.png)
+![A turn completing with no main Strategy](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/conversation-without-memory.png)
 
 The Memory System says so above its pages, marks each layer **Not in use**, and links to the configuration, where **Turn on “Default three-tier”** restores memory:
 
-![Memory not in use](./status-memory-off.png)
+![Memory not in use](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/status-memory-off.png)
 
 ## Source components switched off
 
 With Documents and Memory Spaces switched off on DSH's list, each memory layer row says its component is off and offers **Turn on component**. Providers are not read while their Source is off, so the group shows why instead of the Host error "Source memory-spaces is not installed"; Mnemon Native no longer claims a missing CLI:
 
-![Layer and Provider notes](./layers-component-off.png)
+![Layer and Provider notes](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/layers-component-off.png)
 
 The workspace keeps the Memory Spaces tab in place, marked **Not running**; Status cards say how to restore the layer instead of "Waiting for workspace" or "Directory not synchronized":
 
 | Status | The stopped page | After the component runs again |
 |---|---|---|
-| ![Status with a stopped layer](./status-component-off.png) | ![Stopped Memory Spaces page](./workspace-stopped.png) | ![Memory Spaces resumed](./workspace-resumed.png) |
+| ![Status with a stopped layer](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/status-component-off.png) | ![Stopped Memory Spaces page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/workspace-stopped.png) | ![Memory Spaces resumed](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/workspace-resumed.png) |
 
 The open stopped page moves to the layer's own page once its Source runs again.
 
@@ -42,7 +42,7 @@ The open stopped page moves to the layer's own page once its Source runs again.
 
 | Fallback | Memory not in use | Component notes | Stopped page |
 |---|---|---|---|
-| ![Fallback, dark](./dark-strategy-fallback.png) | ![Memory not in use, dark](./dark-status-memory-off.png) | ![Component notes, dark](./dark-layers-component-off.png) | ![Stopped page, dark](./dark-workspace-stopped.png) |
+| ![Fallback, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/dark-strategy-fallback.png) | ![Memory not in use, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/dark-status-memory-off.png) | ![Component notes, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/dark-layers-component-off.png) | ![Stopped page, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/plugin-linkage-20260927/dark-workspace-stopped.png) |
 
 ## Verification
 

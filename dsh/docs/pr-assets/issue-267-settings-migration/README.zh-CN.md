@@ -12,7 +12,7 @@ mnemon (dsh-mnemon): TypeError: ctx.settings.register is not a function
 
 插件页面显示根插件异常，依赖它的 Source 和 Strategy 等待依赖。本地激活记录将结果标记为 `reproduced`；选定的 DSH 安装文件已与经过完整性校验的公开 npm tarball 比对。
 
-![基线：Mnemon 激活异常，依赖插件等待依赖](./before-alpha7-activation.png)
+![基线：Mnemon 激活异常，依赖插件等待依赖](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/before-alpha7-activation.png)
 
 准备和启动方法见[打包制品验证夹具](./harness/HARNESS.md)。基线与修复制品使用独立的临时 Profile。仅基线需要 `--legacy-peer-deps`，用于越过其过时的 peer 范围并暴露运行时故障；修复制品使用正常的 peer 解析。
 
@@ -73,15 +73,15 @@ alpha7 重启后间隔仍为 `310000`，Light 保持关闭，Auto Capture/Scoped
 
 真实 Mnemon CLI `0.2.8` 还完成了 WebUI 状态调用，并创建、启用存储正常的原生记忆空间。可选的默认 Ollama 嵌入端点未运行；未使用外部嵌入或模型密钥。
 
-![修复后 alpha7 Root 与 Source 激活](./after-alpha7-activation.png)
-![修复后 alpha7 记忆工作台](./after-alpha7-status.png)
-![核心/UI 设置成功保存，无虚假 revision 冲突](./after-alpha7-settings-saved.png)
-![完整 Host 重启后 Strategy 选择保持](./after-alpha7-host-restart.png)
-![旧 UI 偏好恢复](./after-alpha7-legacy-settings.png)
-![旧偏好在重启后保持](./after-alpha7-legacy-restart.png)
-![通过 WebUI 创建并启用原生 CLI 记忆空间](./after-alpha7-native-cli.png)
-![RC.2 设置保存](./after-rc2-settings-saved.png)
-![Alpha.2 设置保存](./after-alpha2-settings-saved.png)
+![修复后 alpha7 Root 与 Source 激活](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-activation.png)
+![修复后 alpha7 记忆工作台](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-status.png)
+![核心/UI 设置成功保存，无虚假 revision 冲突](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-settings-saved.png)
+![完整 Host 重启后 Strategy 选择保持](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-host-restart.png)
+![旧 UI 偏好恢复](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-legacy-settings.png)
+![旧偏好在重启后保持](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-legacy-restart.png)
+![通过 WebUI 创建并启用原生 CLI 记忆空间](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-native-cli.png)
+![RC.2 设置保存](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-rc2-settings-saved.png)
+![Alpha.2 设置保存](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha2-settings-saved.png)
 
 ## 类型隔离前的 Session 制品验证
 
@@ -95,13 +95,13 @@ Session 修复前，alpha.7 的真实回合报错 `format v4 message requires a 
 
 原始文件夹具也通过了两个迁移阶段：DSH 先重命名、导入 `settings.yaml`，此时 Mnemon 补充标记和 View 尚不存在；完整重启一次 Host 后，预期 UI/View 偏好恢复，迁移标记写入。保留备份字节始终不变。这轮仅设置验证使用 `407eac75`；最终 Session 提交没有改动其设置实现。
 
-![最终 alpha.7 回合完成两个 Mnemon 工具调用](./final-alpha7-session-tools.png)
-![Runtime 工具写入一条可见夹具记忆](./final-alpha7-runtime-write.png)
-![RC.2 完成相同的真实工具调用](./final-rc2-session-tools.png)
-![Alpha.2 完成相同的真实工具调用](./final-alpha2-session-tools.png)
-![完整 Host 重启后的最终 alpha.7 设置](./final-alpha7-settings-restart.png)
-![Builtin 工作台在重启后保留 Runtime 记忆](./final-alpha7-builtin-restart.png)
-![原始文件迁移在下一次 Host 启动完成](./after-alpha7-native-import-restart.png)
+![最终 alpha.7 回合完成两个 Mnemon 工具调用](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-alpha7-session-tools.png)
+![Runtime 工具写入一条可见夹具记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-alpha7-runtime-write.png)
+![RC.2 完成相同的真实工具调用](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-rc2-session-tools.png)
+![Alpha.2 完成相同的真实工具调用](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-alpha2-session-tools.png)
+![完整 Host 重启后的最终 alpha.7 设置](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-alpha7-settings-restart.png)
+![Builtin 工作台在重启后保留 Runtime 记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-alpha7-builtin-restart.png)
+![原始文件迁移在下一次 Host 启动完成](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-native-import-restart.png)
 
 ## 最终类型隔离制品与 WebUI 验证
 
@@ -113,12 +113,12 @@ alpha.7 中，浏览器先准备核心/UI 草稿，再通过独立的即时插�
 
 该实现提交的 [Node 22.19 源码检查](https://github.com/omdsh-dev/dsh-mnemon/actions/runs/35733033143/job/106763140386)和 [Node 24 独立插件制品检查](https://github.com/omdsh-dev/dsh-mnemon/actions/runs/35733033143/job/106763140029)均通过。
 
-![类型隔离后的 alpha.7 制品完成两个工具调用](./v4-alpha7-session-tools.png)
-![类型隔离后的 RC.2 制品完成两个工具调用](./v4-rc2-session-tools.png)
-![类型隔离后的 alpha.2 制品完成两个工具调用](./v4-alpha2-session-tools.png)
-![完整 Host 重启后 Builtin 设置保持](./v4-alpha7-settings-restart.png)
-![审查间隔与组合 Strategy 选择保持](./v4-alpha7-strategies-restart.png)
-![最终 Builtin Runtime 记忆在完整重启后保留](./v4-alpha7-builtin-restart.png)
+![类型隔离后的 alpha.7 制品完成两个工具调用](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-alpha7-session-tools.png)
+![类型隔离后的 RC.2 制品完成两个工具调用](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-rc2-session-tools.png)
+![类型隔离后的 alpha.2 制品完成两个工具调用](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-alpha2-session-tools.png)
+![完整 Host 重启后 Builtin 设置保持](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-alpha7-settings-restart.png)
+![审查间隔与组合 Strategy 选择保持](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-alpha7-strategies-restart.png)
+![最终 Builtin Runtime 记忆在完整重启后保留](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-alpha7-builtin-restart.png)
 
 ## 完整本地检查与范围
 

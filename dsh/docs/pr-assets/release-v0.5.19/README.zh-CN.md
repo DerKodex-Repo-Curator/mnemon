@@ -10,16 +10,16 @@
 
 1. 启动未安装 Mnemon 的宿主，打开**插件 → 添加插件**。
 2. 安装 `dsh-mnemon`。安装源由 DSH 自己选择（测速选择了中国大陆镜像源）。本地 registry 返回 npm 的真实元数据，并把五个变化的版本作为一周前发布的新版本加入，因此未变化的包直接从 npm 下载。
-3. 点击**立即启用**并打开记忆系统。[状态页](status.png)显示 **dsh-mnemon 0.5.19 / 系统正常**，Mnemon Native 显示 **Mnemon 0.2.7**，宿主未重启。
-4. 在运行时记忆中添加 `RELEASE_0519_RUNTIME` 条目，刷新页面后读回：[运行时记忆](runtime.png)。
-5. 在 WebUI 中创建并激活 Mnemon Native 记忆空间“发布验收”：[记忆空间](spaces.png)。用 Mnemon CLI `0.2.7` 写入 `RELEASE_0519_NATIVE` 并用 CLI 召回，再用 WebUI 的**直接检索**找到同一条事实：[检索](recall.png)。
-6. 在每个宿主上另建一个用命令行安装的全新 profile，由真实的 DeepSeek 模型回答第一条消息，写入两条运行时记忆（[回复](live-reply.png)）；**存入记忆**把候选内容交给任务 Agent，任务 Agent 将其存入新建的记忆空间并给出回执（[回执](live-receipt.png)）。
+3. 点击**立即启用**并打开记忆系统。[状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.19/status.png)显示 **dsh-mnemon 0.5.19 / 系统正常**，Mnemon Native 显示 **Mnemon 0.2.7**，宿主未重启。
+4. 在运行时记忆中添加 `RELEASE_0519_RUNTIME` 条目，刷新页面后读回：[运行时记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.19/runtime.png)。
+5. 在 WebUI 中创建并激活 Mnemon Native 记忆空间“发布验收”：[记忆空间](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.19/spaces.png)。用 Mnemon CLI `0.2.7` 写入 `RELEASE_0519_NATIVE` 并用 CLI 召回，再用 WebUI 的**直接检索**找到同一条事实：[检索](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.19/recall.png)。
+6. 在每个宿主上另建一个用命令行安装的全新 profile，由真实的 DeepSeek 模型回答第一条消息，写入两条运行时记忆（[回复](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.19/live-reply.png)）；**存入记忆**把候选内容交给任务 Agent，任务 Agent 将其存入新建的记忆空间并给出回执（[回执](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.19/live-receipt.png)）。
 
 两个宿主的每一步均通过，无控制台错误，每个宿主进程只启动一次。[validation.json](validation.json) 记录了制品哈希、全部 18 个包的安装版本与各宿主的结果。profile 与记忆均为合成数据；API Key 仅通过环境变量交给 DSH。
 
-![DSH 0.2.0-rc.1 上的状态页](status.png)
+![DSH 0.2.0-rc.1 上的状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.19/status.png)
 
-![直接检索找到 CLI 写入的 Native 记忆](recall.png)
+![直接检索找到 CLI 写入的 Native 记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.19/recall.png)
 
 ## 验证与发布边界
 

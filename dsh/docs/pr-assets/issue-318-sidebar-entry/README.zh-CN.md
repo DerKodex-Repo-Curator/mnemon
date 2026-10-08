@@ -19,9 +19,9 @@
 
 | | main | 修复后 |
 |---|---|---|
-| 展开 | ![兜底行字更小、偏灰且缩进](./before-expanded.jpg) | ![兜底行与原生行一致](./after-expanded.jpg) |
-| 打开 | ![打开时加粗且背景更深](./before-open.jpg) | ![打开时使用 DSH 选中行的背景](./after-open.jpg) |
-| 折叠 | ![圆形且图标更大](./before-collapsed.jpg) | ![与 DSH 折叠行相同的圆角方形](./after-collapsed.jpg) |
+| 展开 | ![兜底行字更小、偏灰且缩进](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/before-expanded.jpg) | ![兜底行与原生行一致](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/after-expanded.jpg) |
+| 打开 | ![打开时加粗且背景更深](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/before-open.jpg) | ![打开时使用 DSH 选中行的背景](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/after-open.jpg) |
+| 折叠 | ![圆形且图标更大](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/before-collapsed.jpg) | ![与 DSH 折叠行相同的圆角方形](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-318-sidebar-entry/after-collapsed.jpg) |
 
 | 展开状态 | DSH“插件”行 | main 的兜底入口 | 修复后的兜底入口 |
 |---|---|---|---|

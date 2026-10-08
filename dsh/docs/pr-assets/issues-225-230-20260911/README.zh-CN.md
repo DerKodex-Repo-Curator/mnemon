@@ -18,7 +18,7 @@
 
 | 修复前 | 继续对话并冷打开后 |
 |---|---|
-| ![严格迁移拒绝](./225-before-repair.png) | ![两回合均保留](./225-cold-reopen.png) |
+| ![严格迁移拒绝](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/225-before-repair.png) | ![两回合均保留](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/225-cold-reopen.png) |
 
 已有[修复与生命周期测试](../../../tests/legacy-session-repair.spec.ts)通过，覆盖普通和压缩日志的严格迁移、副本独占发布、字节保留、损坏输入拒绝与冷打开。生命周期测试使用已发布 v0 payload validator 检查新 instructions/recall，并验证其他插件上下文消息得到保留。已有受影响日志请按[恢复步骤](../../zh-CN/guides/operations.md#dsh-015-兼容与旧会话恢复)处理；只升级插件不会修复已有制品。
 
@@ -30,13 +30,13 @@ issue-230 独立 worktree 通过 `--strategy-extensions` 启用完整 Starter �
 
 | 重启后的状态 | 设置 |
 |---|---|
-| ![Native 0.2.7 已连接](./230-restarted-status.png) | ![设置已连接](./230-current-settings.png) |
+| ![Native 0.2.7 已连接](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/230-restarted-status.png) | ![设置已连接](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/230-current-settings.png) |
 
 | 关键词检索 | 重启后保留的内容 |
 |---|---|
-| ![召回真实 CLI 写入的事实](./230-native-recall.png) | ![持久化 Native 内容](./230-content-after-restart.png) |
+| ![召回真实 CLI 写入的事实](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/230-native-recall.png) | ![持久化 Native 内容](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issues-225-230-20260911/230-content-after-restart.png) |
 
-未重新搭建 #230 原报告中的 0.5.5 安装和缺失 CLI 环境。早期 HTTP 405 的前后对照仍由其实际 revision 对应的 [PR #226 验证记录](../issue-223-dsh-015/README.zh-CN.md)和[原始失败截图](../issue-223-dsh-015/00-before-http-405.png)负责。本次验证已修复的当前状态及真实 CLI 发现，不声称新增实现修复。
+未重新搭建 #230 原报告中的 0.5.5 安装和缺失 CLI 环境。早期 HTTP 405 的前后对照仍由其实际 revision 对应的 [PR #226 验证记录](../issue-223-dsh-015/README.zh-CN.md)和[原始失败截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-223-dsh-015/00-before-http-405.png)负责。本次验证已修复的当前状态及真实 CLI 发现，不声称新增实现修复。
 
 ## 命令与限制
 

@@ -10,31 +10,31 @@
 
 | 面板 | 存储与界面 |
 |---|---|
-| ![带齿轮的面板](./pages-board.png) | ![存储与界面](./pages-storage-interface.png) |
+| ![带齿轮的面板](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-board.png) | ![存储与界面](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-storage-interface.png) |
 
 改动存储位置需要点击其“应用”，应用行说明后果：
 
-![存储的应用行](./pages-storage-apply.png)
+![存储的应用行](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-storage-apply.png)
 
 ## 设置位于各自组件的页面
 
 | 运行时记忆：USER.md 的位置 | 记忆空间：Provider 与嵌入 |
 |---|---|
-| ![运行时记忆页](./pages-runtime.png) | ![记忆空间页](./pages-spaces.png) |
+| ![运行时记忆页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-runtime.png) | ![记忆空间页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-spaces.png) |
 
 | 默认三层：后台任务 | 审查参数等待其“应用” |
 |---|---|
-| ![默认三层页](./pages-three-tier.png) | ![编辑中的审查参数](./pages-three-tier-limits.png) |
+| ![默认三层页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-three-tier.png) | ![编辑中的审查参数](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-three-tier-limits.png) |
 
 ## 名称即入口
 
 | 行内的关联标签 | 关联名称在原处打开，并可返回 |
 |---|---|
-| ![关联标签](./pages-chips.png) | ![从主动记录打开记忆空间](./pages-related.png) |
+| ![关联标签](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-chips.png) | ![从主动记录打开记忆空间](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-related.png) |
 
 声明的选项改动后才出现“应用”：
 
-![编辑中的轻量上下文选项](./pages-options-edit.png)
+![编辑中的轻量上下文选项](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/pages-options-edit.png)
 
 ## 记忆系统使用组件声明的名称
 
@@ -42,7 +42,7 @@
 
 | 浅色 | 深色 |
 |---|---|
-| ![状态页](./workspace-status.png) | ![状态页，深色](./dark-workspace-status.png) |
+| ![状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/workspace-status.png) | ![状态页，深色](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/dark-workspace-status.png) |
 
 ## DSH 组件列表打开相同的页面
 
@@ -50,21 +50,21 @@
 
 | 之前的 DSH 列表（包名） | 现在的 DSH 列表 |
 |---|---|
-| ![之前的列表](./rows-list-before.png) | ![现在的列表](./rows-list.png) |
+| ![之前的列表](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/rows-list-before.png) | ![现在的列表](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/rows-list.png) |
 
 | DSH 行页面中的“默认三层” | 关联组件在其上打开 |
 |---|---|
-| ![行页面](./row-page.png) | ![在行页面上打开的关联组件](./row-page-related.png) |
+| ![行页面](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/row-page.png) | ![在行页面上打开的关联组件](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/row-page-related.png) |
 
 ## 深色主题与窄列
 
 | 面板 | 存储与界面 | 审查参数 |
 |---|---|---|
-| ![面板，深色](./dark-pages-board.png) | ![存储，深色](./dark-pages-storage-interface.png) | ![审查参数，深色](./dark-pages-three-tier-limits.png) |
+| ![面板，深色](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/dark-pages-board.png) | ![存储，深色](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/dark-pages-storage-interface.png) | ![审查参数，深色](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/dark-pages-three-tier-limits.png) |
 
 | 面板，420 px | 存储应用行，420 px | 审查参数，420 px |
 |---|---|---|
-| ![面板，窄列](./narrow-pages-board.png) | ![存储，窄列](./narrow-pages-storage-apply.png) | ![审查参数，窄列](./narrow-pages-three-tier-limits.png) |
+| ![面板，窄列](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/narrow-pages-board.png) | ![存储，窄列](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/narrow-pages-storage-apply.png) | ![审查参数，窄列](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/component-pages-20260927/narrow-pages-three-tier-limits.png) |
 
 ## 验证
 

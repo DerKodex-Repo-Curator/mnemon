@@ -52,16 +52,16 @@ The fixture scripts only model replies. DSH `0.1.2-rc.1`, tool filtering, review
 
 Original revision and independent document list after review / 审查后原文版本和独立档案列表：
 
-![Original revision remains 1 / 原文版本保持为 1](./01-original-preserved.png)
+![Original revision remains 1 / 原文版本保持为 1](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr199-document-protection/01-original-preserved.png)
 
 Original implementation, rollback steps and preservation marker / 保留的原实现、回滚步骤和标记：
 
-![Original content preserved / 原文内容保留](./02-original-content.png)
+![Original content preserved / 原文内容保留](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr199-document-protection/02-original-content.png)
 
 Independent supplement references the original / 独立补充引用原档案：
 
-![Separate supplement / 独立补充](./03-separate-supplement.png)
+![Separate supplement / 独立补充](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr199-document-protection/03-separate-supplement.png)
 
 Explicit UI edit succeeds with revision 2 / 界面明确编辑成功，修订为 2：
 
-![Explicit edit succeeds / 显式编辑成功](./04-explicit-edit.png)
+![Explicit edit succeeds / 显式编辑成功](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr199-document-protection/04-explicit-edit.png)

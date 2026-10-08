@@ -14,8 +14,8 @@
 
 | 语言 | 修改前 | 本次实现 |
 |---|---|---|
-| 中文 | [PR #286 原始证据](../pr-286-plugin-metadata/plugins-zh.jpg) | [可组合记忆](./plugins-zh.png) |
-| 英文 | [PR #286 原始证据](../pr-286-plugin-metadata/plugins-en.jpg) | [新版说明](./plugins-en.png) |
+| 中文 | [PR #286 原始证据](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr-286-plugin-metadata/plugins-zh.jpg) | [可组合记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composable-naming-20260927/plugins-zh.png) |
+| 英文 | [PR #286 原始证据](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr-286-plugin-metadata/plugins-en.jpg) | [新版说明](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composable-naming-20260927/plugins-en.png) |
 
 截图保留正式 DSH 的分组展示问题，已由 [dsh-external/issues#649](https://github.com/dsh-external/issues/issues/649) 跟踪。本次文案修改没有替换插件管理器。
 

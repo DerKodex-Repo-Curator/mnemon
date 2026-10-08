@@ -12,15 +12,15 @@
 
 | 运行 | 观测结果 | 截图 |
 | --- | --- | --- |
-| main 基线，DSH 0.1.5-rc.2 | 两侧命中原生手柄；左侧悬停标记透明度为 1。 | [修复前](before-rc2.png) |
-| 限定归属的修复，DSH 0.1.5-rc.2 | 两侧手柄隐藏且不接收指针事件；原手柄位置命中 Builtin；输入框可见且直接命中自身。 | [RC2 修复后](after-rc2.png) |
-| 限定归属的修复，DSH 0.1.6-alpha.2 | 原生浏览器命中测试结果相同。 | [alpha2 修复后](after-alpha2.png) |
-| RC2 Runtime Source | 实际打开挂载于 body 的新增对话框，写入新记忆并显示成功回执。刷新并重新选择会话后，两条记忆仍存在。 | [对话框](runtime-dialog-rc2.png)、[保存结果](runtime-write-rc2.png) |
-| RC2 常驻输入框与 Chat | 在 Builtin 打开时发送新消息；Chat 显示新增用户消息与完成的模型回复。原生宽度拖动也正常。 | [Chat](chat-restored-rc2.png) |
+| main 基线，DSH 0.1.5-rc.2 | 两侧命中原生手柄；左侧悬停标记透明度为 1。 | [修复前](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/before-rc2.png) |
+| 限定归属的修复，DSH 0.1.5-rc.2 | 两侧手柄隐藏且不接收指针事件；原手柄位置命中 Builtin；输入框可见且直接命中自身。 | [RC2 修复后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/after-rc2.png) |
+| 限定归属的修复，DSH 0.1.6-alpha.2 | 原生浏览器命中测试结果相同。 | [alpha2 修复后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/after-alpha2.png) |
+| RC2 Runtime Source | 实际打开挂载于 body 的新增对话框，写入新记忆并显示成功回执。刷新并重新选择会话后，两条记忆仍存在。 | [对话框](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/runtime-dialog-rc2.png)、[保存结果](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/runtime-write-rc2.png) |
+| RC2 常驻输入框与 Chat | 在 Builtin 打开时发送新消息；Chat 显示新增用户消息与完成的模型回复。原生宽度拖动也正常。 | [Chat](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/chat-restored-rc2.png) |
 
-![RC2 基线：原生宽度标记覆盖 Builtin](before-rc2.png)
+![RC2 基线：原生宽度标记覆盖 Builtin](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/before-rc2.png)
 
-![RC2 修复后：限定范围隐藏手柄，常驻输入框可见](after-rc2.png)
+![RC2 修复后：限定范围隐藏手柄，常驻输入框可见](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-265-builtin-width-handles/after-rc2.png)
 
 两个版本中都实际拖动了 Chat 左边界 60 px，输入框宽度从 943.20 px 缩至 823.20 px。RC2 再次通过真实拖动恢复原宽度。Runtime 写入并刷新浏览器后，原手柄位置仍命中 Builtin，输入框仍命中自身。
 

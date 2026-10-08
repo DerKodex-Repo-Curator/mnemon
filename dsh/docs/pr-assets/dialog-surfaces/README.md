@@ -27,15 +27,15 @@ Screenshots come from the real npm WebUI in an independent worktree: DSH `0.1.1-
 
 | 场景 / Scenario | 修复前 / Before | 修复后 / After |
 | --- | --- | --- |
-| 深色移动端添加热记忆 / Dark mobile runtime, 680 × 900 | ![Before dark mobile runtime](./before-dark-mobile-runtime.jpg) | ![After dark mobile runtime](./after-dark-mobile-runtime.jpg) |
-| 深色桌面添加热记忆 / Dark desktop runtime, 1280 × 900 | ![Before dark desktop runtime](./before-dark-desktop-runtime.jpg) | ![After dark desktop runtime](./after-dark-desktop-runtime.jpg) |
-| 浅色桌面添加热记忆 / Light desktop runtime, 1280 × 900 | ![Before light desktop runtime](./before-light-desktop-runtime.jpg) | ![After light desktop runtime](./after-light-desktop-runtime.jpg) |
+| 深色移动端添加热记忆 / Dark mobile runtime, 680 × 900 | ![Before dark mobile runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dialog-surfaces/before-dark-mobile-runtime.jpg) | ![After dark mobile runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dialog-surfaces/after-dark-mobile-runtime.jpg) |
+| 深色桌面添加热记忆 / Dark desktop runtime, 1280 × 900 | ![Before dark desktop runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dialog-surfaces/before-dark-desktop-runtime.jpg) | ![After dark desktop runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dialog-surfaces/after-dark-desktop-runtime.jpg) |
+| 浅色桌面添加热记忆 / Light desktop runtime, 1280 × 900 | ![Before light desktop runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dialog-surfaces/before-light-desktop-runtime.jpg) | ![After light desktop runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dialog-surfaces/after-light-desktop-runtime.jpg) |
 
 其他修复后截图 / Additional patched screenshots:
 
 | 创建档案桌面 / Desktop document creation, 1280 × 900 | 创建档案窄屏 / Narrow document creation, 390 × 844 | 沉淀策略 / Persistence strategy, 1280 × 900 |
 | --- | --- | --- |
-| ![After desktop document creation](./after-dark-desktop-document.jpg) | ![After narrow document creation](./after-dark-mobile-document.jpg) | ![After persistence strategy](./after-dark-strategy.jpg) |
+| ![After desktop document creation](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dialog-surfaces/after-dark-desktop-document.jpg) | ![After narrow document creation](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dialog-surfaces/after-dark-mobile-document.jpg) | ![After persistence strategy](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dialog-surfaces/after-dark-strategy.jpg) |
 
 ## 排查范围 / Audit coverage
 

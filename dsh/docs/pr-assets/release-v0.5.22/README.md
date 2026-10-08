@@ -10,16 +10,16 @@ On unmodified npm DSH `0.2.0-rc.2` (npm `latest` and `next`) and `0.1.7-rc.2`, e
 
 1. Started the host without Mnemon installed and opened **Plugins → Add plugin**.
 2. Installed `dsh-mnemon`. DSH chose the install source itself; its speed check picked the mainland China mirror. A loopback registry answered with npm's real metadata plus the new version. The profile then held dsh-mnemon 0.5.22 with every component at its pinned npm version.
-3. Clicked **Enable now**; the Memory System appeared without a host restart. [Status](status.png) reports **dsh-mnemon 0.5.22 / System nominal**, and Mnemon Native names **Mnemon 0.2.9**.
-4. Added a Runtime memory entry and read it back after reloading the page: [Runtime](runtime.png).
-5. Created and activated a Mnemon Native space in the WebUI: [Memory Spaces](spaces.png). Wrote a fact with Mnemon CLI `0.2.9`, recalled it with the CLI, then found the same fact with the WebUI's **Direct recall**: [Recall](recall.png).
+3. Clicked **Enable now**; the Memory System appeared without a host restart. [Status](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/status.png) reports **dsh-mnemon 0.5.22 / System nominal**, and Mnemon Native names **Mnemon 0.2.9**.
+4. Added a Runtime memory entry and read it back after reloading the page: [Runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/runtime.png).
+5. Created and activated a Mnemon Native space in the WebUI: [Memory Spaces](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/spaces.png). Wrote a fact with Mnemon CLI `0.2.9`, recalled it with the CLI, then found the same fact with the WebUI's **Direct recall**: [Recall](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/recall.png).
 6. Opened **Check versions**. dsh-mnemon lists 0.5.22 as installed and names DSH's own plugin installer as its update route. Before publication npm's latest is still 0.5.21, so the dialog marks 0.5.22 as a local version and offers no update. No restart notice appeared after **Enable now**, since the version that runs is the one installed.
 
 Both hosts passed every step without a host warning or console error, and each host process was started once. [validation.json](validation.json) has the package digest and each host's results. Profiles and memories are synthetic.
 
-![Status on DSH 0.2.0-rc.2](status.png)
+![Status on DSH 0.2.0-rc.2](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/status.png)
 
-![The CLI-written Native memory found by Direct recall](recall.png)
+![The CLI-written Native memory found by Direct recall](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.22/recall.png)
 
 ## The fixes in this release
 

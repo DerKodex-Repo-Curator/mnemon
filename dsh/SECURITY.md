@@ -17,7 +17,7 @@ Please **do not open a public issue** for security vulnerabilities.
 
 Report privately through one of these channels, in order of preference:
 
-1. **GitHub Security Advisories** — use the “Report a vulnerability” flow on the [Security tab](https://github.com/omdsh-dev/dsh-mnemon/security) of this repository (private vulnerability reporting).
+1. **GitHub Security Advisories** — use the “Report a vulnerability” flow on the [Security tab](https://github.com/mnemon-dev/mnemon/security) of this repository (private vulnerability reporting).
 2. **Email** — `grivn.wang@gmail.com` (maintainer). Use a subject prefix like `[dsh-mnemon security]`.
 
 Please include, when possible:
@@ -72,7 +72,7 @@ Out of scope:
 
 请**不要**为安全漏洞开公开 issue，按优先级使用以下渠道私下报告：
 
-1. **GitHub Security Advisories**：在本仓库 [Security 页](https://github.com/omdsh-dev/dsh-mnemon/security) 使用“Report a vulnerability”（私密漏洞报告）。
+1. **GitHub Security Advisories**：在本仓库 [Security 页](https://github.com/mnemon-dev/mnemon/security) 使用“Report a vulnerability”（私密漏洞报告）。
 2. **邮件**：`grivn.wang@gmail.com`（维护者），主题加 `[dsh-mnemon security]` 前缀。
 
 请尽量附上：受影响版本、最小复现或 PoC、是否已被公开利用、披露偏好（协调披露 / 署名 / 保密期）。

@@ -19,15 +19,15 @@ Captured on 2026-09-07 from the real local DSH WebUI, using the `codex/memory-sp
 
 | Surface | English | 中文 |
 |---|---|---|
-| Status | [Status](./en/status.jpg) | [状态](./zh-CN/status.jpg) |
-| Runtime | [Runtime](./en/runtime.jpg) | [运行时](./zh-CN/runtime.jpg) |
-| Documents | [Documents](./en/documents.jpg) | [档案](./zh-CN/documents.jpg) |
-| Memory Spaces | [Directory](./en/spaces.jpg) | [记忆空间目录](./zh-CN/spaces.jpg) |
-| Content | [Content](./en/content.jpg) | [内容](./zh-CN/content.jpg) |
-| Create | [Form](./en/create.jpg) | [创建表单](./zh-CN/create.jpg) |
-| Settings | [Layers and enhancements](./en/enhancements.jpg) | [记忆层与增强](./zh-CN/enhancements.jpg) |
-| Narrow directory | [390 px directory](./en/spaces-mobile.jpg) | [390 像素目录](./zh-CN/spaces-mobile.jpg) |
-| Narrow create | [390 px form](./en/create-mobile.jpg) | [390 像素表单](./zh-CN/create-mobile.jpg) |
+| Status | [Status](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/en/status.jpg) | [状态](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/zh-CN/status.jpg) |
+| Runtime | [Runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/en/runtime.jpg) | [运行时](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/zh-CN/runtime.jpg) |
+| Documents | [Documents](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/en/documents.jpg) | [档案](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/zh-CN/documents.jpg) |
+| Memory Spaces | [Directory](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/en/spaces.jpg) | [记忆空间目录](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/zh-CN/spaces.jpg) |
+| Content | [Content](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/en/content.jpg) | [内容](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/zh-CN/content.jpg) |
+| Create | [Form](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/en/create.jpg) | [创建表单](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/zh-CN/create.jpg) |
+| Settings | [Layers and enhancements](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/en/enhancements.jpg) | [记忆层与增强](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/zh-CN/enhancements.jpg) |
+| Narrow directory | [390 px directory](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/en/spaces-mobile.jpg) | [390 像素目录](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/zh-CN/spaces-mobile.jpg) |
+| Narrow create | [390 px form](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/en/create-mobile.jpg) | [390 像素表单](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/memory-space-terminology/zh-CN/create-mobile.jpg) |
 
 ## Layout findings
 

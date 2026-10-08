@@ -12,7 +12,7 @@ mnemon (dsh-mnemon): TypeError: ctx.settings.register is not a function
 
 The plugin page showed the root in an error state and dependent Sources and Strategies waiting for their dependency. The local activation record identifies this result as `reproduced`; selected installed DSH files were compared with integrity-verified public npm tarballs.
 
-![Baseline: Mnemon activation fails and dependent plugins wait](./before-alpha7-activation.png)
+![Baseline: Mnemon activation fails and dependent plugins wait](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/before-alpha7-activation.png)
 
 See the [packed-artifact harness](./harness/HARNESS.md) for preparation and launch instructions. Baseline and fixed artifacts use separate disposable profiles. Only the baseline requires `--legacy-peer-deps` to get past its outdated peer range and expose the runtime failure; the fixed consumer uses normal peer resolution.
 
@@ -73,15 +73,15 @@ The retained-backup fixture restored recall limit `7`, turn bar on/save action o
 
 The real Mnemon CLI `0.2.8` also answered the WebUI status operation and created/enabled a native memory space with normal storage. The optional default Ollama embedding endpoint was not running; no external embedding or model key was used.
 
-![Fixed alpha7 root and Source activation](./after-alpha7-activation.png)
-![Fixed alpha7 memory workbench](./after-alpha7-status.png)
-![Core/UI settings saved without a false revision conflict](./after-alpha7-settings-saved.png)
-![Strategy choices survive a complete Host restart](./after-alpha7-host-restart.png)
-![Retained UI preferences after recovery](./after-alpha7-legacy-settings.png)
-![Retained preferences survive restart](./after-alpha7-legacy-restart.png)
-![Native CLI space created and enabled through WebUI](./after-alpha7-native-cli.png)
-![RC.2 settings save](./after-rc2-settings-saved.png)
-![Alpha.2 settings save](./after-alpha2-settings-saved.png)
+![Fixed alpha7 root and Source activation](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-activation.png)
+![Fixed alpha7 memory workbench](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-status.png)
+![Core/UI settings saved without a false revision conflict](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-settings-saved.png)
+![Strategy choices survive a complete Host restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-host-restart.png)
+![Retained UI preferences after recovery](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-legacy-settings.png)
+![Retained preferences survive restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-legacy-restart.png)
+![Native CLI space created and enabled through WebUI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-native-cli.png)
+![RC.2 settings save](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-rc2-settings-saved.png)
+![Alpha.2 settings save](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha2-settings-saved.png)
 
 ## Session fix: packed verification before type isolation
 
@@ -95,13 +95,13 @@ On these alpha.7 artifacts, the browser selected Builtin display mode, disabled 
 
 The separate original-file fixture also passed both migration stages: DSH first renamed/imported `settings.yaml`, with Mnemon's supplemental marker and View absent; one full Host restart then restored the expected UI/View preferences and wrote the marker. The retained backup remained byte-for-byte unchanged. That settings-only run used `407eac75`; the final Session commit does not change its settings implementation.
 
-![Final alpha.7 turn completes both Mnemon tool calls](./final-alpha7-session-tools.png)
-![The Runtime tool writes one visible fixture memory](./final-alpha7-runtime-write.png)
-![RC.2 completes the same real tool calls](./final-rc2-session-tools.png)
-![Alpha.2 completes the same real tool calls](./final-alpha2-session-tools.png)
-![Final alpha.7 settings after a complete Host restart](./final-alpha7-settings-restart.png)
-![Builtin workbench retains the Runtime memory after restart](./final-alpha7-builtin-restart.png)
-![Original-file migration completes on the next Host start](./after-alpha7-native-import-restart.png)
+![Final alpha.7 turn completes both Mnemon tool calls](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-alpha7-session-tools.png)
+![The Runtime tool writes one visible fixture memory](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-alpha7-runtime-write.png)
+![RC.2 completes the same real tool calls](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-rc2-session-tools.png)
+![Alpha.2 completes the same real tool calls](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-alpha2-session-tools.png)
+![Final alpha.7 settings after a complete Host restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-alpha7-settings-restart.png)
+![Builtin workbench retains the Runtime memory after restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/final-alpha7-builtin-restart.png)
+![Original-file migration completes on the next Host start](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/after-alpha7-native-import-restart.png)
 
 ## Final type-isolated artifacts and WebUI verification
 
@@ -113,12 +113,12 @@ On alpha.7, the browser prepared Core/UI edits, switched Light off through the s
 
 [Source verification on Node 22.19](https://github.com/omdsh-dev/dsh-mnemon/actions/runs/35733033143/job/106763140386) and [packed plugin verification on Node 24](https://github.com/omdsh-dev/dsh-mnemon/actions/runs/35733033143/job/106763140029) passed for this implementation commit.
 
-![Type-isolated alpha.7 artifacts complete both tools](./v4-alpha7-session-tools.png)
-![Type-isolated RC.2 artifacts complete both tools](./v4-rc2-session-tools.png)
-![Type-isolated alpha.2 artifacts complete both tools](./v4-alpha2-session-tools.png)
-![Builtin setting persists after full Host restart](./v4-alpha7-settings-restart.png)
-![Interval and composed Strategy choices persist](./v4-alpha7-strategies-restart.png)
-![Final Builtin Runtime memory survives full Host restart](./v4-alpha7-builtin-restart.png)
+![Type-isolated alpha.7 artifacts complete both tools](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-alpha7-session-tools.png)
+![Type-isolated RC.2 artifacts complete both tools](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-rc2-session-tools.png)
+![Type-isolated alpha.2 artifacts complete both tools](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-alpha2-session-tools.png)
+![Builtin setting persists after full Host restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-alpha7-settings-restart.png)
+![Interval and composed Strategy choices persist](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-alpha7-strategies-restart.png)
+![Final Builtin Runtime memory survives full Host restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-267-settings-migration/v4-alpha7-builtin-restart.png)
 
 ## Complete local checks and limits
 

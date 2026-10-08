@@ -10,7 +10,7 @@ The row showed where memory lives and, under it, an empty field that meant the d
 
 | Light | Dark |
 |---|---|
-| ![Default directory](./directory-default.png) | ![Default directory, dark](./dark-directory-default.png) |
+| ![Default directory](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/directory-default.png) | ![Default directory, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/dark-directory-default.png) |
 
 ## Custom takes a path
 
@@ -18,17 +18,17 @@ Choosing Custom opens an empty field with the cursor in it. Apply waits for a pa
 
 | Custom, empty | Typed wrong |
 |---|---|
-| ![Custom with an empty field](./directory-custom.png) | ![A relative path](./directory-invalid.png) |
+| ![Custom with an empty field](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/directory-custom.png) | ![A relative path](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/directory-invalid.png) |
 
 | A path ready to apply | Typed wrong, dark |
 |---|---|
-| ![An absolute path](./directory-typed.png) | ![A relative path, dark](./dark-directory-invalid.png) |
+| ![An absolute path](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/directory-typed.png) | ![A relative path, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/dark-directory-invalid.png) |
 
 ## Narrow
 
 | Default | Custom |
 |---|---|
-| ![Default, narrow](./narrow-directory-default.png) | ![Custom, narrow](./narrow-directory-custom.png) |
+| ![Default, narrow](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/narrow-directory-default.png) | ![Custom, narrow](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/data-directory-20260927/narrow-directory-custom.png) |
 
 ## Verification
 

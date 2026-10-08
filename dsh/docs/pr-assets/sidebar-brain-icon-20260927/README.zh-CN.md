@@ -8,9 +8,9 @@
 
 | 修改前 | 修改后 |
 |---|---|
-| [当前名称与数据库图标](../sidebar-icon-weight-20260927/after-combined.png) | [当前名称与大脑图标](./expanded.png) |
+| [当前名称与数据库图标](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon-weight-20260927/after-combined.png) | [当前名称与大脑图标](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-brain-icon-20260927/expanded.png) |
 
-[折叠入口](./collapsed.png)可打开状态正常的记忆系统。已在真实 WebUI 验证展开、折叠导航以及返回“插件”页；插件列表仍显示“可组合记忆 (dsh-mnemon)”。
+[折叠入口](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-brain-icon-20260927/collapsed.png)可打开状态正常的记忆系统。已在真实 WebUI 验证展开、折叠导航以及返回“插件”页；插件列表仍显示“可组合记忆 (dsh-mnemon)”。
 
 环境：macOS、Node 24.20.0、pnpm 11.19.0、正式 DSH `0.1.7-rc.2`、Mnemon CLI `0.2.9`、本分支 Root 制品及十六个未修改的伴随插件制品。Root SHA-256：`3f0d0008471f565abd9d9dcb415df3ba8fb46b3f28d030ffa6ab8f6f7a0094cc`。profile、工作区和记忆均为隔离测试数据，未调用真实模型 API。
 

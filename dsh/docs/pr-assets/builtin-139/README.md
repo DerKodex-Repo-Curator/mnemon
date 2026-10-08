@@ -65,9 +65,9 @@ Limitations: no paid model or remote Provider validation. SSH navigation only; i
 
 | 场景 / Scenario | 截图 / Screenshot |
 |---|---|
-| 原版 0.4.1 忽略旧偏好 / Unmodified 0.4.1 ignores the old preference | [Before](./before-0.4.1-conversation.png) |
-| 规范 Builtin 配置 / Canonical Builtin setting | [Settings](../../assets/screenshots/settings-entry-placement.png) |
-| Builtin 中读取 A / Read A through Builtin | [Builtin](./after-builtin-runtime.png) |
-| Sidebar 中读取相同内容 / Same content through Sidebar | [Sidebar](./after-sidebar-runtime.png) |
-| B 的隔离记忆 / Isolated B memory | [Workspace B](./after-workspace-b-isolated.png) |
-| 真实 Native 状态 / Real Native status | [Status](./after-native-status.png) |
+| 原版 0.4.1 忽略旧偏好 / Unmodified 0.4.1 ignores the old preference | [Before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/builtin-139/before-0.4.1-conversation.png) |
+| 规范 Builtin 配置 / Canonical Builtin setting | [Settings](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/screenshots/settings-entry-placement.png) |
+| Builtin 中读取 A / Read A through Builtin | [Builtin](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/builtin-139/after-builtin-runtime.png) |
+| Sidebar 中读取相同内容 / Same content through Sidebar | [Sidebar](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/builtin-139/after-sidebar-runtime.png) |
+| B 的隔离记忆 / Isolated B memory | [Workspace B](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/builtin-139/after-workspace-b-isolated.png) |
+| 真实 Native 状态 / Real Native status | [Status](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/builtin-139/after-native-status.png) |

@@ -35,7 +35,7 @@ MNEMON_CLI_PATH=/absolute/path/to/mnemon pnpm e2e:serve --runtime-write-scope
 
 | 图谱 | 内容 |
 |---|---|
-| ![空间图谱显示连接不可用](./before-graph.jpg) | ![内容显示 0 条记忆](./before-contents.jpg) |
+| ![空间图谱显示连接不可用](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/before-graph.jpg) | ![内容显示 0 条记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/before-contents.jpg) |
 
 空间卡片显示 900 条记忆，因为 `status` 的输出很小。图谱区域显示“连接不可用”，并称该空间只支持按需查询。内容页显示 0 条记忆，并建议先存入第一条记忆。
 
@@ -45,7 +45,7 @@ MNEMON_CLI_PATH=/absolute/path/to/mnemon pnpm e2e:serve --runtime-write-scope
 mnemon output exceeded 2097152 bytes. Install Mnemon and ensure "mnemon" is on PATH, or set MNEMON_CLI_PATH or mnemon.cliPath.
 ```
 
-![添加 C 失败并提示安装](./before-capacity-error.jpg)
+![添加 C 失败并提示安装](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/before-capacity-error.jpg)
 
 没有任何写入：库仍是 900 条，工作记忆仍是 A 和 B。之后每次需要腾出空间的添加都以同样方式失败，工作记忆因此一直是满的。
 
@@ -63,7 +63,7 @@ Issue 中提到的根包 `lib/index.js` 里的 2 MiB 常量属于插件安装和
 
 | 图谱 | 内容 |
 |---|---|
-| ![900 条记忆的图谱](./after-graph.jpg) | ![内容列出 900 条记忆](./after-contents.jpg) |
+| ![900 条记忆的图谱](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/after-graph.jpg) | ![内容列出 900 条记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/after-contents.jpg) |
 
 图谱区域显示 900 条可观察记忆与 14,956 条关系，并绘制实时快照。内容页列出 900 条记忆。
 
@@ -71,7 +71,7 @@ Issue 中提到的根包 `lib/index.js` 里的 2 MiB 常量属于插件安装和
 
 | 容量整理 | 归档后的空间 |
 |---|---|
-| ![容量整理归档到 default](./after-capacity-archived.jpg) | ![空间显示 902 条记忆](./after-archived-space.jpg) |
+| ![容量整理归档到 default](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/after-capacity-archived.jpg) | ![空间显示 902 条记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-320-native-store-dumps/after-archived-space.jpg) |
 
 用 Mnemon CLI 以 `--readonly` 模式读回，库中有 902 条记忆，A 和 B 与添加的内容按 UTF-8 字符串完全一致。`runtime/memories.json` 只保留 C，同样完全一致。两次运行都没有控制台错误。[验证数据](./verification.json)记录了数量、页面文字、条目哈希与截图哈希。
 

@@ -17,7 +17,7 @@ Each trial makes 100 normal branch queries plus four Git calls for a padded path
 
 | Baseline: actual opening frame | Fixed: Git queries running |
 |---|---|
-| ![Visible baseline terminal opening frame](./windows-before.png) | ![No console window during fixed Git queries](./windows-after.png) |
+| ![Visible baseline terminal opening frame](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/windows-before.png) | ![No console window during fixed Git queries](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/windows-after.png) |
 
 Git was not delayed to obtain the screenshot. The baseline frame precedes completed Terminal painting. The screenshot run temporarily minimized one preexisting runner console and restored it afterward. Capture sets focus, so these images do not independently prove focus theft. The zero-window result comes from continuous observation of the entire fixed phase, rather than one screenshot.
 
@@ -31,7 +31,7 @@ New-Item -ItemType Directory -Path $env:RUNNER_TEMP | Out-Null
 
 The archive also contains the reusable observer, worker, runner and workflow. Both runs verified the downloaded source bytes against Git blobs `eca1a05ed7fc1b382ed31ccdcbadfbc800afba64` (baseline) and `340e4817a695d4807142e12d09bd70e792cec847` (fixed).
 
-The [downloadable evidence archive](./windows-evidence.tar.gz) preserves both successful runs beyond Actions retention. Its SHA-256 is `f976d55ec68f6b18322e2c9e7b391f3a9d4ab4c965f15db9da6a60ff3a996dea`; the [44-file manifest](./windows-archive-manifest.json) identifies every member. It contains synthetic observations, source blobs, screenshots and harness files; full Actions logs and unsuccessful harness setup attempts are excluded.
+The [downloadable evidence archive](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/windows-evidence.tar.gz) preserves both successful runs beyond Actions retention. Its SHA-256 is `f976d55ec68f6b18322e2c9e7b391f3a9d4ab4c965f15db9da6a60ff3a996dea`; the [44-file manifest](./windows-archive-manifest.json) identifies every member. It contains synthetic observations, source blobs, screenshots and harness files; full Actions logs and unsuccessful harness setup attempts are excluded.
 
 ## Real WebUI and CLI
 
@@ -60,13 +60,13 @@ Both revisions created the entries, completed conversations, switched sessions a
 
 | Baseline Runtime writes | Fixed Runtime writes |
 |---|---|
-| ![Two baseline Runtime entries](./before-runtime.png) | ![Two fixed Runtime entries](./after-runtime.png) |
+| ![Two baseline Runtime entries](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/before-runtime.png) | ![Two fixed Runtime entries](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/after-runtime.png) |
 
 | Baseline conversation switch | Fixed conversation switch |
 |---|---|
-| ![Baseline session B after switching](./before-conversation-switch.png) | ![Fixed session B after switching](./after-conversation-switch.png) |
+| ![Baseline session B after switching](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/before-conversation-switch.png) | ![Fixed session B after switching](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/after-conversation-switch.png) |
 
-[Fixed detached-HEAD turn after reload](./after-detached-reload.png) · [Actual CLI version check](./after-cli-version.png)
+[Fixed detached-HEAD turn after reload](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/after-detached-reload.png) · [Actual CLI version check](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/after-cli-version.png)
 
 The [trace](./webui-git-probes.json) records two baseline calls without `windowsHide` and four fixed calls with `windowsHide: true`, including `webui-other` and detached HEAD. It passes the original arguments, options, return values and errors through. In this DSH/macOS fixture, actual probes occur on conversation turns; hot A/B switching and browser reload do not add probes. Runtime screenshots show persisted branch labels, not proof of model-context filtering; the existing projection tests cover that behavior.
 

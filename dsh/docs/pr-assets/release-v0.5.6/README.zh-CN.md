@@ -31,6 +31,6 @@
 
 | 截图 | 证据 |
 |---|---|
-| [01 已保存设置](./01-settings-saved.png) | 集中隔离模式和持久化根目录设置 |
-| [02 版本与存储](./02-version-and-storage.png) | 发布版本、工作区选择器、当前范围和一条项目记忆 |
-| [03 刷新后 Runtime](./03-runtime-after-reload.png) | 真实刷新页面后合成记忆仍然存在 |
+| [01 已保存设置](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.6/01-settings-saved.png) | 集中隔离模式和持久化根目录设置 |
+| [02 版本与存储](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.6/02-version-and-storage.png) | 发布版本、工作区选择器、当前范围和一条项目记忆 |
+| [03 刷新后 Runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.6/03-runtime-after-reload.png) | 真实刷新页面后合成记忆仍然存在 |

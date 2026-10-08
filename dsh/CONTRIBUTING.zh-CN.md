@@ -26,8 +26,8 @@
 ## 快速开始
 
 ```sh
-git clone https://github.com/omdsh-dev/dsh-mnemon.git
-cd dsh-mnemon
+git clone https://github.com/mnemon-dev/mnemon.git
+cd mnemon/dsh
 pnpm install
 pnpm run verify
 ```

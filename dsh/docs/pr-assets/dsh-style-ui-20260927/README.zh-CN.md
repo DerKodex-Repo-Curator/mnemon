@@ -10,19 +10,19 @@
 
 | 改版前 | 改版后 |
 |---|---|
-| ![改版前的设置页](./settings-before.png) | ![改版后的设置页](./settings-after.png) |
+| ![改版前的设置页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-before.png) | ![改版后的设置页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-after.png) |
 
 设置页改为 DSH 的偏好行，分成六组。展示位置、存储范围和用户画像范围由选择卡片改为 DSH Menu 下拉，所有开关都是 DSH Switch。
 
 | 存储 | 记忆 Provider |
 |---|---|
-| ![存储分组](./settings-storage.png) | ![Provider 列表](./settings-providers.png) |
+| ![存储分组](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-storage.png) | ![Provider 列表](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-providers.png) |
 
 “存储”包含存储范围、唯一的“数据目录”输入框（留空即默认目录）、用户画像范围以及 ZIP 备份与迁移，这些设置都不再放在 Mnemon Native 面板里。Mnemon Native 是第一张 Provider 卡片，展开后只包含它自己的嵌入设置，使用 DSH 的编辑区样式：
 
-![展开的 Mnemon Native](./settings-native.png)
+![展开的 Mnemon Native](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-native.png)
 
-![后台任务](./settings-background.png)
+![后台任务](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-background.png)
 
 任务 Agent 模型与空闲审查同属“后台任务”；空闲审查开启时才显示其选项，间隔与预算收在“审查参数”中。
 
@@ -30,18 +30,18 @@
 
 | 改版前 | 改版后 |
 |---|---|
-| ![改版前的状态页](./status-before.png) | ![改版后的状态页](./status-after.png) |
+| ![改版前的状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/status-before.png) | ![改版后的状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/status-after.png) |
 
 Mnemon Native 是同一个“记忆 Provider”列表的第一行，已启用数量也把它计算在内。深色主题使用同一组令牌：
 
-![深色主题的状态页](./status-dark.png)
+![深色主题的状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/status-dark.png)
 
 ## 记忆空间
 
 | 改版前 | 改版后 |
 |---|---|
-| ![改版前的记忆空间](./spaces-before.png) | ![改版后的记忆空间](./spaces-after.png) |
-| ![改版前的实体页](./entities-before.png) | ![改版后的实体页](./entities-after.png) |
+| ![改版前的记忆空间](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/spaces-before.png) | ![改版后的记忆空间](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/spaces-after.png) |
+| ![改版前的实体页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/entities-before.png) | ![改版后的实体页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/entities-after.png) |
 
 卡片去掉了 Provider 彩色边条与渐变，改用 DSH 标签、状态点与开关，删除与断开使用 DSH 卡片删除样式。Tab 下的页面以分组标题的层级命名区块。实体能力卡片把不支持的 Provider 标为闲置，而不是故障。
 
@@ -49,12 +49,12 @@ Mnemon Native 是同一个“记忆 Provider”列表的第一行，已启用数
 
 | 改版前 | 改版后 |
 |---|---|
-| ![改版前的插件页](./plugins-before.png) | ![改版后的插件页](./plugins-after.png) |
-| ![改版前的回合记忆](./turn-before.png) | ![改版后的回合记忆](./turn-after.png) |
+| ![改版前的插件页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/plugins-before.png) | ![改版后的插件页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/plugins-after.png) |
+| ![改版前的回合记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/turn-before.png) | ![改版后的回合记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/turn-after.png) |
 
 主策略是一行下拉选择，增强是开关行，与下方 DSH 自带的组件列表一致。回合记忆栏使用 DSH 数据图标与展开箭头，工具名显示为中性标签。“存入记忆”对话框在 DSH 设置字段中编辑候选内容：
 
-![存入记忆对话框](./save-dialog.png)
+![存入记忆对话框](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/save-dialog.png)
 
 ## 验证
 

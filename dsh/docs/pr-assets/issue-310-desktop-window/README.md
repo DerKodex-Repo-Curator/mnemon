@@ -12,8 +12,8 @@ From `b5f7914b`, a page the application serves itself uses Mnemon's local channe
 
 | Published 0.5.18 in a DSH 0.1.7 Desktop window | The fix in the same window |
 | --- | --- |
-| ![Runtime memory says the deployment is read only and has no Add memory](before-runtime.png) | ![Add memory is back and a new entry was written](after-runtime.png) |
-| ![The dsh-mnemon page under Plugins says its settings are read only](before-plugin.png) | ![The dsh-mnemon page under Plugins is editable](after-plugin.png) |
+| ![Runtime memory says the deployment is read only and has no Add memory](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/before-runtime.png) | ![Add memory is back and a new entry was written](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/after-runtime.png) |
+| ![The dsh-mnemon page under Plugins says its settings are read only](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/before-plugin.png) | ![The dsh-mnemon page under Plugins is editable](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/after-plugin.png) |
 
 ## Environment
 
@@ -28,8 +28,8 @@ From `b5f7914b`, a page the application serves itself uses Mnemon's local channe
 | --- | --- | --- | --- | --- | --- |
 | DSH 0.1.7-rc.2 Desktop | 0.5.18 | Read only, no Add memory | Save and Create absent | Read only | 13 through the API Gateway |
 | DSH 0.1.7-rc.2 Desktop | 0.5.19 | Add memory writes | Save and Create enabled | Editable | Local channels; the write is `POST dsh-app://app/dsh-mnemon-write/…` |
-| DSH 0.2.0-rc.1 Desktop, `ownsHost: true` | 0.5.19 | Add memory writes ([screen](after-dsh-020-runtime.png)) | Save and Create enabled | Editable | Local channels |
-| Remote page through `--trusted-host`, DSH 0.2.0-rc.1 | 0.5.19 | Read only, with the reason ([screen](remote-runtime.png)) | Save disabled | Read only, with the reason ([screen](remote-plugin.png)) | 14 through the API Gateway |
+| DSH 0.2.0-rc.1 Desktop, `ownsHost: true` | 0.5.19 | Add memory writes ([screen](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/after-dsh-020-runtime.png)) | Save and Create enabled | Editable | Local channels |
+| Remote page through `--trusted-host`, DSH 0.2.0-rc.1 | 0.5.19 | Read only, with the reason ([screen](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/remote-runtime.png)) | Save disabled | Read only, with the reason ([screen](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/remote-plugin.png)) | 14 through the API Gateway |
 
 No run logged a console error. DSH shows a 0.1.7 window as reconnecting because its WebSocket stream cannot open through the scheme in this shell; Mnemon's requests are plain HTTP and unaffected, and the screens are cropped to the Memory System.
 

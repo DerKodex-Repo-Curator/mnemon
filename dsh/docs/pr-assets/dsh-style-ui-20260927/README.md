@@ -10,19 +10,19 @@ Tested implementation: `0213857a7f7d`, stacked on the optional Mnemon CLI change
 
 | Before | After |
 |---|---|
-| ![Settings before](./settings-before.png) | ![Settings after](./settings-after.png) |
+| ![Settings before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-before.png) | ![Settings after](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-after.png) |
 
 Settings is now a column of DSH preference rows in six groups. Placement, storage scope and user profile scope are DSH Menu selectors instead of choice cards, and every switch is the DSH Switch.
 
 | Storage | Memory providers |
 |---|---|
-| ![Storage group](./settings-storage.png) | ![Provider list](./settings-providers.png) |
+| ![Storage group](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-storage.png) | ![Provider list](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-providers.png) |
 
 Storage holds the scope, the single Data directory field (empty means the default location), the user profile scope and ZIP backup and migration; none of them sit in the Mnemon Native panel any more. Mnemon Native is the first Provider card. Expanded, it holds only its embedding settings, in the DSH editor block:
 
-![Mnemon Native expanded](./settings-native.png)
+![Mnemon Native expanded](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-native.png)
 
-![Background tasks](./settings-background.png)
+![Background tasks](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/settings-background.png)
 
 The task Agent model and idle review share Background tasks; the review options appear while review is on, with its limits folded.
 
@@ -30,18 +30,18 @@ The task Agent model and idle review share Background tasks; the review options 
 
 | Before | After |
 |---|---|
-| ![Status before](./status-before.png) | ![Status after](./status-after.png) |
+| ![Status before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/status-before.png) | ![Status after](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/status-after.png) |
 
 Mnemon Native is the first row of the one Memory providers list; the Provider count includes it. The dark theme uses the same tokens:
 
-![Status in the dark theme](./status-dark.png)
+![Status in the dark theme](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/status-dark.png)
 
 ## Memory Spaces
 
 | Before | After |
 |---|---|
-| ![Spaces before](./spaces-before.png) | ![Spaces after](./spaces-after.png) |
-| ![Entities before](./entities-before.png) | ![Entities after](./entities-after.png) |
+| ![Spaces before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/spaces-before.png) | ![Spaces after](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/spaces-after.png) |
+| ![Entities before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/entities-before.png) | ![Entities after](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/entities-after.png) |
 
 Cards drop the provider stripes and gradients, use DSH Tags, state dots and switches, and show delete and disconnect as DSH card delete actions. Pages under the tabs title their sections at the group heading scale. Entity capability cards mark unsupported Providers as idle instead of failed.
 
@@ -49,12 +49,12 @@ Cards drop the provider stripes and gradients, use DSH Tags, state dots and swit
 
 | Before | After |
 |---|---|
-| ![Plugins page before](./plugins-before.png) | ![Plugins page after](./plugins-after.png) |
-| ![Turn memory before](./turn-before.png) | ![Turn memory after](./turn-after.png) |
+| ![Plugins page before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/plugins-before.png) | ![Plugins page after](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/plugins-after.png) |
+| ![Turn memory before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/turn-before.png) | ![Turn memory after](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/turn-after.png) |
 
 The main Strategy is a selector row and the enhancements are switch rows, as on DSH's own component list below them. The turn memory bar uses the DSH data icon and chevron with neutral tool Tags. The save dialog edits its candidate in a DSH settings field:
 
-![Save to memory dialog](./save-dialog.png)
+![Save to memory dialog](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/dsh-style-ui-20260927/save-dialog.png)
 
 ## Validation
 

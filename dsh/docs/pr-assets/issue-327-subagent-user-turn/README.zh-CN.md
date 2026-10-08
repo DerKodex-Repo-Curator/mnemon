@@ -28,7 +28,7 @@ Issue [#327](https://github.com/omdsh-dev/dsh-mnemon/issues/327) 反馈：通过
 
 ## 修复前（main）
 
-![状态页：后台审查失败，memory subagent stopped with error: SERVER: no user query found in messages，并列出已提交的档案回执](./before-status.jpg)
+![状态页：后台审查失败，memory subagent stopped with error: SERVER: no user query found in messages，并列出已提交的档案回执](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-327-subagent-user-turn/before-status.jpg)
 
 两个宿主上：
 - 第 1 至 3 次请求都保留了任务提示；
@@ -45,7 +45,7 @@ Issue [#327](https://github.com/omdsh-dev/dsh-mnemon/issues/327) 反馈：通过
 
 | 修复后：状态页 | 修复后：审查创建的档案 |
 |---|---|
-| ![状态页：系统正常，没有审查失败，1 份活跃档案](./after-status.jpg) | ![项目档案：Review checkpoint storage](./after-documents.jpg) |
+| ![状态页：系统正常，没有审查失败，1 份活跃档案](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-327-subagent-user-turn/after-status.jpg) | ![项目档案：Review checkpoint storage](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-327-subagent-user-turn/after-documents.jpg) |
 
 两个宿主上，第 4 次请求丢掉了任务提示，被拒一次，随即带着续行消息重试并成功。状态页显示“系统正常”，没有审查失败，项目档案中出现了这份档案。所有运行都没有控制台错误。
 

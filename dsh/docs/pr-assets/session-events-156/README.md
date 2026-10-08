@@ -20,16 +20,16 @@ logs also contained no `error`, `warn`, or `not iterable` matches.
 
 ## Before: alpha.4 with published Mnemon 0.4.4
 
-![The DSH WebUI reproducing agent.session.events is not iterable](./before-alpha4-v0.4.4.jpg)
+![The DSH WebUI reproducing agent.session.events is not iterable](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/session-events-156/before-alpha4-v0.4.4.jpg)
 
 ## After: alpha.4
 
-![The DSH WebUI completing a conversation on alpha.4](./after-alpha4.jpg)
+![The DSH WebUI completing a conversation on alpha.4](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/session-events-156/after-alpha4.jpg)
 
 ## After: latest alpha.5
 
-![The DSH WebUI completing a conversation on alpha.5](./after-alpha5.jpg)
+![The DSH WebUI completing a conversation on alpha.5](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/session-events-156/after-alpha5.jpg)
 
 ## After: stable rc.2
 
-![The DSH WebUI completing a conversation on rc.2](./after-rc2.jpg)
+![The DSH WebUI completing a conversation on rc.2](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/session-events-156/after-rc2.jpg)

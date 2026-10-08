@@ -52,15 +52,15 @@
 
 对话成功调用 Runtime add 和 status：
 
-![真实工具回执与健康 CLI](./images/after-tool-receipts.png)
+![真实工具回执与健康 CLI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-274-profile-generation/images/after-tool-receipts.png)
 
 GUI 保存 `idleReview.minIntervalMs = 310000`。新的 Host 进程打开同一 profile 后，设置仍可见，设置文件逐字节相同：
 
-![冷重启后保存的审查间隔](./images/after-cold-restart-settings.png)
+![冷重启后保存的审查间隔](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-274-profile-generation/images/after-cold-restart-settings.png)
 
 一条合成的工作记忆仍可见，`runtime/memories.json` 逐字节相同：
 
-![冷重启后保留的 Runtime 记忆](./images/after-cold-restart-runtime.png)
+![冷重启后保留的 Runtime 记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-274-profile-generation/images/after-cold-restart-runtime.png)
 
 ## 复现
 

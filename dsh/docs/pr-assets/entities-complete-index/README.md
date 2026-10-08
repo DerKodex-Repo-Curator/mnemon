@@ -22,7 +22,7 @@ Four Native spaces about a fictional project, seeded with explicit entities:
 
 | Before: Atlas | Before: WebUI |
 |---|---|
-| ![Atlas counted 22, listed 20 including memories without the entity](./before-atlas.jpg) | ![WebUI counted 3, listed 8](./before-webui.jpg) |
+| ![Atlas counted 22, listed 20 including memories without the entity](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/entities-complete-index/before-atlas.jpg) | ![WebUI counted 3, listed 8](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/entities-complete-index/before-webui.jpg) |
 
 Each space showed "20 observable", and the rail held 52 of the 63 entities. Selecting `Atlas` listed 20 results: the recall limit cut two memories that carry it, and three that only mention it took their places. `WebUI` counted 3 and listed 8.
 
@@ -37,7 +37,7 @@ Each space showed "20 observable", and the rail held 52 of the 63 entities. Sele
 
 | After: Atlas | After: related memories, collapsed | After: related memories, found |
 |---|---|---|
-| ![Atlas counted 22 and listed 22](./after-atlas.jpg) | ![WebUI 4 of 4, related memories collapsed with Find related memories](./after-collapsed.jpg) | ![Related memories found for WebUI](./after-related.jpg) |
+| ![Atlas counted 22 and listed 22](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/entities-complete-index/after-atlas.jpg) | ![WebUI 4 of 4, related memories collapsed with Find related memories](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/entities-complete-index/after-collapsed.jpg) | ![Related memories found for WebUI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/entities-complete-index/after-related.jpg) |
 
 On both hosts:
 

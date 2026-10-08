@@ -16,11 +16,11 @@
 
 [制品摘要、安装版本与未变化的宿主 PID](validation.json)标识本次候选制品。profile、目录和记忆均为测试数据；本次安装验收不需要远程模型或第三方 Provider。
 
-![版本化状态页](status.png)
+![版本化状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.18/status.png)
 
-[Runtime 写入与读取](runtime.png)
+[Runtime 写入与读取](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.18/runtime.png)
 
-![官方 WebUI 读取 Native CLI 写入的记忆](recall.png)
+![官方 WebUI 读取 Native CLI 写入的记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.18/recall.png)
 
 ## 验证与发布边界
 

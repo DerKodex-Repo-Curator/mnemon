@@ -4,7 +4,7 @@
 
 dsh-mnemon 为 DeepSeek Harness 提供三类记忆：每一轮都会用到的**运行时记忆**、问题需要时才检索的**项目档案**，以及存放在你所选 Provider 上的长期证据**记忆空间**。主策略决定它们如何参与每一轮对话，主策略与增强都在插件页中选择。从默认的分层策略开始即可，日常使用无需管理插件。
 
-[![可组合记忆插件页中的记忆组合面板](../assets/webui-v0.5.19/zh-CN/plugin-composition.jpg)](./guides/ui-guide.md#在插件页中)
+[![可组合记忆插件页中的记忆组合面板](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/webui-v0.5.19/zh-CN/plugin-composition.jpg)](./guides/ui-guide.md#在插件页中)
 
 ## 使用记忆系统
 

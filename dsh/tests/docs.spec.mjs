@@ -51,9 +51,16 @@ describe('documentation checks', () => {
     expect(fixture({ 'README.md': '[web](https://example.invalid/x#y) [mail](mailto:a@example.invalid)' }).failures).toEqual([])
   })
   it('checks current repository URLs used in npm READMEs without rewriting historical links', () => {
-    const report = fixture({ 'README.md': '[ok](https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/a.md#one) [missing](https://github.com/omdsh-dev/dsh-mnemon/tree/main/absent) [history](https://github.com/omdsh-dev/dsh-mnemon/blob/v0.4.0/old.md)', 'docs/a.md': '# One' })
+    const report = fixture({ 'README.md': '[ok](https://github.com/mnemon-dev/mnemon/blob/master/dsh/docs/a.md#one) [missing](https://github.com/mnemon-dev/mnemon/tree/master/dsh/absent) [history](https://github.com/omdsh-dev/dsh-mnemon/blob/v0.4.0/old.md)', 'docs/a.md': '# One' })
     expect(report.localLinks).toBe(2)
-    expect(report.failures).toEqual(['README.md:1: missing https://github.com/omdsh-dev/dsh-mnemon/tree/main/absent'])
+    expect(report.failures).toEqual(['README.md:1: missing https://github.com/mnemon-dev/mnemon/tree/master/dsh/absent'])
+  })
+  it('rejects links into the retired repository main branch but keeps pinned history', () => {
+    const report = fixture({ 'README.md': '[old](https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/a.md) ![raw](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/main/docs/x.png) ![pinned](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/x.png)', 'docs/a.md': '# One' })
+    expect(report.failures).toEqual([
+      'README.md:1: https://github.com/omdsh-dev/dsh-mnemon/blob/main/docs/a.md points at the retired repository; link to dsh/ in mnemon-dev/mnemon',
+      'README.md:1: https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/main/docs/x.png points at the retired repository; link to dsh/ in mnemon-dev/mnemon',
+    ])
   })
   it.each([['README.md', 'en'], ['README.zh-CN.md', 'zh-CN']])('retains the centered %s header, seven badges and localized diagram', (file, language) => {
     const readme = readFileSync(new URL(`../${file}`, import.meta.url), 'utf8')
@@ -63,7 +70,7 @@ describe('documentation checks', () => {
     const images = [...header.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/gu)].map(match => new URL(match[1].replaceAll('&amp;', '&')))
     const badges = images.filter(url => ['img.shields.io', 'dshfind.com'].includes(url.hostname))
     expect(badges).toHaveLength(7)
-    expect(badges.map(url => url.pathname)).toEqual(expect.arrayContaining(['/npm/v/dsh-mnemon', '/npm/dt/dsh-mnemon', '/github/v/release/omdsh-dev/dsh-mnemon', '/github/stars/omdsh-dev/dsh-mnemon', '/badge/License-MIT-yellow.svg']))
+    expect(badges.map(url => url.pathname)).toEqual(expect.arrayContaining(['/npm/v/dsh-mnemon', '/npm/dt/dsh-mnemon', '/github/v/release/omdsh-dev/dsh-mnemon', '/github/stars/mnemon-dev/mnemon', '/badge/License-MIT-yellow.svg']))
     const catalog = badges.filter(url => url.hostname === 'dshfind.com')
     expect(catalog.map(url => url.searchParams.get('lang'))).toEqual([language === 'en' ? 'en' : 'zh', language === 'en' ? 'en' : 'zh'])
     expect(catalog.some(url => url.searchParams.get('metric') === 'downloads')).toBe(true)

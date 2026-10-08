@@ -41,9 +41,9 @@ The baseline displays `stored`, one extracted update and a committed Host receip
 
 | Baseline stored receipt | Baseline empty content |
 |---|---|
-| ![Baseline reports a stored memory](./before-stored-receipt.png) | ![Baseline contains no memory](./before-empty-content.png) |
+| ![Baseline reports a stored memory](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/before-stored-receipt.png) | ![Baseline contains no memory](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/before-empty-content.png) |
 
-![Fixed content appears in the intended namespace](./after-protocol-content.png)
+![Fixed content appears in the intended namespace](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/after-protocol-content.png)
 
 ## Real backend acceptance
 
@@ -63,9 +63,9 @@ The fixed WebUI was then switched to this real service through its ordinary sett
 
 | Real OpenViking content | Real OpenViking direct search |
 |---|---|
-| ![Actual backend contains the full original](./after-real-content.png) | ![Direct search returns the full original](./after-real-search.png) |
+| ![Actual backend contains the full original](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/after-real-content.png) | ![Direct search returns the full original](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/after-real-search.png) |
 
-![Confirmed deletion leaves the real namespace empty](./after-real-forget.png)
+![Confirmed deletion leaves the real namespace empty](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-233-openviking-20260916/after-real-forget.png)
 
 ## Contract and failure handling
 

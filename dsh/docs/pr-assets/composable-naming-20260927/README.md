@@ -14,8 +14,8 @@ The installed artifact was opened in the real Plugins detail page, then switched
 
 | Language | Before | This implementation |
 |---|---|---|
-| Chinese | [PR #286 evidence](../pr-286-plugin-metadata/plugins-zh.jpg) | [Composable memory](./plugins-zh.png) |
-| English | [PR #286 evidence](../pr-286-plugin-metadata/plugins-en.jpg) | [Updated description](./plugins-en.png) |
+| Chinese | [PR #286 evidence](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr-286-plugin-metadata/plugins-zh.jpg) | [Composable memory](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composable-naming-20260927/plugins-zh.png) |
+| English | [PR #286 evidence](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/pr-286-plugin-metadata/plugins-en.jpg) | [Updated description](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composable-naming-20260927/plugins-en.png) |
 
 The screenshots retain the official DSH group-list defect tracked in [dsh-external/issues#649](https://github.com/dsh-external/issues/issues/649). This copy change does not include a plugin-manager replacement.
 

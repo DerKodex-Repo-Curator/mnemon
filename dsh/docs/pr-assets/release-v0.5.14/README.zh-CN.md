@@ -24,9 +24,9 @@
 
 | 观察 | 截图 |
 |---|---|
-| 编辑与重启前新增 Runtime | [runtime-saved.png](./runtime-saved.png) |
-| 冷启动后的版本与健康状态 | [status-after-restart.png](./status-after-restart.png) |
-| 冷启动后保留编辑后的 Runtime 正文 | [runtime-after-restart.png](./runtime-after-restart.png) |
-| 冷启动后保留受限审查设置 | [settings-after-restart.png](./settings-after-restart.png) |
+| 编辑与重启前新增 Runtime | [runtime-saved.png](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.14/runtime-saved.png) |
+| 冷启动后的版本与健康状态 | [status-after-restart.png](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.14/status-after-restart.png) |
+| 冷启动后保留编辑后的 Runtime 正文 | [runtime-after-restart.png](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.14/runtime-after-restart.png) |
+| 冷启动后保留受限审查设置 | [settings-after-restart.png](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.14/settings-after-restart.png) |
 
 可选的源码链接夹具在固定的 DSH 0.1.5-rc.1 开发 Profile 上未能加载 `dsh-client-hmr` bundle，尚未确定原因。打包安装到 0.1.7-rc.1 后通过，且没有修改 DSH 官方代码；本记录不声称已修复源码链接失败。发布冒烟检查不重复真实云账户或在线模型验收，更广的前后对比仍以原始 Issue 记录为准。

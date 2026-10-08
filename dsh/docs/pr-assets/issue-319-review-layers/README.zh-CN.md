@@ -24,13 +24,13 @@ pnpm e2e:serve --review-layers
 
 工具调度、审查 guard、各 Source 与 WebUI 都是真实运行的。
 
-![空闲审查前的两轮对话](./conversation.jpg)
+![空闲审查前的两轮对话](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/conversation.jpg)
 
 ## 基线
 
 | 工作记忆 | 项目档案 |
 |---|---|
-| ![MEMORY.md 中出现同一条规则](./before-runtime.jpg) | ![项目档案 Boot account resolution](./before-documents.jpg) |
+| ![MEMORY.md 中出现同一条规则](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/before-runtime.jpg) | ![项目档案 Boot account resolution](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/before-documents.jpg) |
 
 这一轮审查建好 **Boot account resolution** 后，又把同一条规则写入 MEMORY.md（`Entry added.`）。同一项目事实因此同时出现在两层，而每轮都会加载的 MEMORY.md 里多了一条仓库细节。
 
@@ -47,7 +47,7 @@ pnpm e2e:serve --review-layers
 
 | 工作记忆 | 项目档案 |
 |---|---|
-| ![MEMORY.md 保持为空](./after-runtime.jpg) | ![同一份项目档案](./after-documents.jpg) |
+| ![MEMORY.md 保持为空](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/after-runtime.jpg) | ![同一份项目档案](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/after-documents.jpg) |
 
 同一轮审查建好项目档案后，写入工作记忆的请求返回：
 
@@ -59,7 +59,7 @@ MEMORY.md 保持为空，审查以这份项目档案的 id 结束。
 
 ## 关闭写入运行时记忆
 
-![分层策略页面中关闭写入运行时记忆](./switch-off.jpg)
+![分层策略页面中关闭写入运行时记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-319-review-layers/switch-off.jpg)
 
 该开关位于分层策略页面（**插件 → 可组合记忆**）的**空闲审查**之下。关闭后，审查的工具列表中没有 `mnemon_runtime_memory`。fixture 建好项目档案后直接结束，MEMORY.md 保持为空。三次运行都没有控制台错误。
 

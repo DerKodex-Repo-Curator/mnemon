@@ -16,15 +16,15 @@
 | Native | WebUI 创建并激活 Native 记忆空间，真实 CLI 写入合成事实，再从 WebUI 关键词召回。 |
 | 重启 | Host 冷重启前后，六个 Runtime、Documents 与记忆空间元数据文件哈希不变；新对话从注入的 Runtime 投影读出 pnpm 11。 |
 
-[分层组合](./composition-layered.png) · [通用组合](./composition-general.png) · [组件设置](./component-settings.png) · [Flash 写入](./flash-runtime-write.png) · [已保存 Runtime](./runtime-persisted.png) · [文档搜索](./documents-search.png) · [Native 关键词召回](./native-recall.png)
+[分层组合](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.17/composition-layered.png) · [通用组合](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.17/composition-general.png) · [组件设置](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.17/component-settings.png) · [Flash 写入](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.17/flash-runtime-write.png) · [已保存 Runtime](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.17/runtime-persisted.png) · [文档搜索](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.17/documents-search.png) · [Native 关键词召回](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.17/native-recall.png)
 
 ## 已复现并修复的发布阻塞问题
 
 首次通用策略 Flash 召回在真实 DSH 边界失败：`value is not lossless JSON`。Source 正确省略了可选证据字段，但 Host 转换时把 `score` 与 `revision` 写成 `undefined`。修复后省略缺失字段，保留已有值（包括零分数），同时覆盖 recall 与 related，不改变 Provider 数据、不放宽 DSH 校验。
 
-回归测试使用公开的通用策略与真实组合、Holographic Provider fixture。修复前四组元数据中三组失败；修复后四组全部通过，同时六项已有分层策略 Host 测试通过。[修复前](./general-recall-before.png)。
+回归测试使用公开的通用策略与真实组合、Holographic Provider fixture。修复前四组元数据中三组失败；修复后四组全部通过，同时六项已有分层策略 Host 测试通过。[修复前](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.17/general-recall-before.png)。
 
-重新打包后的十八包组合安装至第二个全新 Profile，使用内容未变的合成数据副本。同一条只读 Flash 请求成功：由 Runtime 读出 pnpm 11，由一次 Native 关键词召回读出 violet gate。三次真实模型请求均返回 HTTP 200，实际工具回执为 `isError: false`。Status 显示 v0.5.17、CLI 0.2.9、一条 Runtime、一份档案及一个活动记忆空间。[修复后](./general-recall-after.png) · [最终状态](./status-final.png) · [脱敏验证记录与制品哈希](./verification.json)。
+重新打包后的十八包组合安装至第二个全新 Profile，使用内容未变的合成数据副本。同一条只读 Flash 请求成功：由 Runtime 读出 pnpm 11，由一次 Native 关键词召回读出 violet gate。三次真实模型请求均返回 HTTP 200，实际工具回执为 `isError: false`。Status 显示 v0.5.17、CLI 0.2.9、一条 Runtime、一份档案及一个活动记忆空间。[修复后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.17/general-recall-after.png) · [最终状态](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.17/status-final.png) · [脱敏验证记录与制品哈希](./verification.json)。
 
 ## 验证范围
 

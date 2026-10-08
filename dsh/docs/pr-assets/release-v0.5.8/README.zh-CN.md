@@ -18,7 +18,7 @@
 
 | 刷新后的 Runtime 记录 | 版本与 Native 状态 |
 | --- | --- |
-| [截图](./01-runtime-after-reload.jpg) | [截图](./02-version-native-status.jpg) |
+| [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.8/01-runtime-after-reload.jpg) | [截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.8/02-version-native-status.jpg) |
 
 未调用外部模型 API。这些检查验证应用与插件行为，不评价模型质量、缓存命中或历史 token 消耗。此前各 issue 记录保留各自的实际复现提交。
 

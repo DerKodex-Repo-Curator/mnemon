@@ -10,13 +10,13 @@ The two main Strategies name what they do: the Layered strategy keeps runtime me
 
 | Light | Dark |
 |---|---|
-| ![Main strategy menu](./names-menu.png) | ![Main strategy menu, dark](./dark-names-menu.png) |
+| ![Main strategy menu](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/strategy-names-20260927/names-menu.png) | ![Main strategy menu, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/strategy-names-20260927/dark-names-menu.png) |
 
 ## DSH's component list
 
 DSH names each row from the package's display metadata, so the list reads the same names as the selector.
 
-![Component rows](./names-rows.png)
+![Component rows](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/strategy-names-20260927/names-rows.png)
 
 ## Verification
 

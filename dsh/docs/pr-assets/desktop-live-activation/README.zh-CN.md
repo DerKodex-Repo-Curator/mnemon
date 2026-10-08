@@ -14,7 +14,7 @@
 
 | 发布版：组件与设置不可用 | 候选修复：组件运行、设置正常 |
 | --- | --- |
-| ![修复前](before.png) | ![修复后](after.png) |
+| ![修复前](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/before.png) | ![修复后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/after.png) |
 
 ## 候选制品与环境
 
@@ -26,13 +26,13 @@
 
 ## 真实 WebUI 验收
 
-1. 启动未安装 Mnemon 的官方 WebUI。[空白安装基线](web-before-install.png)来自同宿主版本的另一全新 profile。
-2. 通过“添加插件”安装候选根 tarball，在[安装结果](web-installed.png)中点击“立即启用”。安装、启用及以下操作期间，宿主始终保持运行。
-3. 打开记忆系统：[状态正常](web-status.png)，三个 Source 和默认 Strategy 均可用。
-4. 新建并读取 Runtime 条目：[运行时记忆结果](web-runtime.png)。
-5. 新建并读取项目档案：[档案结果](web-documents.png)。
-6. 在界面中创建、激活 Native 记忆空间。通过 `mnemon remember` 写入测试事实，用 CLI `recall` 确认，再在[官方 WebUI](web-recall.png)的“检索 → 基础匹配”中读取同一条事实。
-7. 停用再启用 bundle。侧栏恢复，Runtime 与 Documents 内容保留，[同一个已激活 Native 空间及记忆仍在](web-reenabled.png)。原宿主 PID 仍存活，fixture 仅启动过一次宿主。
+1. 启动未安装 Mnemon 的官方 WebUI。[空白安装基线](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-before-install.png)来自同宿主版本的另一全新 profile。
+2. 通过“添加插件”安装候选根 tarball，在[安装结果](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-installed.png)中点击“立即启用”。安装、启用及以下操作期间，宿主始终保持运行。
+3. 打开记忆系统：[状态正常](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-status.png)，三个 Source 和默认 Strategy 均可用。
+4. 新建并读取 Runtime 条目：[运行时记忆结果](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-runtime.png)。
+5. 新建并读取项目档案：[档案结果](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-documents.png)。
+6. 在界面中创建、激活 Native 记忆空间。通过 `mnemon remember` 写入测试事实，用 CLI `recall` 确认，再在[官方 WebUI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-recall.png)的“检索 → 基础匹配”中读取同一条事实。
+7. 停用再启用 bundle。侧栏恢复，Runtime 与 Documents 内容保留，[同一个已激活 Native 空间及记忆仍在](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-reenabled.png)。原宿主 PID 仍存活，fixture 仅启动过一次宿主。
 
 实际执行的 CLI 命令如下，`MNEMON_DATA_DIR` 指向独立测试目录：
 
@@ -43,11 +43,11 @@ mnemon --data-dir "$MNEMON_DATA_DIR" --store default remember \
 mnemon --data-dir "$MNEMON_DATA_DIR" --store default recall LIVE_INSTALL_ACCEPTANCE --basic
 ```
 
-![官方 WebUI 读取 Native CLI 写入的事实](web-recall.png)
+![官方 WebUI 读取 Native CLI 写入的事实](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/web-recall.png)
 
 ## Electron 验收
 
-在 Electron 中启动随附 DSH 宿主，初始不选中已安装 bundle，再通过官方 WebUI 启用。[组件列表](after-components.png)、[正常的状态页](electron-status.png)和[新建 Native Store](electron-native.png)证明启用成功，并实际执行了 CLI 子进程。既有的上游 `cordis:group` 显示问题仍记录在[兼容性说明](../../zh-CN/reference/compatibility.md#dsh-017-bundle-组件列表)中，它不代表 Source 或 Strategy 停止运行。
+在 Electron 中启动随附 DSH 宿主，初始不选中已安装 bundle，再通过官方 WebUI 启用。[组件列表](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/after-components.png)、[正常的状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/electron-status.png)和[新建 Native Store](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/desktop-live-activation/electron-native.png)证明启用成功，并实际执行了 CLI 子进程。既有的上游 `cordis:group` 显示问题仍记录在[兼容性说明](../../zh-CN/reference/compatibility.md#dsh-017-bundle-组件列表)中，它不代表 Source 或 Strategy 停止运行。
 
 ## 自动化验证
 

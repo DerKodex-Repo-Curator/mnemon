@@ -36,11 +36,11 @@ The fixed database artwork is approximately 16.88px high, compared with 17.27px 
 
 | 场景 / Scenario | 修复前 / Before | 修复后 / After |
 | --- | --- | --- |
-| 原生浅色 / Native light | ![Before native light](./before-classic-light.jpg) | ![After native light](./after-classic-light.jpg) |
-| 原生深色 / Native dark | ![Before native dark](./before-classic-dark.jpg) | ![After native dark](./after-classic-dark.jpg) |
-| Web UI 0.3.9 | ![Before Web UI](./before-web-0.3.9.jpg) | ![After Web UI](./after-web-0.3.9.jpg) |
+| 原生浅色 / Native light | ![Before native light](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon/before-classic-light.jpg) | ![After native light](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon/after-classic-light.jpg) |
+| 原生深色 / Native dark | ![Before native dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon/before-classic-dark.jpg) | ![After native dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon/after-classic-dark.jpg) |
+| Web UI 0.3.9 | ![Before Web UI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon/before-web-0.3.9.jpg) | ![After Web UI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon/after-web-0.3.9.jpg) |
 
-展开状态 / Expanded states: [原生浅色 / native light](./after-classic-light-expanded.jpg), [Web UI 0.3.9](./after-web-0.3.9-expanded.jpg).
+展开状态 / Expanded states: [原生浅色 / native light](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon/after-classic-light-expanded.jpg), [Web UI 0.3.9](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/sidebar-icon/after-web-0.3.9-expanded.jpg).
 
 ## 环境与验证 / Environment and validation
 

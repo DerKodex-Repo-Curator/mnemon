@@ -15,13 +15,13 @@
 - [修复后 Builtin](./after-builtin-browser.json)：同一皮肤生效，输入框保持可见，三个增强全部开启，设置保存成功，对话正常回复。
 - [Runtime 编辑弹窗](./dialog-browser.json)：portal 没有工作台钩子，保留默认表面。界面新增合成 Runtime 记录、编辑为 SQLite WAL 后，浏览器刷新仍保留该记录和 Builtin 模式。
 
-新的 Chrome 会话完成了其余层叠顺序对照：[皮肤样式后置](./after-order-browser.json)时，根节点、页头和画布均采用浅绿色表面（[截图](./after-order-sidebar.png)）；[不安装皮肤](./default-browser.json)时，三者均保留原有不透明白色表面和两层渐变（[截图](./default-sidebar.png)）。两组中的 Runtime、Documents 和 Memory Spaces 导航均正常。这两组只检查 Sidebar 表面，没有启动任务会话或写入记忆。
+新的 Chrome 会话完成了其余层叠顺序对照：[皮肤样式后置](./after-order-browser.json)时，根节点、页头和画布均采用浅绿色表面（[截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-273-skin-hooks/after-order-sidebar.png)）；[不安装皮肤](./default-browser.json)时，三者均保留原有不透明白色表面和两层渐变（[截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-273-skin-hooks/default-sidebar.png)）。两组中的 Runtime、Documents 和 Memory Spaces 导航均正常。这两组只检查 Sidebar 表面，没有启动任务会话或写入记忆。
 
 | 基线 Sidebar | 修复后 Sidebar |
 | --- | --- |
-| ![基线表面](./before-skin-sidebar.png) | ![稳定皮肤覆盖](./after-skin-sidebar.png) |
+| ![基线表面](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-273-skin-hooks/before-skin-sidebar.png) | ![稳定皮肤覆盖](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-273-skin-hooks/after-skin-sidebar.png) |
 
-![修复后 Builtin 表面](./after-skin-builtin.png)
+![修复后 Builtin 表面](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-273-skin-hooks/after-skin-builtin.png)
 
 ## 验证
 

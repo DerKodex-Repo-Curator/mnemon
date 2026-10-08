@@ -53,15 +53,15 @@ The [completed browser report](./web-acceptance.json) records two successful bas
 
 | Screenshot | Observed result |
 |---|---|
-| [Before: Team pause](./before-team-paused.png) | Original warning and no Runtime fact after two eligible turns |
-| [Scoped setting](./final-scoped-settings.png) | Explicit compatibility choice saved through the actual settings UI |
-| [Child user evidence](./final-child-user-evidence.png) | Whole live-user decisions retained in the bounded checkpoint |
-| [Child guard and write](./final-child-guard-and-receipt.png) | Team delegation denied; the allowed Runtime tool succeeds |
-| [Parent Team task](./final-parent-team-task.png) | Parent Team tools remain functional |
-| [Runtime after the budget check](./final-runtime.png) | One project fact, no duplicate entry |
+| [Before: Team pause](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/before-team-paused.png) | Original warning and no Runtime fact after two eligible turns |
+| [Scoped setting](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-scoped-settings.png) | Explicit compatibility choice saved through the actual settings UI |
+| [Child user evidence](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-child-user-evidence.png) | Whole live-user decisions retained in the bounded checkpoint |
+| [Child guard and write](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-child-guard-and-receipt.png) | Team delegation denied; the allowed Runtime tool succeeds |
+| [Parent Team task](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-parent-team-task.png) | Parent Team tools remain functional |
+| [Runtime after the budget check](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-runtime.png) | One project fact, no duplicate entry |
 
-![Original Team compatibility pause](./before-team-paused.png)
+![Original Team compatibility pause](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/before-team-paused.png)
 
-![Final Runtime fact after the extra budget-check turn](./final-runtime.png)
+![Final Runtime fact after the extra budget-check turn](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-275-agent-teams/final-runtime.png)
 
 The compact reports contain only synthetic case metadata and receipts. The deterministic model validates integration and evidence transport; it does not measure live-model memory quality. Disabling review, no-write instructions and startup errors also have automated coverage; they are not additional GUI claims. No production credentials, memories or personal CLI installation are used. Windows was not exercised in this macOS run.

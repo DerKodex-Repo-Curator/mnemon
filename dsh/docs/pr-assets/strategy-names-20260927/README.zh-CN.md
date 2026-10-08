@@ -10,13 +10,13 @@
 
 | 浅色 | 深色 |
 |---|---|
-| ![主策略菜单](./names-menu.png) | ![主策略菜单（深色）](./dark-names-menu.png) |
+| ![主策略菜单](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/strategy-names-20260927/names-menu.png) | ![主策略菜单（深色）](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/strategy-names-20260927/dark-names-menu.png) |
 
 ## DSH 组件列表
 
 DSH 按包的显示元数据为每一行命名，列表与选择器使用同样的名称。
 
-![组件列表](./names-rows.png)
+![组件列表](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/strategy-names-20260927/names-rows.png)
 
 ## 验证
 

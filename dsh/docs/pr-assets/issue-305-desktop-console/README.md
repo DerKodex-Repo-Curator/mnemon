@@ -19,13 +19,13 @@
 
 | 状态页：修复前 | 状态页：修复后，真实写入完成 |
 | --- | --- |
-| ![修复前状态](./before-status.png) | ![修复后状态](./after-status.png) |
+| ![修复前状态](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-305-desktop-console/before-status.png) | ![修复后状态](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-305-desktop-console/after-status.png) |
 
 | 版本检查：修复前 | 版本检查：修复后 |
 | --- | --- |
-| ![修复前版本](./before-versions.png) | ![修复后版本](./after-versions.png) |
+| ![修复前版本](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-305-desktop-console/before-versions.png) | ![修复后版本](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-305-desktop-console/after-versions.png) |
 
-![Flash 写入后通过真实 CLI 召回](./after-recall.png)
+![Flash 写入后通过真实 CLI 召回](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-305-desktop-console/after-recall.png)
 
 ## English
 

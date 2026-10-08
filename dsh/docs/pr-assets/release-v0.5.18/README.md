@@ -16,11 +16,11 @@ Using unmodified npm DSH `0.1.7-rc.2`, Node `24.20.0` and a fresh isolated profi
 
 [Artifact hashes, installed versions and unchanged host PID](validation.json) identify this candidate. Profiles, paths and memories are synthetic. No remote model or third-party Provider was needed for these installation checks.
 
-![Versioned Status](status.png)
+![Versioned Status](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.18/status.png)
 
-[Runtime write/read](runtime.png)
+[Runtime write/read](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.18/runtime.png)
 
-![Native CLI memory retrieved by the official WebUI](recall.png)
+![Native CLI memory retrieved by the official WebUI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.18/recall.png)
 
 ## Validation and release boundary
 

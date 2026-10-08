@@ -71,11 +71,11 @@ Windows execution, real cloud Provider services, mobile Safari, LLM summarizatio
 
 These are unedited browser captures of this branch using only the synthetic fixture. / 以下均为本分支合成环境的原始浏览器截图。
 
-- [Runtime edit / 运行时编辑](./runtime-edited-desktop.png)
-- [Document revision / 档案修订](./documents-revision-desktop.png)
-- [Native recall / 原生召回](./native-recall-desktop.png)
-- [Enhancements together / 增强共存](./enhancements-enabled-desktop.png)
-- [Mobile creation / 窄屏创建](./space-create-mobile.png), [reachable footer actions / 可达的底部按钮](./space-create-mobile-actions.png)
-- [English compact page / 英文窄屏页](./documents-mobile-en.png)
-- [Layer disabled / 关闭单层](./documents-disabled-en.png)
-- [Builtin English light / 内置入口英文浅色](./builtin-runtime-en-light.png)
+- [Runtime edit / 运行时编辑](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/architecture-cleanup/runtime-edited-desktop.png)
+- [Document revision / 档案修订](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/architecture-cleanup/documents-revision-desktop.png)
+- [Native recall / 原生召回](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/architecture-cleanup/native-recall-desktop.png)
+- [Enhancements together / 增强共存](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/architecture-cleanup/enhancements-enabled-desktop.png)
+- [Mobile creation / 窄屏创建](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/architecture-cleanup/space-create-mobile.png), [reachable footer actions / 可达的底部按钮](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/architecture-cleanup/space-create-mobile-actions.png)
+- [English compact page / 英文窄屏页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/architecture-cleanup/documents-mobile-en.png)
+- [Layer disabled / 关闭单层](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/architecture-cleanup/documents-disabled-en.png)
+- [Builtin English light / 内置入口英文浅色](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/architecture-cleanup/builtin-runtime-en-light.png)

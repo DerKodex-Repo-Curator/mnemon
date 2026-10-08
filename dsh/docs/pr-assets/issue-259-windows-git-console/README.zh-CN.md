@@ -17,7 +17,7 @@
 
 | 修复前：真实窗口打开帧 | 修复后：Git 查询进行中 |
 |---|---|
-| ![原版 Git 查询产生的可见窗口](./windows-before.png) | ![修复后的 Git 查询没有可见控制台窗口](./windows-after.png) |
+| ![原版 Git 查询产生的可见窗口](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/windows-before.png) | ![修复后的 Git 查询没有可见控制台窗口](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/windows-after.png) |
 
 未人为延长 Git 执行时间。修复前截图捕获的是 Terminal 尚未绘制完成的打开帧。截图复验临时最小化了一个既有 runner 控制台，完成后恢复。截图时设置了焦点，因此图片不能独立证明抢焦点；零窗口结论来自修复后整个阶段的持续枚举，而非单张截图。
 
@@ -31,7 +31,7 @@ New-Item -ItemType Directory -Path $env:RUNNER_TEMP | Out-Null
 
 归档同时保留可复用的观测器、worker、runner 和工作流。两次实验都根据下载的源码字节校验了 Git blob：基线 `eca1a05ed7fc1b382ed31ccdcbadfbc800afba64`，修复后 `340e4817a695d4807142e12d09bd70e792cec847`。
 
-[可下载证据归档](./windows-evidence.tar.gz)随 PR 保留两次成功实验，不依赖 Actions 的保留期限。SHA-256 为 `f976d55ec68f6b18322e2c9e7b391f3a9d4ab4c965f15db9da6a60ff3a996dea`；[44 个文件的清单](./windows-archive-manifest.json)逐项列出归档成员。内容为合成观测数据、源码、截图与验证脚本，不包含完整 Actions 日志或早期未成功的验证环境尝试。
+[可下载证据归档](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/windows-evidence.tar.gz)随 PR 保留两次成功实验，不依赖 Actions 的保留期限。SHA-256 为 `f976d55ec68f6b18322e2c9e7b391f3a9d4ab4c965f15db9da6a60ff3a996dea`；[44 个文件的清单](./windows-archive-manifest.json)逐项列出归档成员。内容为合成观测数据、源码、截图与验证脚本，不包含完整 Actions 日志或早期未成功的验证环境尝试。
 
 ## 真实 WebUI 与 CLI
 
@@ -60,13 +60,13 @@ node scripts/serve-e2e.mjs --strategy-extensions
 
 | 修复前 Runtime 写入 | 修复后 Runtime 写入 |
 |---|---|
-| ![基线的两条 Runtime 记忆](./before-runtime.png) | ![修复后的两条 Runtime 记忆](./after-runtime.png) |
+| ![基线的两条 Runtime 记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/before-runtime.png) | ![修复后的两条 Runtime 记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/after-runtime.png) |
 
 | 修复前会话切换 | 修复后会话切换 |
 |---|---|
-| ![基线切换回会话 B](./before-conversation-switch.png) | ![修复后切换回会话 B](./after-conversation-switch.png) |
+| ![基线切换回会话 B](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/before-conversation-switch.png) | ![修复后切换回会话 B](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/after-conversation-switch.png) |
 
-[分离 HEAD 对话刷新后仍保留](./after-detached-reload.png) · [真实 CLI 版本检查](./after-cli-version.png)
+[分离 HEAD 对话刷新后仍保留](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/after-detached-reload.png) · [真实 CLI 版本检查](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-259-windows-git-console/after-cli-version.png)
 
 [查询记录](./webui-git-probes.json)包含基线两次未设置 `windowsHide` 的调用，以及修复后四次 `windowsHide: true` 的调用，覆盖 `webui-other` 与分离 HEAD。记录脚本透传原始参数、选项、返回值和错误。在该 DSH/macOS 环境中，实际查询发生于对话回合；热切换 A/B 和浏览器刷新未增加查询次数。Runtime 截图证明分支标签已持久化，不用于证明模型上下文过滤；该行为由已有投影测试覆盖。
 

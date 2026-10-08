@@ -10,14 +10,14 @@ The `dsh-mnemon` page under Plugins shows the main Strategy choice and the memor
 
 | State | Plugins page | Settings |
 |---|---|---|
-| Default (three-tier, enhancements off) | [Chinese](./plugins-zh-default.png) | |
-| General with light context | [Chinese](./plugins-zh-general.png), [English](./plugins-en-general.png) | [Chinese](./settings-zh-general.png), [English](./settings-en-general.png) |
+| Default (three-tier, enhancements off) | [Chinese](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/plugins-zh-default.png) | |
+| General with light context | [Chinese](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/plugins-zh-general.png), [English](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/plugins-en-general.png) | [Chinese](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/settings-zh-general.png), [English](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/settings-en-general.png) |
 
 The captures were taken with Settings opened over the Plugins page. That also exposed duplicate element ids between the two mounted copies of the controls; each copy now has its own ids, a change in one reloads the other, and a rejected change shows the Host's current state.
 
 ## General Strategy conversation
 
-`pnpm e2e:serve --general-strategy` selects the general Strategy and scripts only the model's decisions. Turn 1 (`general-strategy-check remember`) checked that the general memory protocol was in the system prompt, that the Runtime, Documents and Memory Spaces Sources were admitted, and that the named Runtime tool and the Route envelope were offered; it then saved one fact, which returned a committed receipt. Turn 2 (`general-strategy-check recall`) found that fact in the resident projection. See [the conversation](./general-conversation.png) and [evidence.json](./evidence.json).
+`pnpm e2e:serve --general-strategy` selects the general Strategy and scripts only the model's decisions. Turn 1 (`general-strategy-check remember`) checked that the general memory protocol was in the system prompt, that the Runtime, Documents and Memory Spaces Sources were admitted, and that the named Runtime tool and the Route envelope were offered; it then saved one fact, which returned a committed receipt. Turn 2 (`general-strategy-check recall`) found that fact in the resident projection. See [the conversation](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/general-conversation.png) and [evidence.json](./evidence.json).
 
 ## Validation
 

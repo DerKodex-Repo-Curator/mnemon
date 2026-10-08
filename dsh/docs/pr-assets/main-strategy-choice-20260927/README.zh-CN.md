@@ -10,14 +10,14 @@
 
 | 状态 | 插件页 | 设置 |
 |---|---|---|
-| 默认（默认三层，增强关闭） | [中文](./plugins-zh-default.png) | |
-| 通用 + 轻量上下文 | [中文](./plugins-zh-general.png)、[English](./plugins-en-general.png) | [中文](./settings-zh-general.png)、[English](./settings-en-general.png) |
+| 默认（默认三层，增强关闭） | [中文](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/plugins-zh-default.png) | |
+| 通用 + 轻量上下文 | [中文](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/plugins-zh-general.png)、[English](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/plugins-en-general.png) | [中文](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/settings-zh-general.png)、[English](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/settings-en-general.png) |
 
 截图时设置对话框叠在插件页之上，由此发现两份同时挂载的控件使用了重复的元素 id；现在每份控件有各自的 id，一处的修改会让另一处重新加载，被拒绝的修改会显示 Host 当前状态。
 
 ## 通用主策略对话
 
-`pnpm e2e:serve --general-strategy` 选中通用主策略，只把模型决策脚本化。第 1 回合（`general-strategy-check remember`）确认系统提示包含通用记忆协议，Runtime、项目档案与记忆空间三个 Source 均已接入，并提供了具名 Runtime 工具与 Route 信封；随后保存一条事实，得到已提交回执。第 2 回合（`general-strategy-check recall`）在常驻投影中读到了这条事实。见[对话截图](./general-conversation.png)与 [evidence.json](./evidence.json)。
+`pnpm e2e:serve --general-strategy` 选中通用主策略，只把模型决策脚本化。第 1 回合（`general-strategy-check remember`）确认系统提示包含通用记忆协议，Runtime、项目档案与记忆空间三个 Source 均已接入，并提供了具名 Runtime 工具与 Route 信封；随后保存一条事实，得到已提交回执。第 2 回合（`general-strategy-check recall`）在常驻投影中读到了这条事实。见[对话截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/main-strategy-choice-20260927/general-conversation.png)与 [evidence.json](./evidence.json)。
 
 ## 验证
 

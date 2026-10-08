@@ -10,7 +10,7 @@ Groups come from the roles components declare; names and descriptions come from 
 
 | Default | Rows name what they relate to |
 |---|---|
-| ![Board](./board-default.png) | ![Relation chips](./board-relations.png) |
+| ![Board](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-default.png) | ![Relation chips](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-relations.png) |
 
 ## A component's page
 
@@ -18,27 +18,27 @@ Selecting a row opens its page: state and switch, origin and package, relations,
 
 | Relations | Declared options |
 |---|---|
-| ![Memory Spaces page](./board-details.png) | ![Active capture options](./board-options.png) |
+| ![Memory Spaces page](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-details.png) | ![Active capture options](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-options.png) |
 
 ## Switches that move others, and problems
 
 | Turning off Memory Spaces takes Active capture along | Memory not in use: the one fix |
 |---|---|
-| ![Cascade with Undo](./board-cascade.png) | ![Problem line](./board-memory-off.png) |
+| ![Cascade with Undo](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-cascade.png) | ![Problem line](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/board-memory-off.png) |
 
 The Memory System shows a layer whose Source component is off as off:
 
-![Project Documents off](./workspace-layer-off.png)
+![Project Documents off](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/workspace-layer-off.png)
 
 ## Dark theme and narrow column
 
 | Board | Page | Cascade |
 |---|---|---|
-| ![Board, dark](./dark-board-default.png) | ![Page, dark](./dark-board-details.png) | ![Cascade, dark](./dark-board-cascade.png) |
+| ![Board, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/dark-board-default.png) | ![Page, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/dark-board-details.png) | ![Cascade, dark](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/dark-board-cascade.png) |
 
 | Board, 420 px | Page, 420 px |
 |---|---|
-| ![Board, narrow](./narrow-board-default.png) | ![Page, narrow](./narrow-board-details.png) |
+| ![Board, narrow](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/narrow-board-default.png) | ![Page, narrow](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/composition-board-20260927/narrow-board-details.png) |
 
 ## Verification
 

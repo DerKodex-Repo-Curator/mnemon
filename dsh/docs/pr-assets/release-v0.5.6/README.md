@@ -31,6 +31,6 @@ The three screenshots were visually reviewed. The temporary Profile, memory and 
 
 | Screenshot | Evidence |
 |---|---|
-| [01 Settings saved](./01-settings-saved.png) | Centralized isolation and its persisted root setting |
-| [02 Version and storage](./02-version-and-storage.png) | Release version, workspace selector, active scope and one project entry |
-| [03 Runtime after reload](./03-runtime-after-reload.png) | Synthetic memory persists after a real page reload |
+| [01 Settings saved](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.6/01-settings-saved.png) | Centralized isolation and its persisted root setting |
+| [02 Version and storage](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.6/02-version-and-storage.png) | Release version, workspace selector, active scope and one project entry |
+| [03 Runtime after reload](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.6/03-runtime-after-reload.png) | Synthetic memory persists after a real page reload |

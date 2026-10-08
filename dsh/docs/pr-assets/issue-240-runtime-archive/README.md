@@ -29,7 +29,7 @@ No live model or external service is needed for the one-safe-destination path.
 
 | Before | After preflight | After activating Native |
 | --- | --- | --- |
-| ![Before](./before-webui.png) | ![Preflight](./after-preflight-webui.png) | ![Native success](./after-native-webui.png) |
+| ![Before](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-240-runtime-archive/before-webui.png) | ![Preflight](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-240-runtime-archive/after-preflight-webui.png) | ![Native success](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-240-runtime-archive/after-native-webui.png) |
 
 ## Automated checks and limits
 

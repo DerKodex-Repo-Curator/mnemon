@@ -10,22 +10,22 @@
 
 | 页面 | 结果 | 截图 |
 |---|---|---|
-| 状态 | 不显示 Mnemon Native 卡片；Provider 列表显示 Mem0 就绪 | [状态](./nocli-status.png) |
-| 版本 | 先列 dsh-mnemon；Mnemon CLI 显示“未安装（可选）”并给出安装命令 | [版本](./nocli-versions.png) |
-| 设置 | Native 标记为“未安装 CLI（可选）”；依赖 CLI 的向量测试被停用 | [设置](./nocli-settings.png) |
-| 创建记忆空间 | 默认选中 Mem0；Mnemon Native 被停用并提示“需要在本机安装 Mnemon CLI” | [创建](./nocli-create.png) |
+| 状态 | 不显示 Mnemon Native 卡片；Provider 列表显示 Mem0 就绪 | [状态](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/optional-mnemon-cli-20260927/nocli-status.png) |
+| 版本 | 先列 dsh-mnemon；Mnemon CLI 显示“未安装（可选）”并给出安装命令 | [版本](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/optional-mnemon-cli-20260927/nocli-versions.png) |
+| 设置 | Native 标记为“未安装 CLI（可选）”；依赖 CLI 的向量测试被停用 | [设置](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/optional-mnemon-cli-20260927/nocli-settings.png) |
+| 创建记忆空间 | 默认选中 Mem0；Mnemon Native 被停用并提示“需要在本机安装 Mnemon CLI” | [创建](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/optional-mnemon-cli-20260927/nocli-create.png) |
 
 从该对话框创建的空间落在 Mem0 上，存储正常。之后对同一个 Mem0 容器执行 Headless 流程，走默认沉淀策略：没有就绪的 Provider 时，沉淀失败并提示“No memory provider is ready: install the Mnemon CLI to use Mnemon Native, or connect another provider in Settings”；连接 Mem0 后，策略显示为 Mem0，沉淀出的空间创建在 Mem0 上，写入一条事实后，用自然语言问题召回到了它。见 [evidence.json](./evidence.json)。
 
 ## 安装 Mnemon CLI 并接入 Provider Lab 时
 
-安装了 CLI 的 WebUI 夹具通过公开的插件组合（`scripts/seed-provider-lab.mjs`）写入测试数据：Mnemon Native、OpenViking、Honcho、Mem0、Hindsight、Holographic、RetainDB 与 Supermemory 各自创建了一个空间并写入五条事实。见[状态](./lab-status.png)截图。
+安装了 CLI 的 WebUI 夹具通过公开的插件组合（`scripts/seed-provider-lab.mjs`）写入测试数据：Mnemon Native、OpenViking、Honcho、Mem0、Hindsight、Holographic、RetainDB 与 Supermemory 各自创建了一个空间并写入五条事实。见[状态](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/optional-mnemon-cli-20260927/lab-status.png)截图。
 
 - 状态页把 Mnemon Native 卡片显示为连接正常，含 Mnemon 0.2.7 与它的空间，并列显示已启用的第三方 Provider。
 - 七个其他 Provider 同时就绪（其中四个按字母排在它前面）时，创建对话框仍默认选中 Mnemon Native。这一改动的第一版会选中按字母排序的第一个就绪 Provider；WebUI 检查发现了这个问题，现在只要 Native 就绪就排在首位。
 - 检索按每个激活空间列出一个来源，并为每条结果标注 Provider。Ollama 空闲时，“记忆系统的三层结构是什么？”从 OpenViking、Mem0、Honcho 与 RetainDB 召回了对应事实，也召回了无 CLI 流程中创建的 Mem0 空间里的事实。
-- 内容页列出每个可枚举 Provider 的事实。共显示 43 条：Mnemon Native、OpenViking、Honcho、Holographic、RetainDB 与 Supermemory 各 5 条，三个 Mem0 空间合计 11 条，Hindsight 在抽取仍在进行时显示了前 2 个单元（[内容](./lab-content.png)）。
-- 实体页只把 Mnemon Native、Hindsight 与 Holographic 作为实体索引，其他 Provider 都标记为不支持。共 24 个活跃实体，来自 Mnemon Native（9）、Hindsight（15）与 Holographic（13）（[实体](./lab-entities.png)）。
+- 内容页列出每个可枚举 Provider 的事实。共显示 43 条：Mnemon Native、OpenViking、Honcho、Holographic、RetainDB 与 Supermemory 各 5 条，三个 Mem0 空间合计 11 条，Hindsight 在抽取仍在进行时显示了前 2 个单元（[内容](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/optional-mnemon-cli-20260927/lab-content.png)）。
+- 实体页只把 Mnemon Native、Hindsight 与 Holographic 作为实体索引，其他 Provider 都标记为不支持。共 24 个活跃实体，来自 Mnemon Native（9）、Hindsight（15）与 Holographic（13）（[实体](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/optional-mnemon-cli-20260927/lab-entities.png)）。
 
 ## 验证
 

@@ -12,8 +12,8 @@ DSH 桌面版从应用自己的 `dsh-app://app/` 地址加载窗口，DSH 0.1.7 
 
 | 已发布的 0.5.18，DSH 0.1.7 桌面窗口 | 同一窗口中的修复 |
 | --- | --- |
-| ![运行时记忆提示当前部署为只读，没有“添加记忆”](before-runtime.png) | ![“添加记忆”恢复，新条目已写入](after-runtime.png) |
-| ![插件页中的 dsh-mnemon 提示设置只读](before-plugin.png) | ![插件页中的 dsh-mnemon 可以编辑](after-plugin.png) |
+| ![运行时记忆提示当前部署为只读，没有“添加记忆”](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/before-runtime.png) | ![“添加记忆”恢复，新条目已写入](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/after-runtime.png) |
+| ![插件页中的 dsh-mnemon 提示设置只读](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/before-plugin.png) | ![插件页中的 dsh-mnemon 可以编辑](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/after-plugin.png) |
 
 ## 环境
 
@@ -28,8 +28,8 @@ DSH 桌面版从应用自己的 `dsh-app://app/` 地址加载窗口，DSH 0.1.7 
 | --- | --- | --- | --- | --- | --- |
 | DSH 0.1.7-rc.2 桌面版 | 0.5.18 | 只读，没有“添加记忆” | 没有“存入记忆”与“创建记忆空间” | 只读 | 13 次全部经 API Gateway |
 | DSH 0.1.7-rc.2 桌面版 | 0.5.19 | “添加记忆”写入成功 | “存入记忆”与“创建记忆空间”可用 | 可编辑 | 本地通道；写入为 `POST dsh-app://app/dsh-mnemon-write/…` |
-| DSH 0.2.0-rc.1 桌面版，`ownsHost: true` | 0.5.19 | “添加记忆”写入成功（[截图](after-dsh-020-runtime.png)） | 两者可用 | 可编辑 | 本地通道 |
-| 通过 `--trusted-host` 打开的远程页面，DSH 0.2.0-rc.1 | 0.5.19 | 只读，并写明原因（[截图](remote-runtime.png)） | “存入记忆”不可用 | 只读，并写明原因（[截图](remote-plugin.png)） | 14 次全部经 API Gateway |
+| DSH 0.2.0-rc.1 桌面版，`ownsHost: true` | 0.5.19 | “添加记忆”写入成功（[截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/after-dsh-020-runtime.png)） | 两者可用 | 可编辑 | 本地通道 |
+| 通过 `--trusted-host` 打开的远程页面，DSH 0.2.0-rc.1 | 0.5.19 | 只读，并写明原因（[截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/remote-runtime.png)） | “存入记忆”不可用 | 只读，并写明原因（[截图](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-310-desktop-window/remote-plugin.png)） | 14 次全部经 API Gateway |
 
 所有运行均无控制台错误。由于 WebSocket 事件流无法通过该协议在此窗口中建立，DSH 会把 0.1.7 窗口显示为“重新连接中”；Mnemon 的请求是普通 HTTP，不受影响，截图已裁到记忆系统区域。
 

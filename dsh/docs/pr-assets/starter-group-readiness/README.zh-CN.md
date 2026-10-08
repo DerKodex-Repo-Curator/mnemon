@@ -16,9 +16,9 @@
 
 | DSH 0.2.0-rc.1 上已发布的 0.5.19：共 11 个组件，第一行是 `dsh-mnemon/starter` | DSH 0.2.0-rc.1 上的候选包：共 10 个组件，第一行是 `dsh-mnemon/bundle` |
 | --- | --- |
-| ![改动前](before-components.png) | ![改动后](after-components.png) |
+| ![改动前](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-readiness/before-components.png) | ![改动后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-readiness/after-components.png) |
 
-英文界面：[改动前](before-components-en.png) · [改动后](after-components-en.png)。容器行仍与原来的 `cordis:group` 一样显示“已关闭”，因为 DSH 的插件清单会跳过 group 条目（[上游 #649](https://github.com/dsh-external/issues/issues/649)）。
+英文界面：[改动前](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-readiness/before-components-en.png) · [改动后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-readiness/after-components-en.png)。容器行仍与原来的 `cordis:group` 一样显示“已关闭”，因为 DSH 的插件清单会跳过 group 条目（[上游 #649](https://github.com/dsh-external/issues/issues/649)）。
 
 ## 验收
 
@@ -32,9 +32,9 @@
 | profile patch 中残留 `mnemon-starter: disabled: true` | 正常启动，记忆系统可用 | 相同 |
 | 打开再关闭“通用策略” | 只有该组件变化 | 未测 |
 
-DSH 0.2.0-rc.1 上的功能验收从安装到结束只使用一个宿主进程。状态页显示系统正常与 Mnemon 0.2.7，页面与 [v0.5.19 发布验收](../release-v0.5.19/status.png)的截图逐字节一致。运行时记忆刷新后能读回，在界面中创建并激活了 Native 记忆空间，**直接检索**能找到 Mnemon CLI 写入的事实。
+DSH 0.2.0-rc.1 上的功能验收从安装到结束只使用一个宿主进程。状态页显示系统正常与 Mnemon 0.2.7，页面与 [v0.5.19 发布验收](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.19/status.png)的截图逐字节一致。运行时记忆刷新后能读回，在界面中创建并激活了 Native 记忆空间，**直接检索**能找到 Mnemon CLI 写入的事实。
 
-![直接检索找到 Mnemon CLI 写入的事实](recall.png)
+![直接检索找到 Mnemon CLI 写入的事实](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-readiness/recall.png)
 
 `dsh web` 的 profile 以 `nodeLinker: hoisted` 安装依赖，18 个包都在 profile 自己的 `node_modules` 中，准备步骤发现它们已经可被解析。真正需要这一步的是桌面版的插件 generation 布局：profile 只暴露根包。激活夹具（`tests/bundle-activation.spec.mjs`）用 DSH 自己的启动流程与插件管理器复现这种布局：使用原生 group、不做准备时，冷启动后再启用 bundle，两个宿主上都有四个组件导入失败；使用组件组时，所有已启用的组件都正常启动。夹具的其他用例在两个宿主上同样通过：保留另一个 bundle 的依赖路径、旧版 `mnemon` 总开关与组件选择，以及管理器的组件与 bundle 开关。
 

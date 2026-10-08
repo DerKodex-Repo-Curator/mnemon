@@ -44,7 +44,7 @@ The UI selected centralized workspaces and an existing directory named `项目 w
 
 | Centralized workspace status | Runtime write and readback |
 |---|---|
-| ![Healthy centralized Unicode workspace](./webui-centralized-status.png) | ![Two Runtime entries after the UI write](./webui-runtime-write.png) |
+| ![Healthy centralized Unicode workspace](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-266-workspace-ancestor/webui-centralized-status.png) | ![Two Runtime entries after the UI write](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-266-workspace-ancestor/webui-runtime-write.png) |
 
 Read-only inspection confirmed the canonical workspace hash `b541b67e760240d3e9cf9985777163114eb92d9dad1ce95546b73fd0e04c4c12`, with exactly two entries under `<central-root>/workspaces/<hash>/runtime/memories.json` and the exact added text in its `MEMORY.md` projection. The global Runtime remained empty, and no `.mnemon` directory appeared inside the workspace. The JSON and projection hashes are retained in the WebUI record. The screenshots' “Issue 261” session title and first entry are intentionally retained labels from the reused compatibility fixture.
 

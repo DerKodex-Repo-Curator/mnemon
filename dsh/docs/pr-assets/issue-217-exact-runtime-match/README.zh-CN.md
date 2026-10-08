@@ -16,11 +16,11 @@
 
 修复后又添加新的 `X` 并直接移除，重复了报告中的原始操作。直接读取临时目录中的 `memories.json` 和 `MEMORY.md`，确认最终内容只有 `EGO_LINUX_CHROME`，其创建和更新时间均未改变。基线在两次失败操作后仍保留两条原始记录。
 
-![基线：精确移除被拒绝](./before-remove.png)
+![基线：精确移除被拒绝](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-217-exact-runtime-match/before-remove.png)
 
-![修复后：精确替换成功](./after-edit.png)
+![修复后：精确替换成功](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-217-exact-runtime-match/after-edit.png)
 
-![修复后：精确移除，包含该子串的另一条记录保留](./after-remove.png)
+![修复后：精确移除，包含该子串的另一条记录保留](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-217-exact-runtime-match/after-remove.png)
 
 ## 自动验证与边界
 

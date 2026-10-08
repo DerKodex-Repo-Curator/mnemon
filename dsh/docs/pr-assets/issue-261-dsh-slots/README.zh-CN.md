@@ -37,9 +37,9 @@ alpha 还进行了真实会话范围切换：设置为工作区存储后，在�
 
 | 修复前：alpha 注册失败 | 修复后：alpha 的两个 peer 与 Mnemon 同时存在 |
 |---|---|
-| ![alpha 修复前](./01-alpha-before-missing-turn-bar.png) | ![alpha 修复后](./02-alpha-after-peer-turn-bar.png) |
+| ![alpha 修复前](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-261-dsh-slots/01-alpha-before-missing-turn-bar.png) | ![alpha 修复后](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-261-dsh-slots/02-alpha-after-peer-turn-bar.png) |
 
-补充截图：[Sidebar Runtime 记录](./03-alpha-runtime-navigation.png)、[关闭 Mnemon 后保留 peer](./04-alpha-bar-off-peers-retained.png)、[Builtin 跳转](./05-alpha-builtin-navigation.png)、[工作区 B 记录](./06-alpha-workspace-b-memory.png)、[工作区 A 隔离](./07-alpha-workspace-a-isolated.png)、[RC 完成回合](./08-rc-after-turn-bar.png)。
+补充截图：[Sidebar Runtime 记录](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-261-dsh-slots/03-alpha-runtime-navigation.png)、[关闭 Mnemon 后保留 peer](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-261-dsh-slots/04-alpha-bar-off-peers-retained.png)、[Builtin 跳转](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-261-dsh-slots/05-alpha-builtin-navigation.png)、[工作区 B 记录](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-261-dsh-slots/06-alpha-workspace-b-memory.png)、[工作区 A 隔离](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-261-dsh-slots/07-alpha-workspace-a-isolated.png)、[RC 完成回合](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-261-dsh-slots/08-rc-after-turn-bar.png)。
 
 - [浏览器观测](./browser-results.json)、[类型检查摘要](./typecheck-results.json)、[验证与版本摘要](./verification.json)。
 - [制品验证脚本与复现命令](./harness/HARNESS.md)、[制品完整性与版本组合结果](./harness/evidence-summary.json)。

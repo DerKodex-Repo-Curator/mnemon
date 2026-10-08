@@ -10,15 +10,15 @@
 
 1. 在未安装 Mnemon 的情况下启动宿主，打开**插件 → 添加插件**。
 2. 安装 `dsh-mnemon`。安装源由 DSH 自己选择（测速选中了中国大陆镜像源）。本地 registry 按发布一天后 npm 的样子返回真实元数据，并加入 0.5.20。从空的 pnpm store 开始，0.2.0-rc.1 安装用时 21.8 秒，0.1.7-rc.2 用时 13.2 秒。
-3. 点击**立即启用**，约一秒内出现记忆系统，宿主无需重启。[状态页](status.png)显示 **dsh-mnemon 0.5.20 / 系统正常**，Mnemon Native 写出 **Mnemon 0.2.7**。
-4. 在运行时记忆中添加一条记录，刷新页面后读回：[运行时记忆](runtime.png)。
-5. 在 WebUI 中创建并激活 Mnemon Native 记忆空间：[记忆空间](spaces.png)。用 Mnemon CLI `0.2.7` 写入一条事实并用 CLI 召回，再用 WebUI 的**直接检索**找到同一条事实：[检索](recall.png)。
+3. 点击**立即启用**，约一秒内出现记忆系统，宿主无需重启。[状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/status.png)显示 **dsh-mnemon 0.5.20 / 系统正常**，Mnemon Native 写出 **Mnemon 0.2.7**。
+4. 在运行时记忆中添加一条记录，刷新页面后读回：[运行时记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/runtime.png)。
+5. 在 WebUI 中创建并激活 Mnemon Native 记忆空间：[记忆空间](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/spaces.png)。用 Mnemon CLI `0.2.7` 写入一条事实并用 CLI 召回，再用 WebUI 的**直接检索**找到同一条事实：[检索](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/recall.png)。
 
 两个宿主的每一步都通过，没有宿主警告或控制台错误，每个宿主进程只启动一次。[validation.json](validation.json) 记录了包摘要与各宿主的结果。profile 与记忆均为合成数据。
 
-![DSH 0.2.0-rc.1 上的状态页](status.png)
+![DSH 0.2.0-rc.1 上的状态页](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/status.png)
 
-![直接检索找到 CLI 写入的 Native 记忆](recall.png)
+![直接检索找到 CLI 写入的 Native 记忆](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.20/recall.png)
 
 ## 升级与其他接入方式
 

@@ -32,6 +32,6 @@ Open the printed workspace and choose the Mnemon E2E preset. Send `cache-round-2
 - `MNEMON_NATIVE_TEST_CLI=/opt/homebrew/bin/mnemon pnpm --filter dsh-mnemon-source-memory-spaces exec vitest run tests/native-integration.spec.ts`: passed; real CLI round trip in a disposable store. / 真实 CLI 临时存储读写闭环通过。
 - Regressions cover overlapping requests, cross-child/root attempts, duplicate and expired results, rejected startup, cancelled/disposed requests, disposal during workflow preparation, revocation before asynchronous cleanup, operation-specific schema validation, and authoritative tool/outer `run_code` success. / 回归覆盖并发、跨子任务与父任务越权、重复及过期结果、启动失败、取消与销毁、工作流准备期间销毁、异步清理前撤销、操作专用 schema 和权威执行事件。
 
-![Before: UUID result tool](./before.png)
-![After: stable tool and request envelope](./after.png)
-![After: real runtime write succeeds](./runtime-write.png)
+![Before: UUID result tool](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-239-result-tool/before.png)
+![After: stable tool and request envelope](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-239-result-tool/after.png)
+![After: real runtime write succeeds](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-239-result-tool/runtime-write.png)

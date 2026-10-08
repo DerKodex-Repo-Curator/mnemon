@@ -8,16 +8,16 @@ On 2026-09-11, a real DSH 0.1.5-rc.1 WebUI reproduced the invisible Mnemon launc
 
 | Before / 修复前 | After / 修复后 |
 |---|---|
-| ![Invisible entry](../../assets/issues/232/before-orca-wide.png) | ![Visible entry](../../assets/issues/232/after-orca-wide.png) |
+| ![Invisible entry](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/issues/232/before-orca-wide.png) | ![Visible entry](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/issues/232/after-orca-wide.png) |
 
 The browser clicks exercised the actual built Starter, all three Sources, Native Provider, default Strategy and the scoped/light-context/auto-capture enhancements together. The icon also worked in the collapsed sidebar. From the restored entry, Runtime add and edit persisted, returning to chat worked, and creating/activating a Native space produced a connected status with Mnemon CLI 0.2.7. A restart with the skin disabled retained the data and working default launcher.
 
 浏览器实操使用构建后的 Starter、三个 Source、Native Provider、默认 Strategy，并同时启用 scoped、light-context、auto-capture。窄侧栏入口同样可见且可点击；从入口新增、编辑热记忆并返回会话成功，创建并激活 Native 空间后显示 CLI 0.2.7 已连接。关闭皮肤并重启后，数据与默认入口保持正常。
 
-- [Runtime write / 热记忆写入](../../assets/issues/232/after-orca-runtime-write.png)
-- [Collapsed sidebar / 折叠侧栏](../../assets/issues/232/after-orca-collapsed.png)
-- [Native CLI status / Native CLI 状态](../../assets/issues/232/after-orca-native-status.png)
-- [Default skin after restart / 重启后的默认皮肤](../../assets/issues/232/after-default-status.png)
+- [Runtime write / 热记忆写入](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/issues/232/after-orca-runtime-write.png)
+- [Collapsed sidebar / 折叠侧栏](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/issues/232/after-orca-collapsed.png)
+- [Native CLI status / Native CLI 状态](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/issues/232/after-orca-native-status.png)
+- [Default skin after restart / 重启后的默认皮肤](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/issues/232/after-default-status.png)
 
 Reproduction uses the existing disposable WebUI fixture. Its optional extra-package argument is named `--better-sidebar`; here it installs the actual ORCA LINK bundle. Clone the external skin at the recorded revision, then run these commands in the isolated issue worktree:
 

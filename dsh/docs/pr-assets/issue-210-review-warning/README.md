@@ -28,6 +28,6 @@ Choose the printed disposable workspace and Mnemon E2E preset. Send a durable �
 - Bilingual documentation links and `git diff --check`: passed. Upstream missing source-map notices are non-failing.
 - Composition follow-up: the real loopback fixture returns HTTP 200 for a parent that advertises the stable result tool, and HTTP 400 only for a child completion persona (stable or legacy tool name). A user message quoting the protocol also stays HTTP 200. / 组合验证：真实本地端点对公开固定结果工具的父任务返回 HTTP 200，仅对子任务完成 persona 返回 HTTP 400（兼容固定和旧工具名）；用户消息引用协议仍返回 HTTP 200。
 
-![Before: silent failure](./before.png)
-![After: warning and guidance](./after.png)
-![After: runtime write succeeds](./runtime-write.png)
+![Before: silent failure](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-210-review-warning/before.png)
+![After: warning and guidance](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-210-review-warning/after.png)
+![After: runtime write succeeds](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-210-review-warning/runtime-write.png)

@@ -39,11 +39,11 @@ No run reports a host warning. The Headless upgrade check passes from 0.5.16, 0.
 
 | Stuck on 0.5.19 | After the 0.5.20 generation and a restart |
 | --- | --- |
-| ![Stuck](desktop-stuck-0519.png) | ![Updated](desktop-updated-0520.png) |
+| ![Stuck](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-upgrade/desktop-stuck-0519.png) | ![Updated](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-upgrade/desktop-updated-0520.png) |
 
 **Updating without a restart.** When the link moves while DSH runs and a component is then switched, the Loader keeps the running group's old module. That group waits for the removed readiness service, so the Memory System disappears until DSH restarts:
 
-![mnemon-bundle (dsh-mnemon/bundle) waiting for mnemonStarterReady after an update without a restart](in-place-no-restart.png)
+![mnemon-bundle (dsh-mnemon/bundle) waiting for mnemonStarterReady after an update without a restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/starter-group-upgrade/in-place-no-restart.png)
 
 The installation guide, the operations table and the compatibility reference now name this message and send it to a restart rather than to the Starter switch, which 0.5.20 no longer has.
 

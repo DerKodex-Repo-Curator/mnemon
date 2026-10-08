@@ -10,8 +10,8 @@
 
 | 截图 | 验证结果 |
 |---|---|
-| [版本与状态](./01-version-status.png) | 实际运行 0.5.7，RPC 已连接，无需活动会话 |
-| [归档原文](./02-document-archived.png) | 刷新后仍可读取原文与 Host 回执 |
-| [刷新后的索引](./03-index-after-reload.png) | 一个 Native 索引，含冷存储引用与匹配的内容 hash |
+| [版本与状态](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.7/01-version-status.png) | 实际运行 0.5.7，RPC 已连接，无需活动会话 |
+| [归档原文](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.7/02-document-archived.png) | 刷新后仍可读取原文与 Host 回执 |
+| [刷新后的索引](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/release-v0.5.7/03-index-after-reload.png) | 一个 Native 索引，含冷存储引用与匹配的内容 hash |
 
 模型仅提供预设的归档决策；浏览器、DSH 传输、Host、存储和 Native CLI 均为真实实现。全部内容为合成数据，结束后清理临时 Profile 和浏览器。本次发布冒烟不重复历史完整浏览器矩阵、Windows/Electron 检查或真实模型质量实验。[DSH 兼容报告](../issue-223-dsh-015/README.zh-CN.md) 与[归档回归报告](../issue-222-document-archive/README.md) 保留原始 revision 和更广的覆盖范围。

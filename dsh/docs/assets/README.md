@@ -12,9 +12,9 @@ The current product gallery is [v0.5.19 in Light appearance](./webui-v0.5.19/REA
 | [diagrams](./diagrams) | Code-authored architecture diagrams; current terminology retained / 代码绘制的架构图，已采用当前术语 |
 | [memory-space-terminology](./memory-space-terminology/README.md) | Historical pre-release terminology and layout evidence, based on v0.5.3 / 基于 v0.5.3 的版本化前用语与布局证据 |
 | [showcase](./showcase/README.md) | Historical v0.5.2 screenshots and demo / v0.5.2 历史截图与演示 |
-| [screenshots](./screenshots) | Earlier implementation and release screenshots / 较早实现与发布截图 |
-| [media](./media) | Earlier promotional image, GIF and video / 较早宣传图片、GIF 与视频 |
-| [issues](./issues) | Issue-specific evidence / Issue 专属证据 |
+| [screenshots](https://github.com/omdsh-dev/dsh-mnemon/tree/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/screenshots) | Earlier implementation and release screenshots / 较早实现与发布截图 |
+| [media](https://github.com/omdsh-dev/dsh-mnemon/tree/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/media) | Earlier promotional image, GIF and video / 较早宣传图片、GIF 与视频 |
+| [issues](https://github.com/omdsh-dev/dsh-mnemon/tree/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/assets/issues) | Issue-specific evidence / Issue 专属证据 |
 | [PR assets](../pr-assets/README.md) | Dated engineering reports and their original evidence / 带日期的工程记录及原始证据 |
 
 The [repository audit](./webui-v0.5.4/repository-audit.json) inventories all 142 pre-existing media files and their repository-local references. OCR found legacy labels in 68 of the 135 checked PNG/JPEG files. All 142 original files retain their hashes; current usage guides now point to the Light gallery. A missing local reference is not permission to delete a file: GitHub Issues, PRs and release records may link to it externally.

@@ -52,15 +52,15 @@ Only model decisions are deterministic. Browser, DSH tools, Runtime storage, CLI
 
 The conversation successfully calls Runtime add and status:
 
-![Actual tool receipts and healthy CLI](./images/after-tool-receipts.png)
+![Actual tool receipts and healthy CLI](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-274-profile-generation/images/after-tool-receipts.png)
 
 The UI saved `idleReview.minIntervalMs = 310000`. A new Host process reopened the same profile; the setting remained visible and the settings file was byte-identical:
 
-![Saved interval after a cold Host restart](./images/after-cold-restart-settings.png)
+![Saved interval after a cold Host restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-274-profile-generation/images/after-cold-restart-settings.png)
 
 The single synthetic work-memory entry remained visible, and `runtime/memories.json` was byte-identical:
 
-![Runtime entry after a cold Host restart](./images/after-cold-restart-runtime.png)
+![Runtime entry after a cold Host restart](https://raw.githubusercontent.com/omdsh-dev/dsh-mnemon/2296898ddde876aa49a5dd68165d6c40c069fcd1/docs/pr-assets/issue-274-profile-generation/images/after-cold-restart-runtime.png)
 
 ## Reproduction
 
