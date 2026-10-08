@@ -1,9 +1,19 @@
-name: CI
+name: DSH plugins CI
+
+# Verifies the DeepSeek Harness plugin workspace in dsh/. The jobs match the
+# workspace's former CI in omdsh-dev/dsh-mnemon; every command runs from dsh/.
 
 on:
   push:
-    branches: [main]
+    branches: [master]
+    paths:
+      - 'dsh/**'
+      - '.github/workflows/dsh-ci.yml'
   pull_request:
+    branches: [master]
+    paths:
+      - 'dsh/**'
+      - '.github/workflows/dsh-ci.yml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
@@ -11,6 +21,10 @@ concurrency:
 
 permissions:
   contents: read
+
+defaults:
+  run:
+    working-directory: dsh
 
 jobs:
   verify-windows-workspace:
