@@ -36,11 +36,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omdsh-dev/dsh-mnemon.git"
+    "url": "git+https://github.com/mnemon-dev/mnemon.git",
+    "directory": "dsh"
   },
-  "homepage": "https://github.com/omdsh-dev/dsh-mnemon#readme",
+  "homepage": "https://github.com/mnemon-dev/mnemon/tree/master/dsh#readme",
   "bugs": {
-    "url": "https://github.com/omdsh-dev/dsh-mnemon/issues"
+    "url": "https://github.com/mnemon-dev/mnemon/issues"
   },
   "license": "MIT",
   "publishConfig": {

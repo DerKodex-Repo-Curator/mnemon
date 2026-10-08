@@ -13,6 +13,10 @@ const execute = promisify(execFile)
 const defaultRegistry = 'https://registry.npmjs.org'
 const manifestName = 'release-manifest.json'
 const starterName = 'dsh-mnemon'
+// The workspace is the dsh/ directory of the mnemon repository. Published
+// manifests name that repository and their path inside it.
+const repositoryUrl = 'git+https://github.com/mnemon-dev/mnemon.git'
+const workspaceDirectory = 'dsh'
 const internalName = /^dsh-mnemon-(?:source|strategy|provider)-[a-z0-9-]+$/u
 const releaseVersion = /^(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)(?:-(alpha|beta|rc)\.(?:0|[1-9]\d*))?$/u
 
@@ -77,8 +81,8 @@ export function createReleasePlan(packages, { tag, prerelease, baseVersions } = 
       assert.equal(starter.manifest.dependencies?.[manifest.name] ?? starter.manifest.devDependencies?.[manifest.name], manifest.version,
         `${manifest.name}: Starter must pin the tested plugin version (runtime or development)`)
       if (item.directory.startsWith(root + '/')) {
-        assert.equal(manifest.repository?.url, 'git+https://github.com/omdsh-dev/dsh-mnemon.git', `${manifest.name}: repository URL must identify the official source`)
-        assert.equal(manifest.repository?.directory, relative(root, item.directory), `${manifest.name}: repository directory must identify the package source`)
+        assert.equal(manifest.repository?.url, repositoryUrl, `${manifest.name}: repository URL must identify the official source`)
+        assert.equal(manifest.repository?.directory, `${workspaceDirectory}/${relative(root, item.directory)}`, `${manifest.name}: repository directory must identify the package source`)
       }
     }
     for (const field of ['dependencies', 'optionalDependencies', 'peerDependencies', 'devDependencies']) {
@@ -159,7 +163,8 @@ export async function readReleaseVersionsAtRevision(packages, revision, run = gi
     const directory = relative(root, item.directory)
     const path = directory === '' ? 'package.json' : `${directory}/package.json`
     try {
-      const manifest = JSON.parse(await run(['show', `${revision}:${path}`], root))
+      // ./ resolves the path from the workspace, not from the repository root.
+      const manifest = JSON.parse(await run(['show', `${revision}:./${path}`], root))
       versions.set(item.manifest.name, manifest.version)
     } catch (error) {
       if (!missingAtRevision(error)) throw error
@@ -173,7 +178,9 @@ export async function readChangedPaths(baseRevision, revision, run = git) {
     assert.match(value ?? '', /^[0-9a-f]{40}$/u, 'Changed-package validation requires full revisions')
     await run(['cat-file', '-e', `${value}^{commit}`], root)
   }
-  const output = await run(['diff', '--name-only', '--diff-filter=ACMRD', baseRevision, revision, '--'], root)
+  // --relative keeps the workspace's own paths (plugins/..., src/...) and
+  // leaves out changes elsewhere in the repository.
+  const output = await run(['diff', '--name-only', '--relative', '--diff-filter=ACMRD', baseRevision, revision, '--'], root)
   return output.split(/\r?\n/u).filter(Boolean)
 }
 
@@ -186,8 +193,8 @@ export async function devOnlyManifestChanges(plan, paths, baseRevision, revision
     if (!changedPaths.has(path)) continue
     try {
       const [before, after] = await Promise.all([
-        run(['show', `${baseRevision}:${path}`], root),
-        run(['show', `${revision}:${path}`], root),
+        run(['show', `${baseRevision}:./${path}`], root),
+        run(['show', `${revision}:./${path}`], root),
       ])
       const beforeManifest = JSON.parse(before)
       const afterManifest = JSON.parse(after)

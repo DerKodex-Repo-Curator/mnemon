@@ -74,11 +74,19 @@ async function readPendingChangesets() {
 
 async function main() {
   const revision = process.env.CHANGESET_REVISION?.trim() || await git(['rev-parse', 'HEAD'])
-  const baseRevision = process.env.CHANGESET_BASE_REVISION?.trim() || await git(['merge-base', revision, 'origin/main'])
+  const baseRevision = process.env.CHANGESET_BASE_REVISION?.trim() || await git(['merge-base', revision, 'origin/master'])
   for (const value of [baseRevision, revision]) assert.match(value, /^[0-9a-f]{40}$/u, 'Changeset validation requires full Git revisions')
 
   const packages = await readReleasePackages()
-  const baseVersions = introducedPackageBaseVersions(packages, await readReleaseVersionsAtRevision(packages, baseRevision))
+  const versionsAtBase = await readReleaseVersionsAtRevision(packages, baseRevision)
+  // The change that brings the whole workspace into a repository relocates
+  // published packages; it does not publish anything new. Release intent starts
+  // with the first change made inside the workspace.
+  if (!versionsAtBase.has('dsh-mnemon')) {
+    console.log('The workspace is introduced by this change; release intent applies from the next change.')
+    return
+  }
+  const baseVersions = introducedPackageBaseVersions(packages, versionsAtBase)
   const plan = createReleasePlan(packages, { baseVersions })
   const paths = await readChangedPaths(baseRevision, revision)
   const ignoredPackageJson = await devOnlyManifestChanges(plan, paths, baseRevision, revision)

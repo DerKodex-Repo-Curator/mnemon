@@ -174,7 +174,7 @@ describe('selective, channel-safe official release', () => {
     const run = vi.fn(async args => args[0] === 'diff' ? 'src/removed.ts\n' : '')
     await expect(readChangedPaths(baseRevision, revision, run)).resolves.toEqual(['src/removed.ts'])
     expect(run.mock.calls.at(-1)[0]).toEqual([
-      'diff', '--name-only', '--diff-filter=ACMRD', baseRevision, revision, '--',
+      'diff', '--name-only', '--relative', '--diff-filter=ACMRD', baseRevision, revision, '--',
     ])
   })
 

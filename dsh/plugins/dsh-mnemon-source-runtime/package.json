@@ -103,11 +103,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omdsh-dev/dsh-mnemon.git",
-    "directory": "plugins/dsh-mnemon-source-runtime"
+    "url": "git+https://github.com/mnemon-dev/mnemon.git",
+    "directory": "dsh/plugins/dsh-mnemon-source-runtime"
   },
-  "homepage": "https://github.com/omdsh-dev/dsh-mnemon/tree/main/plugins/dsh-mnemon-source-runtime#readme",
+  "homepage": "https://github.com/mnemon-dev/mnemon/tree/master/dsh/plugins/dsh-mnemon-source-runtime#readme",
   "bugs": {
-    "url": "https://github.com/omdsh-dev/dsh-mnemon/issues"
+    "url": "https://github.com/mnemon-dev/mnemon/issues"
   }
 }
